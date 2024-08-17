@@ -1,0 +1,58 @@
+.main {
+  flex: 1 1 auto;
+  overflow: hidden;
+
+  &__house-cost {
+    position: relative;
+    z-index: 3;
+    margin-top: -40px;
+  }
+
+  &__catalog {
+    position: relative;
+    z-index: 2;
+    margin-top: 60px;
+  }
+
+  &__features {
+    margin-top: 60px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+
+  &__stages {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  @media (max-width: 991px) {
+    &__features {
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+
+    &__stages {
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+  }
+
+  @media (max-width: 767px) {
+    &__catalog {
+      margin-top: 45px;
+    }
+
+    &__features {
+      margin-top: 45px;
+      padding-top: 35px;
+      padding-bottom: 35px;
+    }
+
+    &__stages {
+      padding-top: 35px;
+      padding-bottom: 35px;
+    }
+  }
+}

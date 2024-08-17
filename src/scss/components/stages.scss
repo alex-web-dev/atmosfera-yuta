@@ -1,0 +1,43 @@
+.stages {
+  position: relative;
+
+  &--white {
+    background-color: #fff;
+  }
+
+  &__content {
+    position: relative;
+    z-index: 3;
+  }
+
+  &__bg-img {
+    position: absolute;
+    pointer-events: none;
+
+    &:nth-child(1) {
+      top: 10px;
+      right: 0;
+    }
+
+    &:nth-child(2) {
+      bottom: -79px;
+      left: 0;
+      z-index: 2;
+    }
+  }
+
+  @media (max-width: 767px) {
+    &__bg-img {
+      &:nth-child(1) {
+        top: -65px;
+        right: -25px;
+        max-width: 162px;
+      }
+
+      &:nth-child(2) {
+        bottom: -55px;
+        max-width: 120px;
+      }
+    }
+  }
+}

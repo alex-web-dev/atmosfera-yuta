@@ -1,0 +1,84 @@
+.callback-card {
+  padding: 40px 40px 52px;
+  border-radius: 20px;
+  @include primary-gradient();
+
+  &__icon {
+    margin-bottom: 20px;
+  }
+
+  &__text {
+    margin-top: 20px;
+
+    &--sm {
+      max-width: 290px;
+    }
+  }
+
+  &__form {
+    margin-top: 44px;
+  }
+
+  &__btns {
+    &:not(:first-child) {
+      margin-top: 40px;
+    }
+  }
+
+  &__btn {
+    width: 100%;
+
+    &:not(:first-child) {
+      margin-top: 18px;
+    }
+  }
+
+  &__ps {
+    margin-top: 20px;
+  }
+
+  @media (max-width: 1340px) {
+    padding: 30px 35px 40px;
+  }
+
+  @media (max-width: 1180px) {
+    padding: 25px 25px 30px;
+
+    &__icon {
+      margin-bottom: 16px;
+    }
+
+    &__text {
+      margin-top: 12px;
+    }
+
+    &__form {
+      margin-top: 32px;
+    }
+
+    &__btns {
+      &:not(:first-child) {
+        margin-top: 32px;
+      }
+    }
+  }
+
+  @media (max-width: 767px) {
+    padding-left: var(--container-mobile-offset);
+    padding-right: var(--container-mobile-offset);
+
+    &__icon {
+      margin-bottom: 12px;
+    }
+
+    &__form {
+      margin-top: 24px;
+    }
+
+    &__btns {
+      &:not(:first-child) {
+        margin-top: 24px;
+      }
+    }
+  }
+}

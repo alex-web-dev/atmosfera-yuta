@@ -1,0 +1,18 @@
+.banner-feature {
+  position: relative;
+  padding: 16px 20px 16px 28px;
+  border-radius: 4px;
+  background-color: #fff;
+
+  &__checkbox {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  @media (max-width: 767px) {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+}

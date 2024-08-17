@@ -1,0 +1,142 @@
+.house-calc {
+  max-width: 100%;
+  min-width: 0;
+
+  &__progress {
+    margin-bottom: 24px;
+  }
+
+  &__main {
+    max-width: 100%;
+  }
+
+  &__slide {
+    padding-right: 1px;
+    background-color: #fff;
+  }
+
+  &__slide-header {
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+  }
+
+  &__step {
+    margin-right: 12px;
+    flex: 0 0 auto;
+  }
+
+  &__list {
+    margin-top: -20px;
+    margin-left: -20px;
+    display: flex;
+    flex-wrap: wrap;
+    user-select: none;
+  }
+
+  &__item {
+    margin-top: 20px;
+    margin-left: 20px;
+    width: calc(50% - 20px);
+  }
+
+  &__footer {
+    margin-top: 24px;
+    padding-top: 40px;
+    display: flex;
+    align-items: center;
+    border-top: 1px solid var(--color-blue-100);
+  }
+
+  &__footer-btn {
+    &:not(:first-child) {
+      margin-left: 28px;
+    }
+
+    &--next {
+      &:after {
+        margin-left: 8px;
+        @include pseudo-icon("../img/icons/right-primary.svg", 24px, 24px);
+        background-size: 8px 12px;
+      }
+    }
+
+    &--prev {
+      &:before {
+        margin-right: 8px;
+        @include pseudo-icon("../img/icons/right-primary.svg", 24px, 24px);
+        background-size: 8px 12px;
+        transform: rotate(180deg);
+      }
+
+      &.swiper-button-disabled {
+        cursor: default;
+        color: var(--color-gray-400);
+  
+        &:before {
+          background-image: url("../img/icons/right-gray-400.svg");
+        }
+      }
+    }
+  }
+
+  @media (max-width: 1180px) {
+    &__slide-title {
+      font-size: 18px;
+    }
+
+    &__item {
+      min-height: 263px;
+    }
+  }
+
+  @media (max-width: 991px) {
+    &__footer {
+      padding-top: 24px;
+    }
+  }
+
+  @media (max-width: 767px) {
+    &__footer {
+      margin-top: 16px;
+      padding-top: 16px;
+      justify-content: space-between;
+    }
+  }
+
+  @media (max-width: 640px) {
+    &__progress {
+      margin-bottom: 20px;
+    }
+
+    &__slide-header {
+      margin-bottom: 20px;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    &__step {
+      font-size: 14px;
+    }
+
+    &__step-label {
+      font-size: 14px;
+    }
+
+    &__slide-title {
+      font-size: 16px; 
+    }
+
+    &__list {
+      margin-top: -10px;
+      margin-left: -10px;
+    }
+
+    &__item {
+      margin-top: 10px;
+      margin-left: 10px;
+      width: calc(100% - 10px);
+      min-height: 140px;
+    }
+  }
+}

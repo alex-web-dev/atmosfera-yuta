@@ -1,0 +1,13 @@
+.submenu {
+  &__content {
+    padding: 16px;
+    border-radius: 8px;
+    background-color: #fff;
+  }
+
+  &__item {
+    &:not(:first-child) {
+      margin-top: 10px;
+    }
+  }
+}

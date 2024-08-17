@@ -1,0 +1,54 @@
+.menu-toggle {
+  padding-bottom: 2px;
+  height: 24px;
+
+  &__lines {
+    position: relative;
+    z-index: 1;
+
+    &,
+    &:before,
+    &:after {
+      height: 2px;
+      border-radius: 1px;
+      background-color: #fff;
+      display: block;
+      transform: rotate(0);
+      width: 24px;
+      transition: transform 0.35s, width 0.35s, background 0.35s;
+    }
+
+    &:before,
+    &:after {
+      content: '';
+      position: absolute;
+      right: 0;
+    }
+
+    &:before {
+      transform: translateY(-8px);
+    }
+
+    &:after {
+      transform: translateY(8px);
+    }
+  }
+
+  &--active &__lines {
+    height: 0;
+
+    &,
+    &:before,
+    &:after {
+      background-color: var(--color-black);
+    }
+
+    &:before {
+      transform: rotate(-45deg);
+    }
+
+    &:after {
+      transform: rotate(45deg);
+    }
+  }
+}

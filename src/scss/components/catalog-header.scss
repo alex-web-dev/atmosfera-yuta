@@ -1,0 +1,141 @@
+.catalog-header {
+  padding-top: 40px;
+  padding-bottom: 28px;
+  background-color: #fff;
+  border-radius: 20px;
+
+  &__top {
+    margin-bottom: 32px;
+    display: flex;
+    align-items: center;
+  }
+
+  &__location {
+    position: relative;
+    
+    &:not(:first-child) {
+      margin-left: 20px;
+      padding-left: 20px;
+      
+      &:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 1px;
+        height: 36px;
+        background-color: var(--color-blue-100);
+      }
+    }
+  }
+
+  &__location-icon {
+    &:first-child:not(:last-child) {
+      margin-right: 20px;
+    }
+
+    &:last-child:not(:first-child) {
+      margin-left: 20px;
+    }
+  }
+
+  &__btns {
+    margin-top: -12px;
+    margin-left: -12px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__btn {
+    margin-top: 12px;
+    margin-left: 12px;
+    width: calc(25% - 12px);
+  }
+
+  &__bottom {
+    margin-top: 32px;
+    display: flex;
+    align-items: center;
+  }
+
+  &__bottom-tags {
+    margin-top: -8px;
+    margin-left: -8px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    &:not(:last-child) {
+      margin-right: 15px;
+    }
+  }
+
+  &__bottom-tag {
+    margin-top: 8px;
+    margin-left: 8px;
+    flex: 0 0 auto;
+  }
+
+  &__bottom-reset {
+    margin-left: auto;
+  }
+
+  @media (max-width: 1180px) {
+    &__btn {
+      width: calc(50% - 12px);
+    }
+  }
+
+  @media (max-width: 991px) {
+    padding-top: 32px;
+    padding-bottom: 24px;
+
+    &__location-icon {
+      &:first-child:not(:last-child) {
+        margin-right: 12px;
+      }
+  
+      &:last-child:not(:first-child) {
+        margin-left: 12px;
+      }
+    }
+
+    &__bottom {
+      margin-top: 24px;
+    }
+  }
+
+  @media (max-width: 767px) {
+    &__top {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    &__location {
+      &:not(:first-child) {
+        margin-top: 12px;
+        margin-left: 0;
+        padding-left: 0;
+        
+        &:before {
+          display: none;
+        }
+      }
+    }
+
+    &__btn {
+      width: calc(100% - 12px);
+    }
+
+    &__bottom {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    &__bottom-reset {
+      margin-top: 12px;
+      font-size: 14px;
+    }
+  }
+}

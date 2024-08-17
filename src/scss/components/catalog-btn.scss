@@ -1,0 +1,35 @@
+.catalog-btn {
+  padding: 8px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--color-gray-100);
+  border: 1px solid var(--color-gray-100);
+  border-radius: 8px;
+
+  &__main {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  &:after {
+    margin-left: 20px;
+    @include pseudo-icon('../img/icons/right-primary.svg', 24px, 24px);
+    background-size: 8px 12px;
+    transform: rotate(90deg);
+  }
+
+  &.dropdown__btn--active {
+    background-color: transparent;
+    border-color: var(--color-primary);
+
+    &:after {
+      transform: rotate(-90deg);
+    }
+  }
+
+  &__label {
+    margin-bottom: 2px;
+  }
+}

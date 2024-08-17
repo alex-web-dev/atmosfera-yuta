@@ -1,0 +1,28 @@
+.site-rating {
+  display: flex;
+  flex: 0 0 auto;
+
+  &__value {
+    padding-bottom: 16px;
+    flex: 0 0 auto;
+    width: 64px;
+    height: 96px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    background: url('/img/icons/rating-value.svg') center / contain no-repeat;
+    color: #fff;
+  }
+
+  &__info {
+    margin-left: 16px;
+    width: 136px;
+  }
+
+  &__text {
+    &--sm {
+      max-width: 110px;
+    }
+  }
+}

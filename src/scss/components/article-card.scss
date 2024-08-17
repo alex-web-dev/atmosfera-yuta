@@ -1,0 +1,29 @@
+.article-card {
+  display: flex;
+  flex-direction: column;
+
+  &__img-box {
+    position: relative;
+    padding-top: min(60%, 320px);
+    border-radius: 20px;
+    overflow: hidden;
+
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__img {
+    object-fit: cover;
+  }
+
+  &__date {
+    margin-bottom: 8px;
+  }
+
+  &__title {
+    a {
+      display: inline-block;
+    }
+  }
+}

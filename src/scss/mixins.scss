@@ -1,0 +1,38 @@
+@mixin font-face(
+  $font-family,
+  $file-path,
+  $weight: normal,
+  $style: normal,
+  $display: swap,
+  $asset-pipeline: false
+) {
+  @font-face {
+    font-family: $font-family;
+    font-weight: $weight;
+    font-display: $display;
+    font-style: $style;
+    src: url("#{$file-path}.woff2") format("woff2"),
+      url("#{$file-path}.woff") format("woff");
+  }
+}
+
+@mixin icon($url, $width, $height) {
+  background: url($url) center / contain no-repeat;
+  width: $width;
+  height: $height;
+}
+
+@mixin pseudo-icon($url, $width, $height, $display: inline-block) {
+  content: "";
+  display: $display;
+  @include icon($url, $width, $height);
+}
+
+@mixin primary-gradient($rotate: 102deg, $first: -3.33%, $second: 127.12%) {
+  background-image: linear-gradient($rotate, #439EF8 $first, #041632 $second);
+}
+
+@mixin gold-gradient($rotate: 108deg, $first: -3.76%, $second: 25.39%, $third: 90.28%) {
+  background-image: linear-gradient($rotate, #FFA61F $first, #FFEFB5 $second, #FFA41B $third);
+}
+

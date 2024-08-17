@@ -1,0 +1,20 @@
+.articles {
+  &--white {
+    padding: 60px 0;
+    background-color: #fff;
+  }
+
+  @media (max-width: 991px) {
+    &--white {
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+  }
+
+  @media (max-width: 767px) {
+    &--white {
+      padding-top: 35px;
+      padding-bottom: 35px;
+    }
+  }
+}

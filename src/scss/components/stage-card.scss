@@ -1,0 +1,54 @@
+.stage-card {
+  padding: 24px;
+  border-radius: 20px;
+  background-color: var(--color-gray-100);
+
+  &--white {
+    background-color: #fff;
+  }
+
+  &__num {
+    margin-bottom: 24px;
+  }
+
+  &__icon {
+    margin-bottom: 56px;
+    width: 68px;
+    height: 68px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  &__icon-img {
+    width: 36px;
+    height: 36px;
+    object-fit: contain;
+  }
+
+  &__text {
+    margin-top: 16px;
+  }
+
+  @media (max-width: 991px) {
+    &__icon {
+      margin-bottom: 40px;
+    }
+  }
+
+  @media (max-width: 767px) {
+    &__icon {
+      margin-bottom: 24px;
+      width: 58px;
+      height: 58px;
+    }
+
+    &__icon-img {
+      width: 30px;
+      height: 30px;
+    }
+  }
+}

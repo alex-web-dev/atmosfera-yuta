@@ -1,0 +1,46 @@
+.tag {
+  padding: 12px 16px;
+  display: inline-flex;
+  align-items: center;
+  min-height: 48px;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 80px;
+  background-color: var(--color-gray-100);
+
+  &--gold {
+    @include gold-gradient();
+  }
+
+  &--white {
+    background-color: #fff;
+  }
+
+  &--sm {
+    padding: 8px 12px;
+    min-height: 40px;
+  }
+
+  &--shadow {
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  &__icon {
+    margin-right: 4px;
+  }
+
+  &--sm &__icon {
+    margin-right: 2px;
+  }
+
+  @media (max-width: 767px) {
+    &--mobile-sm {
+      padding: 8px 12px;
+      min-height: 40px;
+    }
+
+    &--mobile-sm &__icon {
+      margin-right: 2px;
+    }
+  }
+}

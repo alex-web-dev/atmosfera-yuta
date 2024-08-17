@@ -1,0 +1,25 @@
+.list {
+  padding-left: 15px;
+
+  &__item {
+    padding-left: 7px;
+    font-size: 16px;
+    line-height: 1.5;
+
+    &:not(:first-child) {
+      margin-top: 20px;
+    }
+
+    &--arrow {
+      list-style-image: url('../img/icons/right-purple-dark.svg');
+    }
+  }
+
+  @media (max-width: 767px) {
+    &__item {
+      &:not(:first-child) {
+        margin-top: 16px;
+      }
+    }
+  }
+}

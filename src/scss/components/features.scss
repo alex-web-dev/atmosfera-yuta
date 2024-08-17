@@ -1,0 +1,38 @@
+.features {
+  position: relative;
+
+  &--white {
+    background-color: #fff;
+  }
+
+  &__bg-img {
+    position: absolute;
+    pointer-events: none;
+
+    &:nth-child(1) {
+      right: 0;
+      top: -400px;
+      z-index: 1;
+    }
+  }
+
+  @media (max-width: 1400px) {
+    &__bg-img {
+      &:nth-child(1) {
+        top: -360px;
+        right: -20px;
+        max-width: 300px;
+      }
+    }
+  }
+
+  @media (max-width: 767px) {
+    &__bg-img {
+      &:nth-child(1) {
+        top: -278px;
+        right: -40px;
+        max-width: 210px;
+      }
+    }
+  }
+}

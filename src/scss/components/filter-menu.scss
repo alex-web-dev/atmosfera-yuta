@@ -1,0 +1,31 @@
+.filter-menu {
+  padding: 24px;
+  width: 100%;
+  background: #ffffff;
+  box-shadow: 0px 12px 24px rgba(67, 67, 73, 0.1);
+  border-radius: 16px;
+
+  &--lg {
+    width: 420px;
+  }
+
+  &--xl {
+    width: 480px;
+  }
+
+  &__checkbox {
+    width: 100%;
+    display: block;
+  }
+
+  @media (max-width: 1180px) {
+    &--lg,
+    &--xl {
+      max-width: 100%;
+    }
+  }
+
+  @media (max-width: 767px) {
+    padding: 16px;
+  }
+}

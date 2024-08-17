@@ -1,0 +1,7 @@
+.mobile-submenu {
+  &__item {
+    &:not(:first-child) {
+      margin-top: 10px;
+    }
+  }
+}

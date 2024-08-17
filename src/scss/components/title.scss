@@ -1,0 +1,149 @@
+.title {
+  line-height: 1.3;
+  font-weight: 400;
+
+  b,
+  strong {
+    font-weight: 600;
+  }
+
+  &--strong-primary {
+    b,
+    strong {
+      color: var(--color-primary);
+    }
+  }
+
+  &--1 {
+    font-size: 48px;
+    line-height: 1.46;
+  }
+
+  &--2 {
+    font-size: 40px;
+  }
+
+  &--3 {
+    font-size: 34px;
+  }
+
+  &--4 {
+    font-size: 28px;
+    line-height: 1.5;
+  }
+
+  &--5 {
+    font-size: 24px;
+    line-height: 1.5;
+  }
+
+  &--6 {
+    font-size: 20px;
+  }
+
+  &--semibold {
+    font-weight: 600;
+  }
+
+  &--medium {
+    font-weight: 500;
+  }
+
+  &--bold {
+    font-weight: 700;
+  }
+
+  &--white {
+    color: #fff;
+  }
+
+  &--primary {
+    color: var(--color-primary);
+  }
+
+  &--center {
+    text-align: center;
+  }
+
+  &--spacing-3 {
+    letter-spacing: 0.03em;
+  }
+
+  &--spacing-4 {
+    letter-spacing: 0.04em;
+  }
+
+  &--upper {
+    text-transform: uppercase;
+  }
+
+  &--lh-1 {
+    line-height: 1;
+  }
+
+  &--lh-12 {
+    line-height: 1.2;
+  }
+
+  &--lh-14 {
+    line-height: 1.4;
+  }
+
+  &--lh-16 {
+    line-height: 1.6;
+  }
+
+  @media (max-width: 1180px) {
+    &--1 {
+      font-size: 44px;
+    }
+
+    &--2 {
+      font-size: 36px;
+    }
+
+    &--3 {
+      font-size: 30px;
+    }
+
+    &--6 {
+      font-size: 18px;
+    }
+  }
+
+  @media (max-width: 991px) {
+    &--1 {
+      font-size: 40px;
+    }
+
+    &--2 {
+      font-size: 34px;
+    }
+
+    &--3 {
+      font-size: 28px;
+    }
+
+    &--5 {
+      font-size: 22px;
+    }
+  }
+
+  @media (max-width: 767px) {
+    &--1 {
+      font-size: 32px;
+    }
+
+    &--2 {
+      font-size: 28px;
+    }
+
+    &--3 {
+      font-size: 24px;
+    }
+
+    &--5 {
+      font-size: 20px;
+    }
+  }
+}
