@@ -38,12 +38,16 @@
 
   @media (max-width: 767px) {
     &__title {
+      margin-bottom: 20px;
       font-size: 24px;
       
       &--sm {
-        margin-bottom: 20px;
         max-width: 320px;
       }
+    }
+
+    &__img-box {
+      border-radius: 16px;
     }
   }
 }

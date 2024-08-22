@@ -10,12 +10,12 @@
   background-color: #fff;
   visibility: hidden;
   overflow: hidden;
-  transition: visibility 0.8s, height 0.8s;
+  transition: visibility 0.6s ease-in-out, height 0.6s ease-in-out;
 
   &--active {
     visibility: visible;
-    height: 100dvh;
     height: 100vh;
+    height: 100dvh;
   }
 
   &--show {
@@ -69,7 +69,7 @@
     &:after {
       margin-top: -2px;
       margin-left: 5px;
-      @include pseudo-icon('../img/icons/right-black.svg', 20px, 20px);
+      @include pseudo-icon("../img/icons/right-black.svg", 20px, 20px);
       background-size: 8px 12px;
       transition: transform 0.35s;
     }

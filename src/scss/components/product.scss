@@ -1,0 +1,160 @@
+.product {
+  &__content {
+    display: flex;
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    min-width: 0;
+  }
+
+  &__body-footer {
+    margin-top: auto;
+  }
+
+  &__sliders {
+    position: relative;
+  }
+
+  &__slider-item {
+    display: flex;
+    align-items: flex-start;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.5s, opacity 0.5s;
+
+    &--active {
+      visibility: visible;
+      opacity: 1;
+    }
+
+    &:not(:first-child) {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__nav-slider {
+    flex: 0 0 100px;
+    margin-right: 20px;
+  }
+
+  &__main-slider-box {
+    position: relative;
+    padding-top: min(72.4%, 574px);
+    flex: 1 1 auto;
+    width: 100%;
+  }
+
+  &__main-slider {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__switch {
+    margin-top: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__switch-main {
+    margin: 0 20px;
+    flex: 0 0 auto;
+  }
+
+  &__switch-item {
+    transition: color 0.35s;
+
+    .text__icon {
+      transition: stroke 0.35s;
+      stroke: var(--color-black);
+    }
+
+    &--active {
+      color: var(--color-primary);
+
+      .text__icon {
+        stroke: var(--color-primary);
+      }
+    }
+  }
+
+  &__sidebar {
+    margin-left: 20px;
+    flex: 0 0 427px;
+  }
+
+  &__sidebar-section {
+    &:not(:first-child) {
+      margin-top: 20px;
+    }
+  }
+
+  @media (max-width: 1180px) {
+    &__sidebar {
+      flex-basis: 360px;
+    }
+  }
+
+  @media (max-width: 991px) {
+    &__content {
+      flex-direction: column;
+    }
+
+    &__slider-item {
+      flex-direction: column;
+    }
+
+    &__nav-slider {
+      margin-top: 20px;
+      order: 2;
+      max-width: 100%;
+      flex: none;
+    }
+
+    &__main-slider-box {
+      padding-top: min(72.4%, 480px);
+    }
+
+    &__sidebar {
+      margin-top: 20px;
+      margin-left: 0;
+    }
+  }
+
+  @media (max-width: 767px) {
+    &__main-slider-box {
+      padding-top: min(83%, 320px);
+    }
+
+    &__switch-main {
+      margin: 0 12px;
+    }
+
+    &__switch-item {
+      font-size: 12px;
+
+      .text__icon {
+        width: 16px;
+        height: 16px;
+
+        &:first-child:not(:last-child) {
+          margin-right: 10px;
+        }
+  
+        &:last-child:not(:first-child) {
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+}

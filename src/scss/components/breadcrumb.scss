@@ -1,0 +1,48 @@
+.breadcrumb {
+  font-size: 14px;
+  line-height: 1.5;
+
+  &__list {
+    display: flex;
+    align-items: center;
+    overflow-x: auto;
+  }
+
+  &__item {
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+
+    &:not(:last-child) {
+      position: relative;
+      margin-right: 12px;
+    }
+  }
+
+  &__item {
+    &:not(:last-child):after {
+      margin-top: 1px;
+      margin-left: 12px;
+      @include pseudo-icon('../img/icons/right-white.svg', 20px, 20px);
+      background-size: 8px 12px;
+      opacity: 0.7;
+    }
+  }
+
+  &__link,
+  &__current {
+    flex: 0 0 auto;
+  }
+
+  &__link {
+    color: rgba(#fff, 0.7);
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__current {
+    color: #fff;
+  }
+}

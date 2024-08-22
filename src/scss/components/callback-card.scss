@@ -66,6 +66,7 @@
   @media (max-width: 767px) {
     padding-left: var(--container-mobile-offset);
     padding-right: var(--container-mobile-offset);
+    border-radius: 16px;
 
     &__icon {
       margin-bottom: 12px;

@@ -20,6 +20,20 @@
     }
   }
 
+  &__item--has-children &__link {
+    &:before {
+      max-width: calc(100% - 24px);
+    }
+    
+    &:after {
+      margin-top: -2px;
+      margin-left: 4px;
+      @include pseudo-icon('../img/icons/right-white.svg', 20px, 20px);
+      background-size: 8px 12px;
+      transform: rotate(90deg);
+    }
+  }
+
   &__submenu {
     position: absolute;
     top: 100%;
@@ -35,16 +49,6 @@
   &__item:hover &__submenu {
     visibility: visible;
     opacity: 1;
-  }
-
-  &__item--has-children &__link {
-    &:after {
-      margin-top: -2px;
-      margin-left: 4px;
-      @include pseudo-icon('../img/icons/right-white.svg', 20px, 20px);
-      background-size: 8px 12px;
-      transform: rotate(90deg);
-    }
   }
 
   @media (max-width: 1340px) {

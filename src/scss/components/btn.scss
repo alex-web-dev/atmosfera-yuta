@@ -23,9 +23,14 @@
       inset 2px 2px 4px rgba(255, 255, 255, 0.4);
   }
 
+  &--white {
+    background: #fff;
+    color: #4b5257;
+  }
+
   &--border-white {
     border-color: #fff;
-    background-color: transparent;
+    background: transparent;
 
     &:hover {
       background-color: var(--color-primary);
@@ -83,9 +88,14 @@
     line-height: 1.375;
   }
 
-  &--px-sm {
+  &--px-xs {
     padding-left: 20px;
     padding-right: 20px;
+  }
+
+  &--px-sm {
+    padding-left: 32px;
+    padding-right: 32px;
   }
 
   &--py-2xs {

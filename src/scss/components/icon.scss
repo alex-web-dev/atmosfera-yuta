@@ -8,6 +8,10 @@
   &__img {
     max-height: 100%;
     object-fit: contain;
+
+    &--rotate-180deg {
+      transform: rotate(180deg);
+    }
   }
 
   &--sm {

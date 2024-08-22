@@ -16,8 +16,6 @@
 
   &__features {
     margin-top: 60px;
-    padding-top: 60px;
-    padding-bottom: 60px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
   }
@@ -25,6 +23,38 @@
   &__stages {
     padding-top: 60px;
     padding-bottom: 60px;
+  }
+
+  &__overlay {
+    position: relative;
+    z-index: 1;
+    margin-top: -60px;
+
+    &--mt-xl {
+      margin-top: -590px;
+    }
+  }
+
+  &__project-cost {
+    margin-top: 24px;
+  }
+
+  &__equipment {
+    margin-top: 56px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+
+  &__callback {
+    padding-top: 60px;
+  }
+
+  @media (max-width: 1180px) {
+    &__overlay {
+      &--mt-xl {
+        margin-top: -490px;
+      }
+    }
   }
 
   @media (max-width: 991px) {
@@ -37,6 +67,22 @@
       padding-top: 50px;
       padding-bottom: 50px;
     }
+
+    &__overlay {
+      margin-top: -40px;
+
+      &--mt-xl {
+        margin-top: -490px;
+      }
+    }
+
+    &__callback {
+      padding-top: 50px;
+    }
+
+    &__equipment {
+      margin-top: 46px;
+    }
   }
 
   @media (max-width: 767px) {
@@ -46,13 +92,28 @@
 
     &__features {
       margin-top: 45px;
-      padding-top: 35px;
-      padding-bottom: 35px;
     }
 
     &__stages {
       padding-top: 35px;
       padding-bottom: 35px;
+    }
+
+    &__overlay {
+      margin-top: -30px;
+
+      &--mt-xl {
+        margin-top: -390px;
+      }
+    }
+
+    &__callback {
+      padding-top: 35px;
+    }
+
+    &__equipment {
+      margin-top: 35px;
+      padding-bottom: 20px;
     }
   }
 }

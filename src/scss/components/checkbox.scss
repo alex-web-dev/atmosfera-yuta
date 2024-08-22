@@ -16,17 +16,17 @@
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    background-color: #f8f8fb;
+    background-color: var(--color-gray-100);
     cursor: pointer;
 
     &:before {
       content: '';
       position: absolute;
       display: block;
-      width: 10px;
-      height: 10px;
+      width: 9px;
+      height: 9px;
       border-radius: 50%;
-      border: 2px solid rgba(var(--color-gray-400), 0.5);
+      border: 2px solid rgba(var(--color-gray-400--rgb), 0.5);
     }
 
     &:after {

@@ -3,6 +3,10 @@
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.2));
   outline: none;
 
+  &.js-accordion-status-activating {
+    filter: none;
+  }
+
   &__content {
     padding: 15px 40px;
     position: relative;

@@ -6,6 +6,7 @@
   background: url('../img/banner-bg.jpg') center / cover no-repeat;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
+  overflow: hidden;
 
   &:before {
     content: '';
@@ -17,9 +18,26 @@
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0) 100%);
   }
 
+  &--blur {
+    &:before {
+      background: rgba(39, 39, 44, 0.75);
+      backdrop-filter: blur(23px);
+    }
+  }
+
+  &--xl {
+    padding-bottom: 605px;
+  }
+
   &__content {
     position: relative;
     z-index: 1;
+  }
+
+  &__breadcrumb {
+    &:not(:last-child) {
+      margin-bottom: 60px;
+    }
   }
 
   &__location {
@@ -28,7 +46,9 @@
   }
 
   &__title {
-    max-width: 716px;
+    &--sm {
+      max-width: 716px;
+    }
   }
 
   &__features {
@@ -49,6 +69,16 @@
   @media (max-width: 1180px) {
     padding-top: 165px;
 
+    &--xl {
+      padding-bottom: 505px;
+    }
+
+    &__breadcrumb {
+      &:not(:last-child) {
+        margin-bottom: 40px;
+      }
+    }
+
     &__title {
       max-width: 680px;
     }
@@ -62,6 +92,16 @@
     padding-top: 100px;
     padding-bottom: 90px;
 
+    &--xl {
+      padding-bottom: 490px;
+    }
+
+    &__breadcrumb {
+      &:not(:last-child) {
+        margin-bottom: 32px;
+      }
+    }
+
     &__title {
       max-width: 650px;
     }
@@ -70,6 +110,18 @@
   @media (max-width: 767px) {
     padding-top: 80px;
     padding-bottom: 70px;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+
+    &--xl {
+      padding-bottom: 390px;
+    }
+    
+    &__breadcrumb {
+      &:not(:last-child) {
+        margin-bottom: 24px;
+      }
+    }
     
     &__location {
       max-width: 320px;

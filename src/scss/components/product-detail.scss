@@ -1,0 +1,31 @@
+.product-detail {
+  display: flex;
+  align-items: center;
+
+  &__img-box {
+    margin-right: 20px;
+    flex: 0 0 auto;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__img {
+    max-height: 100%;
+    object-fit: contain;
+  }
+
+  @media (max-width: 767px) {
+    &__img-box {
+      margin-right: 16px;
+      width: 44px;
+      height: 44px;
+    }
+
+    &__title {
+      font-size: 16px;
+    }
+  }
+}

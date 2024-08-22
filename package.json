@@ -13,9 +13,12 @@
     "vite": "^5.4.0"
   },
   "dependencies": {
+    "@floating-ui/dom": "^1.6.10",
     "imask": "^7.6.1",
     "normalize.css": "^8.0.1",
+    "nouislider": "^15.8.1",
     "simplebar": "^6.2.7",
-    "swiper": "^11.0.1"
+    "swiper": "^11.0.1",
+    "tippy.js": "^6.3.7"
   }
 }

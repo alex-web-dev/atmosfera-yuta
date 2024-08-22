@@ -26,4 +26,10 @@
       display: inline-block;
     }
   }
+
+  @media (max-width: 767px) {
+    &__img-box {
+      border-radius: 16px;
+    }
+  }
 }

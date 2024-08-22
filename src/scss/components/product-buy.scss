@@ -1,0 +1,26 @@
+.product-buy {
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__item-value {
+    &:not(:first-child) {
+      margin-left: 10px;
+    }
+  }
+
+  &__btn {
+    margin-top: 20px;
+  }
+
+  &__text {
+    margin-top: 16px;
+  }
+
+  @media (max-width: 767px) {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+}

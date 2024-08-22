@@ -7,12 +7,19 @@ $dropdowns.forEach(($dropdown) => {
 window.addEventListener("click", (e) => {
   const $activeDropdown = document.querySelector(".dropdown--active");
   const isInner = e.target.closest(".dropdown") && !e.target.classList.contains("dropdown");
-  if (!$activeDropdown || isInner) {
+
+  if (!$activeDropdown || isInner || isNoUiSliderActive) {
     return;
   }
 
   closeDropdown($activeDropdown);
 });
+
+let isNoUiSliderActive = false;
+document.addEventListener("nouislider:start", () => (isNoUiSliderActive = true));
+document.addEventListener("nouislider:end", () => setTimeout(() => (isNoUiSliderActive = false)));
+document.addEventListener("price-filter:mouse-down", () => (isNoUiSliderActive = true));
+document.addEventListener("mouseup", () => setTimeout(() => (isNoUiSliderActive = false)));
 
 function dropdownBtnHandler($btn, $dropdown, e) {
   e.stopPropagation();
@@ -27,21 +34,25 @@ function dropdownBtnHandler($btn, $dropdown, e) {
 }
 
 export function openDropdown($dropdown) {
-  if (!$dropdown)
-    return;
+  if (!$dropdown) return;
 
   const $btn = $dropdown.querySelector(".dropdown__btn");
   $dropdown.classList.add("dropdown--active");
   $btn.classList.add("dropdown__btn--active");
+
+  const event = new Event("dropdown:show");
+  $dropdown.dispatchEvent(event);
 }
 
 export function closeDropdown($dropdown) {
-  if (!$dropdown)
-    return;
-  
+  if (!$dropdown) return;
+
   const $btn = $dropdown.querySelector(".dropdown__btn");
   $dropdown.classList.remove("dropdown--active");
   $btn.classList.remove("dropdown__btn--active");
+
+  const event = new Event("dropdown:hide");
+  $dropdown.dispatchEvent(event);
 }
 
 export default {

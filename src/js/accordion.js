@@ -33,6 +33,10 @@ $accordions.forEach(($accordion) => {
       $btn.dataset.toggleText = toggleText;
     }
 
+    if (window.innerWidth < 991) {
+      addActivatingStatusToItems();
+    }
+
     setTimeout(() => {
       animated = false;
       $accordion.classList.remove("accordion--activating");
@@ -43,6 +47,19 @@ $accordions.forEach(($accordion) => {
       } else {
         $accordion.classList.remove("accordion--active");
       }
+
+      removeActivatingStatusFromItems();
     }, delay);
   });
 });
+
+
+function addActivatingStatusToItems() {
+  const $items = document.querySelectorAll('.js-accordion-status');
+  $items.forEach($item => $item.classList.add('js-accordion-status-activating'));
+}
+
+function removeActivatingStatusFromItems() {
+  const $items = document.querySelectorAll('.js-accordion-status');
+  $items.forEach($item => $item.classList.remove('js-accordion-status-activating'));
+}

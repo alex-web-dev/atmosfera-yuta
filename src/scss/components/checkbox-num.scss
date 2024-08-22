@@ -1,0 +1,26 @@
+.checkbox-num {
+  display: inline-flex;
+  align-items: flex-start;
+  user-select: none;
+
+  &__input {
+    display: none;
+  }
+
+  &__switch {
+    position: relative;
+    flex: 0 0 auto;
+    width: 32px;
+    height: 32px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  &__input:checked ~ &__switch {
+    @include primary-gradient(120.8deg, 3.01%, 93.63%);
+    color: #fff;
+  }
+}

@@ -1,0 +1,45 @@
+.btn-checkbox {
+  &__input {
+    display: none;
+  }
+
+  &__main {
+    padding: 16px 20px;
+    background-color: var(--color-gray-50);
+    border-radius: 8px;
+    cursor: pointer;
+
+    .text__icon {
+      fill: var(--color-gray-400);
+    }
+  }
+
+  &__input:checked ~ &__main {
+    @include primary-gradient();
+    color: #fff;
+
+    .text__icon {
+      fill: #fff;
+    }
+  }
+
+  @media (max-width: 767px) {
+    &__main {
+      padding: 12px;
+      font-size: 14px;
+
+      .text__icon {
+        width: 16px;
+        height: 16px;
+
+        &:first-child:not(:last-child) {
+          margin-left: 6px;
+        }
+
+        &:last-child:not(:first-child) {
+          margin-left: 6px;
+        }
+      }
+    }
+  }
+}

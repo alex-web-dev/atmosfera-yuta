@@ -68,6 +68,10 @@
     }
   }
 
+  @media (max-width: 767px) {
+    border-radius: 16px;
+  }
+
   @media (max-width: 640px) {
     &__img-box {
       margin-bottom: 4px;

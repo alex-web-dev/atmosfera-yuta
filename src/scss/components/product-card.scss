@@ -80,7 +80,7 @@
         top: 50%;
         transform: translate(-50%, -50%);
         width: calc(100% + 8px);
-        height: 24px;
+        height: 36px;
         background-color: transparent;
         border: none;
       }
@@ -128,7 +128,6 @@
     position: relative;
     margin-left: 20px;
     flex: 0 0 auto;
-    transition: background 0.35s, border 0.35s;
 
     &:before,
     &:after {
@@ -143,14 +142,14 @@
     }
 
     &:after {
-      @include pseudo-icon('../img/icons/heart-white.svg', 17px, 17px);
+      @include pseudo-icon('../img/icons/heart-primary-gradient.svg', 17px, 17px);
       opacity: 0;
       visibility: hidden;
     }
 
     &--active {
-      background-color: var(--color-primary);
-      border-color: var(--color-primary);
+      background-color: var(--color-gray-100);
+      border-color: var(--color-gray-100);
 
       &:before {
         visibility: hidden;
@@ -242,6 +241,10 @@
     &__price-old {
       font-size: 13px;
     }
+
+    &__pagination {
+      display: none;
+    }
   }
 
   @media (max-width: 991px) {
@@ -251,9 +254,7 @@
   }
 
   @media (max-width: 767px) {
-    &__pagination {
-      display: none;
-    }
+    border-radius: 16px;
   }
 
   @media (max-width: 640px) {

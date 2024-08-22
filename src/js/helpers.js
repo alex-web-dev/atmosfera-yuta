@@ -23,7 +23,34 @@ export function unlockBody() {
   $absoluteElems.forEach(($elem) => ($elem.style.paddingRight = ""));
 }
 
+export function extractNumber(str) {
+  let match = str.match(/\d[\d\s]*\d/);
+  return match ? parseInt(match[0].replace(/\s+/g, ""), 10) : null;
+}
+
+export function getYearString(N) {
+  const lastDigit = N % 10;
+  const lastTwoDigits = N % 100;
+
+  if (lastTwoDigits >= 11 && lastTwoDigits <= 19) {
+    return `${N} лет`;
+  }
+
+  switch (lastDigit) {
+    case 1:
+      return `${N} год`;
+    case 2:
+    case 3:
+    case 4:
+      return `${N} года`;
+    default:
+      return `${N} лет`;
+  }
+}
+
 export default {
   lockBody,
-  unlockBody
+  unlockBody,
+  extractNumber,
+  getYearString,
 };

@@ -1,0 +1,104 @@
+.switch {
+  display: flex;
+  align-items: center;
+
+  &__input {
+    display: none;
+  }
+
+  &__btn {
+    position: relative;
+    display: inline-block;
+    user-select: none;
+    height: 24px;
+    width: 48px;
+    border-radius: 80px;
+    cursor: pointer;
+    overflow: hidden;
+    background: var(--color-gray-50);
+
+    &:before {
+      content: "";
+      position: absolute;
+      @include primary-gradient();
+      height: 100%;
+      width: 100%;
+      top: 0;
+      left: 0;
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 8px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      border: 2px solid var(--color-gray-400);
+    }
+
+    &--always-on {
+      &:before {
+        opacity: 1;
+      }
+
+      &:after {
+        display: none;
+      }
+    }
+  }
+
+  &__btn-circle {
+    position: absolute;
+    z-index: 1;
+    display: block;
+    background: #fff;
+    height: 18px;
+    width: 18px;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 3px;
+    border-radius: 50%;
+    transition: 0.25s ease-in-out;
+  }
+
+  &__input:checked + &__btn {
+    &:before {
+      opacity: 1;
+    }
+
+    &:after {
+      right: unset;
+      left: 7px;
+      width: 12px;
+      height: 12px;
+      border-radius: 0;
+      border: none;
+      background: url('../img/icons/check-white.svg') center / contain no-repeat;
+    }
+  }
+
+  &__input:checked + &__btn &__btn-circle {
+    left: 27px;
+  }
+
+  @media (max-width: 767px) {
+    &__btn {
+      width: 40px;
+      height: 20px;
+    }
+
+    &__btn-circle { 
+      width: 15px;
+      height: 15px;
+    }
+
+    &__input:checked + &__btn &__btn-circle {
+      left: 22px;
+    }
+  }
+}

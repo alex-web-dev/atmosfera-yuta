@@ -1,0 +1,26 @@
+.checkboxes-num {
+  padding: 12px 20px;
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+  background-color: var(--color-gray-100);
+  border-radius: 8px;
+
+  &__label {
+    margin-right: 20px;
+    flex: 0 0 auto;
+  }
+
+  &__list {
+    margin-top: -4px;
+    margin-left: -4px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    margin-top: 4px;
+    margin-left: 4px;
+    flex: 0 0 auto;
+  }
+}

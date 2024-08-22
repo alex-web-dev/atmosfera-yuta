@@ -1,0 +1,58 @@
+.tooltip {
+  position: relative;
+
+  &__main {
+    position: absolute;
+    left: 0;
+    top: calc(100% + 8px);
+    z-index: 5;
+    padding: 24px;
+    background-color: #fff;
+    box-shadow: 0px 12px 24px rgba(67, 67, 73, 0.1);
+    border-radius: 16px;
+    max-width: 100vw;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.35s, opacity 0.35s;
+
+    &--xl {
+      width: 514px;
+    }
+  }
+
+  &--active &__main {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  &__label {
+    margin-bottom: 12px;
+  }
+
+  &__img {
+    border-radius: 12px;
+    max-height: 184px;
+  }
+
+  &__text {
+    margin-top: 12px;
+  }
+
+  @media (max-width: 767px) {
+    &__main {
+      padding: 20px;
+    }
+
+    &__label {
+      font-size: 12px;
+    }
+
+    &__img {
+      max-height: 160px;
+    }
+
+    &__text {
+      font-size: 14px;
+    }
+  }
+}

@@ -1,0 +1,34 @@
+.sort-btn {
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  border: 1px solid #fff;
+  border-radius: 8px;
+
+  &__label {
+    margin-right: 8px;
+  }
+
+  &__value {
+    display: flex;
+    align-items: center;
+
+    &:after {
+      @include pseudo-icon('../img/icons/right-primary.svg', 20px, 20px);
+      background-size: 8px 12px;
+      transform: rotate(90deg);
+    }
+  }
+
+
+  &.dropdown__btn--active {
+    background-color: transparent;
+    border-color: var(--color-primary);
+
+    &:after {
+      transform: rotate(-90deg);
+    }
+  }
+}

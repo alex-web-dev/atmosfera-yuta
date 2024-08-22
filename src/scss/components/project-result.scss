@@ -1,0 +1,26 @@
+.project-result {
+  &__title {
+    margin-bottom: 40px;
+  }
+
+  @media (max-width: 991px) {
+    &__title {
+      margin-bottom: 32px;
+
+      &--sm {
+        margin-bottom: 24px;
+        max-width: 560px;
+      }
+    }
+  }
+
+  @media (max-width: 767px) {
+    &__title {
+      margin-bottom: 20px;
+
+      &--sm {
+        max-width: 320px;
+      }
+    }
+  }
+}

@@ -28,13 +28,15 @@ $productCards.forEach(($productCard) => {
 
     const $link = $productCard.querySelector(".product-card__img-main");
     $sliderPagination.addEventListener("click", (e) => {
-      e.stopPropagation();
-      // $link.click();
+      if (window.innerWidth > 1180) {
+        e.stopPropagation();
+        $link.click();
+      }
     });
   }
 
-  const $bookmarkBtn = $productCard.querySelector('.product-card__bookmark-btn');
-  $bookmarkBtn?.addEventListener('click', () => {
-    $bookmarkBtn.classList.toggle('product-card__bookmark-btn--active');
-  })
+  const $bookmarkBtn = $productCard.querySelector(".product-card__bookmark-btn");
+  $bookmarkBtn?.addEventListener("click", () => {
+    $bookmarkBtn.classList.toggle("product-card__bookmark-btn--active");
+  });
 });

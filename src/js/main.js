@@ -12,3 +12,7 @@ import './product-card.js';
 import './custom-slider.js';
 import './imask.js';
 import './popup.js';
+import './filter-price.js';
+import './product.js';
+import './project-cost.js';
+import './tooltip.js';

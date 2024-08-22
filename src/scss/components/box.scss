@@ -1,0 +1,23 @@
+.box {
+  padding: 40px;
+  background-color: #fff;
+  border-radius: 20px;
+  overflow: hidden;
+
+  &--primary-gradient {
+    @include primary-gradient(120.8deg, 3%, 93.63%);
+  }
+
+  @media (max-width: 1180px) {
+    padding: 32px;
+  }
+
+  @media (max-width: 991px) {
+    padding: 24px;
+  }
+
+  @media (max-width: 767px) {
+    border-radius: 16px;
+    padding: 16px;
+  }
+}

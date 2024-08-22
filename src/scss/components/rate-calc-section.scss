@@ -1,0 +1,95 @@
+.rate-calc-section {
+  &--white {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #fff;
+  }
+
+  &__title {
+    margin-bottom: 40px;
+  }
+
+  &__body {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  &__sidebar {
+    margin-right: 20px;
+    flex: 0 0 426px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__sidebar-link {
+    margin-top: 40px;
+    align-self: center;
+  }
+
+  &__main {
+    flex: 1 1 auto;
+  }
+
+  &__item {
+    &:not(:first-child) {
+      margin-top: 8px;
+    }
+  }
+
+  @media (max-width: 1340px) {
+    &__sidebar {
+      flex-basis: 380px;
+    }
+  }
+
+  @media (max-width: 1180px) {
+    &__sidebar {
+      flex-basis: 340px;
+    }
+  }
+
+  @media (max-width: 991px) {
+    &--white {
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+
+    &__title {
+      margin-bottom: 32px;
+    }
+
+    &__body {
+      flex-direction: column;
+    }
+
+    &__sidebar {
+      margin-right: 0;
+      margin-bottom: 32px;
+      flex: none;
+      width: 100%;
+    }
+
+    &__sidebar-link {
+      margin-top: 24px;
+    }
+
+    &__main {
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 767px) {
+    &--white {
+      padding-top: 35px;
+      padding-bottom: 35px;
+    }
+    
+    &__title {
+      margin-bottom: 20px;
+    }
+
+    &__sidebar-link {
+      margin-top: 16px;
+    }
+  }
+}

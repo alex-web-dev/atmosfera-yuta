@@ -1,0 +1,60 @@
+.noUi-horizontal {
+  height: 2px;
+
+  .noUi-handle {
+    top: -7px;
+    width: 16px;
+    height: 16px;
+    background-color: var(--color-primary);
+    border-radius: 50%;
+    box-shadow: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  .noUi-handle {
+    &:before,
+    &:after {
+      display: none;
+    }
+  }
+
+  .noUi-handle-lower {
+    right: -8px;
+  }
+
+  &[data-start-max] .noUi-handle-lower {
+    right: -16px;
+  }
+
+  .noUi-handle-upper {
+    right: 0;
+  }
+}
+
+.noUi-connects {
+  cursor: pointer;
+  overflow: visible;
+
+  &:before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 16px;
+  }
+}
+
+.noUi-connect {
+  position: relative;
+  background-color: var(--color-primary);
+}
+
+.noUi-target {
+  border: none;
+  background: #eee;
+  border-radius: 0;
+  box-shadow: none;
+}

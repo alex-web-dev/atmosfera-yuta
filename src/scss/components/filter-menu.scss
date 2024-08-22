@@ -18,6 +18,26 @@
     display: block;
   }
 
+  &__checkboxes-num {
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__label {
+    margin-bottom: 12px;
+
+    &--mb-0 {
+      margin-bottom: 0;
+    }
+  }
+
+  &__price {
+    &:not(:last-child) {
+      margin-bottom: 27px;
+    }
+  }
+
   @media (max-width: 1180px) {
     &--lg,
     &--xl {
