@@ -963,7 +963,7 @@
                     </div>
                   </div>
                   <div class="text text--sm text--gray-400 filter-menu__label">Площадь, м<sup>2</sup></div>
-                  <div class="filter-price filter-menu__price">
+                  <div class="filter-price filter-menu__price" data-name="fixed-area" data-update-check-input-id="filter-area-any">
                     <div class="filter-price__fields">
                       <div class="filter-price__field">
                         <input
@@ -999,35 +999,69 @@
                   <div class="text text--sm text--gray-400 filter-menu__label filter-menu__label--mb-0">Фиксированная площадь</div>
                   <div class="filter-menu__checkboxes">
                     <label class="filter-checkbox filter-menu__checkbox">
-                      <input class="filter-checkbox__input" type="radio" name="filter-area" data-label="Любая" checked />
+                      <input
+                        class="filter-checkbox__input"
+                        type="radio"
+                        name="filter-area"
+                        data-label="Любая"
+                        id="filter-area-any"
+                        checked />
                       <span class="text text--iflex text--justify-between filter-checkbox__btn">
                         <span>Любая</span>
                         <div class="filter-checkbox__switch"></div>
                       </span>
                     </label>
                     <label class="filter-checkbox filter-menu__checkbox">
-                      <input class="filter-checkbox__input" type="radio" name="filter-area" data-label="Менее 80 м<sup>2</sup>" />
+                      <input
+                        class="filter-checkbox__input"
+                        type="radio"
+                        name="filter-area"
+                        data-label="Менее 80 м<sup>2</sup>"
+                        data-filter-price-name="fixed-area"
+                        data-filter-price-min="52"
+                        data-filter-price-max="80" />
                       <span class="text text--iflex text--justify-between filter-checkbox__btn">
                         <span>Менее 80 м<sup>2</sup></span>
                         <div class="filter-checkbox__switch"></div>
                       </span>
                     </label>
                     <label class="filter-checkbox filter-menu__checkbox">
-                      <input class="filter-checkbox__input" type="radio" name="filter-area" data-label="81 - 120 м<sup>2</sup>" />
+                      <input
+                        class="filter-checkbox__input"
+                        type="radio"
+                        name="filter-area"
+                        data-label="81 - 120 м<sup>2</sup>"
+                        data-filter-price-name="fixed-area"
+                        data-filter-price-min="81"
+                        data-filter-price-max="120" />
                       <span class="text text--iflex text--justify-between filter-checkbox__btn">
                         <span>81 - 120 м<sup>2</sup></span>
                         <div class="filter-checkbox__switch"></div>
                       </span>
                     </label>
                     <label class="filter-checkbox filter-menu__checkbox">
-                      <input class="filter-checkbox__input" type="radio" name="filter-area" data-label="121 - 200 м<sup>2</sup>" />
+                      <input
+                        class="filter-checkbox__input"
+                        type="radio"
+                        name="filter-area"
+                        data-label="121 - 200 м<sup>2</sup>"
+                        data-filter-price-name="fixed-area"
+                        data-filter-price-min="121"
+                        data-filter-price-max="200" />
                       <span class="text text--iflex text--justify-between filter-checkbox__btn">
                         <span>121 - 200 м<sup>2</sup></span>
                         <div class="filter-checkbox__switch"></div>
                       </span>
                     </label>
                     <label class="filter-checkbox filter-menu__checkbox">
-                      <input class="filter-checkbox__input" type="radio" name="filter-area" data-label="201 м<sup>2</sup> и более" />
+                      <input
+                        class="filter-checkbox__input"
+                        type="radio"
+                        name="filter-area"
+                        data-label="201 м<sup>2</sup> и более"
+                        data-filter-price-name="fixed-area"
+                        data-filter-price-min="201"
+                        data-filter-price-max="305" />
                       <span class="text text--iflex text--justify-between filter-checkbox__btn">
                         <span>201 м<sup>2</sup> и более</span>
                         <div class="filter-checkbox__switch"></div>
@@ -1045,7 +1079,7 @@
                 </button>
                 <div class="filter-menu filter-menu--xl catalog-filter__menu dropdown__main">
                   <div class="text text--sm text--gray-400 filter-menu__label">Стоимость, руб.</div>
-                  <div class="filter-price filter-menu__price">
+                  <div class="filter-price filter-menu__price" data-name="price" data-update-check-input-id="filter-price-any">
                     <div class="filter-price__fields">
                       <div class="filter-price__field">
                         <input
@@ -1074,35 +1108,62 @@
                       data-max="6717000"
                       data-start-min="1390000"
                       data-start-max="6717000"
-                      data-step="1000"
+                      data-step="1"
                       data-min-label="от"
                       data-max-label="до"></div>
                   </div>
                   <div class="text text--sm text--gray-400 filter-menu__label filter-menu__label--mb-0">Фиксированная стоимость</div>
                   <div class="filter-menu__checkboxes">
                     <label class="filter-checkbox filter-menu__checkbox">
-                      <input class="filter-checkbox__input" type="radio" name="filter-price" data-label="Любая" checked />
+                      <input
+                        class="filter-checkbox__input"
+                        type="radio"
+                        name="filter-price"
+                        data-label="Любая"
+                        id="filter-price-any"
+                        checked />
                       <span class="text text--iflex text--justify-between filter-checkbox__btn">
                         <span>Любая</span>
                         <div class="filter-checkbox__switch"></div>
                       </span>
                     </label>
                     <label class="filter-checkbox filter-menu__checkbox">
-                      <input class="filter-checkbox__input" type="radio" name="filter-price" data-label="Менее 2 000 000 руб." />
+                      <input
+                        class="filter-checkbox__input"
+                        type="radio"
+                        name="filter-price"
+                        data-label="Менее 2 000 000 руб."
+                        data-filter-price-name="price"
+                        data-filter-price-min="1390000"
+                        data-filter-price-max="2000000" />
                       <span class="text text--iflex text--justify-between filter-checkbox__btn">
                         <span>Менее 2 000 000 руб.</span>
                         <div class="filter-checkbox__switch"></div>
                       </span>
                     </label>
                     <label class="filter-checkbox filter-menu__checkbox">
-                      <input class="filter-checkbox__input" type="radio" name="filter-price" data-label="2 000 001 - 4 000 000 руб." />
+                      <input
+                        class="filter-checkbox__input"
+                        type="radio"
+                        name="filter-price"
+                        data-label="2 000 001 - 4 000 000 руб."
+                        data-filter-price-name="price"
+                        data-filter-price-min="2000001"
+                        data-filter-price-max="4000000" />
                       <span class="text text--iflex text--justify-between filter-checkbox__btn">
                         <span>2 000 001 - 4 000 000 руб.</span>
                         <div class="filter-checkbox__switch"></div>
                       </span>
                     </label>
                     <label class="filter-checkbox filter-menu__checkbox">
-                      <input class="filter-checkbox__input" type="radio" name="filter-price" data-label="4 000 001 руб. и более" />
+                      <input
+                        class="filter-checkbox__input"
+                        type="radio"
+                        name="filter-price"
+                        data-label="4 000 001 руб. и более"
+                        data-filter-price-name="price"
+                        data-filter-price-min="4000001"
+                        data-filter-price-max="6717000" />
                       <span class="text text--iflex text--justify-between filter-checkbox__btn">
                         <span>4 000 001 руб. и более</span>
                         <div class="filter-checkbox__switch"></div>
@@ -1128,7 +1189,7 @@
                   <span>Акция сезона</span>
                 </button>
               </div>
-              <button class="text text--iflex text--gray-400 text--medium catalog-header__bottom-reset">
+              <button class="text text--iflex text--gray-400 text--medium catalog-header__bottom-reset js-reset-filters">
                 <div class="icon text__icon text__icon--mx-2xs">
                   <img class="icon__img" src="img/icons/close-gray-400.svg" alt="" />
                 </div>
