@@ -18,15 +18,26 @@
     margin-bottom: 40px;
   }
 
-  &__btn {
-    margin: 40px auto 0;
-    width: 320px;
-    max-width: 100%;
-
+  &__footer {
+    padding-top: 40px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition: padding 0.7s, transform 0.7s;
+    
     &--hide {
+      padding-top: 0;
       visibility: hidden;
       opacity: 0;
+      transform: scaleY(0);
     }
+  }
+
+  &__btn {
+    width: 320px;
+    max-width: 100%;
   }
 
   @media (max-width: 991px) {
