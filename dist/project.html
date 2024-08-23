@@ -6,8 +6,8 @@
     <meta name="format-detection" content="telephone=no" />
     <link rel="shortcut icon" href="./favicon.png" />
     <title>Атмосфера уюта - Проект - Планировка</title>
-    <script type="module" crossorigin src="./assets/main-Dce0QXWd.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/main-CxiOBPTg.css">
+    <script type="module" crossorigin src="./assets/main-BVzLbopH.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/main-BTlQwv9Z.css">
   </head>
   <body>
     <header class="header">
@@ -316,7 +316,7 @@
             <div class="product__body box">
               <div class="product__sliders">
                 <div class="product__slider-item product__slider-item--active">
-                  <div class="product-nav-slider product__nav-slider">
+                  <div class="product-nav-slider product__nav-slider swiper">
                     <div class="swiper-wrapper product-nav-slider__wrapper">
                       <div class="swiper-slide product-nav-slider__slide">
                         <img class="product-nav-slider__img" src="img/project/layout/1.jpg" alt="" />
@@ -327,20 +327,20 @@
                     </div>
                   </div>
                   <div class="product__main-slider-box">
-                    <div class="product-main-slider product__main-slider swiper">
+                    <div class="product-main-slider product__main-slider swiper gallery">
                       <div class="swiper-wrapper product-main-slider__wrapper">
-                        <div class="product-main-slider__slide swiper-slide">
-                          <img class="product-main-slider__img" src="img/project/layout/1.jpg" alt="" />
+                        <div class="product-main-slider__slide swiper-slide gallery__item" data-img="img/project/layout/1.jpg">
+                          <img class="product-main-slider__img gallery__btn" src="img/project/layout/1.jpg" alt="" />
                         </div>
-                        <div class="product-main-slider__slide swiper-slide">
-                          <img class="product-main-slider__img" src="img/project/layout/2.jpg" alt="" />
+                        <div class="product-main-slider__slide swiper-slide gallery__item" data-img="img/project/layout/2.jpg">
+                          <img class="product-main-slider__img gallery__btn" src="img/project/layout/2.jpg" alt="" />
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
                 <div class="product__slider-item">
-                  <div class="product-nav-slider product__nav-slider">
+                  <div class="product-nav-slider product__nav-slider swiper">
                     <div class="swiper-wrapper product-nav-slider__wrapper">
                       <div class="swiper-slide product-nav-slider__slide">
                         <img class="product-nav-slider__img" src="img/project/appearance/1.jpg" alt="" />
@@ -360,22 +360,22 @@
                     </div>
                   </div>
                   <div class="product__main-slider-box">
-                    <div class="product-main-slider product__main-slider swiper">
+                    <div class="product-main-slider product__main-slider swiper gallery">
                       <div class="swiper-wrapper product-main-slider__wrapper">
-                        <div class="product-main-slider__slide swiper-slide">
-                          <img class="product-main-slider__img" src="img/project/appearance/1.jpg" alt="" />
+                        <div class="product-main-slider__slide swiper-slide gallery__item" data-img="img/project/appearance/1.jpg">
+                          <img class="product-main-slider__img gallery__btn" src="img/project/appearance/1.jpg" alt="" />
                         </div>
-                        <div class="product-main-slider__slide swiper-slide">
-                          <img class="product-main-slider__img" src="img/project/appearance/2.jpg" alt="" />
+                        <div class="product-main-slider__slide swiper-slide gallery__item" data-img="img/project/appearance/2.jpg">
+                          <img class="product-main-slider__img gallery__btn" src="img/project/appearance/2.jpg" alt="" />
                         </div>
-                        <div class="product-main-slider__slide swiper-slide">
-                          <img class="product-main-slider__img" src="img/project/appearance/3.jpg" alt="" />
+                        <div class="product-main-slider__slide swiper-slide gallery__item" data-img="img/project/appearance/3.jpg">
+                          <img class="product-main-slider__img gallery__btn" src="img/project/appearance/3.jpg" alt="" />
                         </div>
-                        <div class="product-main-slider__slide swiper-slide">
-                          <img class="product-main-slider__img" src="img/project/appearance/4.jpg" alt="" />
+                        <div class="product-main-slider__slide swiper-slide gallery__item" data-img="img/project/appearance/4.jpg">
+                          <img class="product-main-slider__img gallery__btn" src="img/project/appearance/4.jpg" alt="" />
                         </div>
-                        <div class="product-main-slider__slide swiper-slide">
-                          <img class="product-main-slider__img" src="img/project/appearance/5.jpg" alt="" />
+                        <div class="product-main-slider__slide swiper-slide gallery__item" data-img="img/project/appearance/5.jpg">
+                          <img class="product-main-slider__img gallery__btn" src="img/project/appearance/5.jpg" alt="" />
                         </div>
                       </div>
                     </div>
@@ -519,7 +519,7 @@
                           <div class="text text--sm text--gray-400 project-calc__label">Тип фундамента</div>
                           <div class="project-calc__checkboxes">
                             <label class="btn-checkbox project-calc__checkbox tooltip">
-                              <input class="btn-checkbox__input" type="radio" name="foundation-type" checked />
+                              <input class="btn-checkbox__input" type="radio" name="foundation-type" checked data-price="200000" />
                               <span class="text text--medium text--iflex btn-checkbox__main">
                                 <span>Ленточный фундамент</span>
                                 <svg
@@ -546,7 +546,7 @@
                               </div>
                             </label>
                             <label class="btn-checkbox project-calc__checkbox tooltip">
-                              <input class="btn-checkbox__input" type="radio" name="foundation-type" />
+                              <input class="btn-checkbox__input" type="radio" name="foundation-type" data-price="250000" />
                               <span class="text text--medium text--iflex btn-checkbox__main">
                                 <span>Свайный фундамент</span>
                                 <svg
@@ -573,7 +573,7 @@
                               </div>
                             </label>
                             <label class="btn-checkbox project-calc__checkbox tooltip">
-                              <input class="btn-checkbox__input" type="radio" name="foundation-type" />
+                              <input class="btn-checkbox__input" type="radio" name="foundation-type" data-price="300000" />
                               <span class="text text--medium text--iflex btn-checkbox__main">
                                 <span>ЖБИ фундамент</span>
                                 <svg
@@ -605,13 +605,13 @@
                           <div class="text text--sm text--gray-400 project-calc__label">Другое</div>
                           <div class="project-calc__checkboxes">
                             <label class="btn-checkbox project-calc__checkbox">
-                              <input class="btn-checkbox__input" type="radio" name="foundation-type" />
+                              <input class="btn-checkbox__input" type="radio" name="foundation-type" data-price="0" />
                               <span class="text text--medium text--iflex btn-checkbox__main">
                                 <span>Фундамент не нужен, уже есть</span>
                               </span>
                             </label>
                             <label class="btn-checkbox project-calc__checkbox">
-                              <input class="btn-checkbox__input" type="radio" name="foundation-type" />
+                              <input class="btn-checkbox__input" type="radio" name="foundation-type" data-price="100000" />
                               <span class="text text--medium text--iflex btn-checkbox__main">
                                 <span>Нужна консультация</span>
                               </span>
@@ -692,13 +692,13 @@
                             <div class="text text--sm text--gray-400 project-calc__label">Размер бруса</div>
                             <div class="project-calc__checkboxes">
                               <label class="btn-checkbox project-calc__checkbox">
-                                <input class="btn-checkbox__input" type="radio" name="timber-size" checked />
+                                <input class="btn-checkbox__input" type="radio" name="timber-size" checked data-price="100000" />
                                 <span class="text text--medium text--iflex btn-checkbox__main">
                                   <span>140 x 140 см</span>
                                 </span>
                               </label>
                               <label class="btn-checkbox project-calc__checkbox">
-                                <input class="btn-checkbox__input" type="radio" name="timber-size" />
+                                <input class="btn-checkbox__input" type="radio" name="timber-size" data-price="150000" />
                                 <span class="text text--medium text--iflex btn-checkbox__main">
                                   <span>140 x 190 см</span>
                                 </span>
@@ -709,13 +709,13 @@
                             <div class="text text--sm text--gray-400 project-calc__label">Размер бруса</div>
                             <div class="project-calc__checkboxes">
                               <label class="btn-checkbox project-calc__checkbox">
-                                <input class="btn-checkbox__input" type="radio" name="timber-size" />
+                                <input class="btn-checkbox__input" type="radio" name="timber-size" data-price="200000" />
                                 <span class="text text--medium text--iflex btn-checkbox__main">
                                   <span>150 x 150 см</span>
                                 </span>
                               </label>
                               <label class="btn-checkbox project-calc__checkbox">
-                                <input class="btn-checkbox__input" type="radio" name="timber-size" />
+                                <input class="btn-checkbox__input" type="radio" name="timber-size" data-price="300000" />
                                 <span class="text text--medium text--iflex btn-checkbox__main">
                                   <span>150 x 200 см</span>
                                 </span>
@@ -738,7 +738,7 @@
                           <div class="text text--sm text--gray-400 project-calc__label">Тип постройки</div>
                           <div class="project-calc__checkboxes">
                             <label class="btn-checkbox project-calc__checkbox">
-                              <input class="btn-checkbox__input" type="radio" name="build-type" checked />
+                              <input class="btn-checkbox__input" type="radio" name="build-type" checked data-price="200000" />
                               <span class="text text--medium text--iflex btn-checkbox__main">
                                 <span>Сруб</span>
                                 <svg
@@ -758,7 +758,7 @@
                               </span>
                             </label>
                             <label class="btn-checkbox project-calc__checkbox">
-                              <input class="btn-checkbox__input" type="radio" name="build-type" />
+                              <input class="btn-checkbox__input" type="radio" name="build-type" data-price="400000" />
                               <span class="text text--medium text--iflex btn-checkbox__main">
                                 <span>С отделкой</span>
                                 <svg
@@ -808,7 +808,7 @@
                           <div class="text text--sm text--gray-400 project-calc__label">Канализация</div>
                           <div class="project-calc__checkboxes">
                             <label class="btn-checkbox project-calc__checkbox">
-                              <input class="btn-checkbox__input" type="checkbox" name="additional-services" checked />
+                              <input class="btn-checkbox__input" type="checkbox" name="additional-services" checked data-price="50000" />
                               <span class="text text--medium text--iflex btn-checkbox__main">
                                 <span>Сливная яма</span>
                                 <svg
@@ -828,7 +828,7 @@
                               </span>
                             </label>
                             <label class="btn-checkbox project-calc__checkbox">
-                              <input class="btn-checkbox__input" type="checkbox" name="additional-services" />
+                              <input class="btn-checkbox__input" type="checkbox" name="additional-services" data-price="50000" />
                               <span class="text text--medium text--iflex btn-checkbox__main">
                                 <span>Трубопровод</span>
                                 <svg
@@ -853,7 +853,7 @@
                           <div class="text text--sm text--gray-400 project-calc__label">Другое</div>
                           <div class="project-calc__checkboxes">
                             <label class="btn-checkbox project-calc__checkbox">
-                              <input class="btn-checkbox__input" type="checkbox" name="additional-services" />
+                              <input class="btn-checkbox__input" type="checkbox" name="additional-services" data-price="50000" />
                               <span class="text text--medium text--iflex btn-checkbox__main">
                                 <span>Отопление</span>
                                 <svg
@@ -873,7 +873,7 @@
                               </span>
                             </label>
                             <label class="btn-checkbox project-calc__checkbox">
-                              <input class="btn-checkbox__input" type="checkbox" name="additional-services" />
+                              <input class="btn-checkbox__input" type="checkbox" name="additional-services" data-price="50000" />
                               <span class="text text--medium text--iflex btn-checkbox__main">
                                 <span>Электромонтаж</span>
                                 <svg
@@ -893,7 +893,7 @@
                               </span>
                             </label>
                             <label class="btn-checkbox project-calc__checkbox">
-                              <input class="btn-checkbox__input" type="checkbox" name="additional-services" />
+                              <input class="btn-checkbox__input" type="checkbox" name="additional-services" data-price="50000" />
                               <span class="text text--medium text--iflex btn-checkbox__main">
                                 <span>Вентиляция естественная</span>
                                 <svg
@@ -913,7 +913,7 @@
                               </span>
                             </label>
                             <label class="btn-checkbox project-calc__checkbox">
-                              <input class="btn-checkbox__input" type="checkbox" name="additional-services" />
+                              <input class="btn-checkbox__input" type="checkbox" name="additional-services" data-price="50000" />
                               <span class="text text--medium text--iflex btn-checkbox__main">
                                 <span>Разводка канализации и воды</span>
                                 <svg
@@ -942,7 +942,7 @@
                   <div class="project-calc__footer-content">
                     <div class="project-calc__footer-total">
                       <div class="text text--sm text--gray-400 project-calc__footer-label">Итого</div>
-                      <div class="text text--xl text--medium project-calc__footer-price">~ 383 000 руб.</div>
+                      <div class="text text--xl text--medium project-calc__footer-price">~ <span class="project-calc__footer-price-value">383 000</span> руб.</div>
                     </div>
                     <div class="project-calc__footer-btns">
                       <button class="link link--medium link--iflex project-calc__footer-btn project-calc__footer-btn--prev">Назад</button>
@@ -958,7 +958,7 @@
               <div class="project-result project-cost__result">
                 <div class="title title--3 title--medium title--strong-primary project-result__title project-result__title--sm">
                   Примерная стоимость строительства дома по&nbsp;вашим параметрам
-                  <b>от 2 763 600 руб.</b>
+                  <b>от <span class="project-result__title-value">0</span> руб.</b>
                 </div>
                 <form class="form project-result__form" action="#" autocomplete="off">
                   <div class="form__main">
@@ -1005,142 +1005,269 @@
           <div class="equipment__content">
             <div class="title title--5 equipment__title"><b>Комплектация</b> проекта</div>
             <div class="equipment-table">
-              <table class="equipment-table__main">
-                <thead>
-                  <tr>
-                    <th>
-                      <span class="text text--medium equipment-table__th-text">Описание работы</span>
-                    </th>
-                    <th>
-                      <span class="text text--medium equipment-table__th-text">Сруб</span>
-                    </th>
-                    <th>
-                      <span class="text text--medium equipment-table__th-text">С отделкой</span>
-                    </th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td class="equipment-table__header" colspan="3">
-                      <div class="text text--center text--medium equipment-table__header-text">Домокомплект</div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <span class="text equipment-table__text">
-                        Обвязка из бруса хвойных пород сечением 150 х 150 / 150 х 200 мм., строганная с одной стороны
-                      </span>
-                    </td>
-                    <td>
-                      <span class="checkbox">
-                        <span
-                          class="checkbox__switch checkbox__switch--gray-100 checkbox__switch--checked checkbox__switch--default"></span>
-                      </span>
-                    </td>
-                    <td>
-                      <span class="checkbox">
-                        <span
-                          class="checkbox__switch checkbox__switch--gray-100 checkbox__switch--checked checkbox__switch--default"></span>
-                      </span>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <span class="text equipment-table__text">
-                        Несущие стены из строганного / профилированного бруса, толщиной равной сечению бруса выбранной комплектации
-                      </span>
-                    </td>
-                    <td>
-                      <span class="checkbox">
-                        <span
-                          class="checkbox__switch checkbox__switch--gray-100 checkbox__switch--checked checkbox__switch--default"></span>
-                      </span>
-                    </td>
-                    <td>
-                      <span class="checkbox">
-                        <span
-                          class="checkbox__switch checkbox__switch--gray-100 checkbox__switch--checked checkbox__switch--default"></span>
-                      </span>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <span class="text equipment-table__text">
-                        Внутренние перегородки из строганного / профилированного бруса, толщиной равной сечению бруса выбранной комплектации
-                      </span>
-                    </td>
-                    <td>
-                      <span class="checkbox">
-                        <span class="checkbox__switch checkbox__switch--gray-100 checkbox__switch--default"></span>
-                      </span>
-                    </td>
-                    <td>
-                      <span class="checkbox">
-                        <span
-                          class="checkbox__switch checkbox__switch--gray-100 checkbox__switch--checked checkbox__switch--default"></span>
-                      </span>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="equipment-table__header" colspan="3">
-                      <div class="text text--center text--medium equipment-table__header-text">Кровля</div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <span class="text equipment-table__text"> Стропильная система </span>
-                    </td>
-                    <td>
-                      <span class="checkbox">
-                        <span
-                          class="checkbox__switch checkbox__switch--gray-100 checkbox__switch--checked checkbox__switch--default"></span>
-                      </span>
-                    </td>
-                    <td>
-                      <span class="checkbox">
-                        <span
-                          class="checkbox__switch checkbox__switch--gray-100 checkbox__switch--checked checkbox__switch--default"></span>
-                      </span>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <span class="text equipment-table__text">
-                        Металлочерепица. Покрытие: полиэстер, с гарантией качества 15 лет, толщина стали 0,5 мм.
-                      </span>
-                    </td>
-                    <td>
-                      <span class="checkbox">
-                        <span class="checkbox__switch checkbox__switch--gray-100 checkbox__switch--default"></span>
-                      </span>
-                    </td>
-                    <td>
-                      <span class="checkbox">
-                        <span
-                          class="checkbox__switch checkbox__switch--gray-100 checkbox__switch--checked checkbox__switch--default"></span>
-                      </span>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <span class="text equipment-table__text">
-                        Металлочерепица. Покрытие: полиэстер, с гарантией качества 15 лет, толщина стали 0,5 мм.
-                      </span>
-                    </td>
-                    <td>
-                      <span class="checkbox">
-                        <span class="checkbox__switch checkbox__switch--gray-100 checkbox__switch--default"></span>
-                      </span>
-                    </td>
-                    <td>
-                      <span class="checkbox">
-                        <span
-                          class="checkbox__switch checkbox__switch--gray-100 checkbox__switch--checked checkbox__switch--default"></span>
-                      </span>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
+              <div class="equipment-table__main-box">
+                <table class="equipment-table__main">
+                  <thead>
+                    <tr>
+                      <th>
+                        <span class="text text--medium equipment-table__th-text">Описание работы</span>
+                      </th>
+                      <th>
+                        <span class="text text--medium equipment-table__th-text">Сруб</span>
+                      </th>
+                      <th>
+                        <span class="text text--medium equipment-table__th-text">С отделкой</span>
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="equipment-table__header" colspan="3">
+                        <div class="text text--center text--medium equipment-table__header-text">Домокомплект</div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <span class="text equipment-table__text">
+                          Обвязка из бруса хвойных пород сечением 150 х 150 / 150 х 200 мм., строганная с одной стороны
+                        </span>
+                      </td>
+                      <td>
+                        <span class="checkbox">
+                          <span
+                            class="checkbox__switch checkbox__switch--gray-100 checkbox__switch--checked checkbox__switch--default"></span>
+                        </span>
+                      </td>
+                      <td>
+                        <span class="checkbox">
+                          <span
+                            class="checkbox__switch checkbox__switch--gray-100 checkbox__switch--checked checkbox__switch--default"></span>
+                        </span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <span class="text equipment-table__text">
+                          Несущие стены из строганного / профилированного бруса, толщиной равной сечению бруса выбранной комплектации
+                        </span>
+                      </td>
+                      <td>
+                        <span class="checkbox">
+                          <span
+                            class="checkbox__switch checkbox__switch--gray-100 checkbox__switch--checked checkbox__switch--default"></span>
+                        </span>
+                      </td>
+                      <td>
+                        <span class="checkbox">
+                          <span
+                            class="checkbox__switch checkbox__switch--gray-100 checkbox__switch--checked checkbox__switch--default"></span>
+                        </span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <span class="text equipment-table__text">
+                          Внутренние перегородки из строганного / профилированного бруса, толщиной равной сечению бруса выбранной комплектации
+                        </span>
+                      </td>
+                      <td>
+                        <span class="checkbox">
+                          <span class="checkbox__switch checkbox__switch--gray-100 checkbox__switch--default"></span>
+                        </span>
+                      </td>
+                      <td>
+                        <span class="checkbox">
+                          <span
+                            class="checkbox__switch checkbox__switch--gray-100 checkbox__switch--checked checkbox__switch--default"></span>
+                        </span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="equipment-table__header" colspan="3">
+                        <div class="text text--center text--medium equipment-table__header-text">Кровля</div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <span class="text equipment-table__text"> Стропильная система </span>
+                      </td>
+                      <td>
+                        <span class="checkbox">
+                          <span
+                            class="checkbox__switch checkbox__switch--gray-100 checkbox__switch--checked checkbox__switch--default"></span>
+                        </span>
+                      </td>
+                      <td>
+                        <span class="checkbox">
+                          <span
+                            class="checkbox__switch checkbox__switch--gray-100 checkbox__switch--checked checkbox__switch--default"></span>
+                        </span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <span class="text equipment-table__text">
+                          Металлочерепица. Покрытие: полиэстер, с гарантией качества 15 лет, толщина стали 0,5 мм.
+                        </span>
+                      </td>
+                      <td>
+                        <span class="checkbox">
+                          <span class="checkbox__switch checkbox__switch--gray-100 checkbox__switch--default"></span>
+                        </span>
+                      </td>
+                      <td>
+                        <span class="checkbox">
+                          <span
+                            class="checkbox__switch checkbox__switch--gray-100 checkbox__switch--checked checkbox__switch--default"></span>
+                        </span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <span class="text equipment-table__text">
+                          Металлочерепица. Покрытие: полиэстер, с гарантией качества 15 лет, толщина стали 0,5 мм.
+                        </span>
+                      </td>
+                      <td>
+                        <span class="checkbox">
+                          <span class="checkbox__switch checkbox__switch--gray-100 checkbox__switch--default"></span>
+                        </span>
+                      </td>
+                      <td>
+                        <span class="checkbox">
+                          <span
+                            class="checkbox__switch checkbox__switch--gray-100 checkbox__switch--checked checkbox__switch--default"></span>
+                        </span>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="equipment-table__main-box equipment-table__main-box--addition">
+                <table class="equipment-table__main">
+                  <tbody>
+                    <tr>
+                      <td class="equipment-table__header" colspan="3">
+                        <div class="text text--center text--medium equipment-table__header-text">Домокомплект</div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <span class="text equipment-table__text">
+                          Обвязка из бруса хвойных пород сечением 150 х 150 / 150 х 200 мм., строганная с одной стороны
+                        </span>
+                      </td>
+                      <td>
+                        <span class="checkbox">
+                          <span
+                            class="checkbox__switch checkbox__switch--gray-100 checkbox__switch--checked checkbox__switch--default"></span>
+                        </span>
+                      </td>
+                      <td>
+                        <span class="checkbox">
+                          <span
+                            class="checkbox__switch checkbox__switch--gray-100 checkbox__switch--checked checkbox__switch--default"></span>
+                        </span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <span class="text equipment-table__text">
+                          Несущие стены из строганного / профилированного бруса, толщиной равной сечению бруса выбранной комплектации
+                        </span>
+                      </td>
+                      <td>
+                        <span class="checkbox">
+                          <span
+                            class="checkbox__switch checkbox__switch--gray-100 checkbox__switch--checked checkbox__switch--default"></span>
+                        </span>
+                      </td>
+                      <td>
+                        <span class="checkbox">
+                          <span
+                            class="checkbox__switch checkbox__switch--gray-100 checkbox__switch--checked checkbox__switch--default"></span>
+                        </span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <span class="text equipment-table__text">
+                          Внутренние перегородки из строганного / профилированного бруса, толщиной равной сечению бруса выбранной комплектации
+                        </span>
+                      </td>
+                      <td>
+                        <span class="checkbox">
+                          <span class="checkbox__switch checkbox__switch--gray-100 checkbox__switch--default"></span>
+                        </span>
+                      </td>
+                      <td>
+                        <span class="checkbox">
+                          <span
+                            class="checkbox__switch checkbox__switch--gray-100 checkbox__switch--checked checkbox__switch--default"></span>
+                        </span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="equipment-table__header" colspan="3">
+                        <div class="text text--center text--medium equipment-table__header-text">Кровля</div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <span class="text equipment-table__text"> Стропильная система </span>
+                      </td>
+                      <td>
+                        <span class="checkbox">
+                          <span
+                            class="checkbox__switch checkbox__switch--gray-100 checkbox__switch--checked checkbox__switch--default"></span>
+                        </span>
+                      </td>
+                      <td>
+                        <span class="checkbox">
+                          <span
+                            class="checkbox__switch checkbox__switch--gray-100 checkbox__switch--checked checkbox__switch--default"></span>
+                        </span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <span class="text equipment-table__text">
+                          Металлочерепица. Покрытие: полиэстер, с гарантией качества 15 лет, толщина стали 0,5 мм.
+                        </span>
+                      </td>
+                      <td>
+                        <span class="checkbox">
+                          <span class="checkbox__switch checkbox__switch--gray-100 checkbox__switch--default"></span>
+                        </span>
+                      </td>
+                      <td>
+                        <span class="checkbox">
+                          <span
+                            class="checkbox__switch checkbox__switch--gray-100 checkbox__switch--checked checkbox__switch--default"></span>
+                        </span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <span class="text equipment-table__text">
+                          Металлочерепица. Покрытие: полиэстер, с гарантией качества 15 лет, толщина стали 0,5 мм.
+                        </span>
+                      </td>
+                      <td>
+                        <span class="checkbox">
+                          <span class="checkbox__switch checkbox__switch--gray-100 checkbox__switch--default"></span>
+                        </span>
+                      </td>
+                      <td>
+                        <span class="checkbox">
+                          <span
+                            class="checkbox__switch checkbox__switch--gray-100 checkbox__switch--checked checkbox__switch--default"></span>
+                        </span>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
             </div>
             <button class="btn btn--text-sm btn--px-sm equipment__btn">Показать все комплектации</button>
           </div>
@@ -1197,9 +1324,20 @@
                   <div class="rate-calc__section">
                     <div class="text text--sm text--gray-400 rate-calc__label">Первоначальный взнос</div>
                     <div class="filter-price">
-                      <div class="filter-price__header">
-                        <span class="text text--medium filter-price__header-value" data-filter-type="rub">828 900 руб.</span>
-                        <span class="text text--medium text--gray-400 filter-price__header-percent">30%</span>
+                      <div class="filter-price__fields filter-price__fields--mb-xs">
+                        <div class="filter-price__field">
+                          <input
+                            class="filter-price__input filter-price__input--p-0 filter-price__input--min js-imask"
+                            type="text"
+                            data-mask="int"
+                            data-mask-min="829080"
+                            data-mask-max="1381800"
+                            data-mask-text="руб." />
+                          <span class="filter-price__field-width filter-price__field-width--p-0"></span>
+                        </div>
+                        <div class="filter-price__field filter-price__field--justify-end">
+                          <span class="text text--medium text--gray-400 filter-price__header-percent">30%</span>
+                        </div>
                       </div>
                       <div
                         class="filter-price__slider"
@@ -1217,8 +1355,17 @@
                   <div class="rate-calc__section">
                     <div class="text text--sm text--gray-400 rate-calc__label">Срок ипотеки</div>
                     <div class="filter-price">
-                      <div class="filter-price__header">
-                        <span class="text text--medium filter-price__header-value" data-filter-type="year">828 900 руб.</span>
+                      <div class="filter-price__fields filter-price__fields--mb-xs">
+                        <div class="filter-price__field">
+                          <input
+                            class="filter-price__input filter-price__input--p-0 filter-price__input--min js-imask"
+                            type="text"
+                            data-mask="int"
+                            data-mask-min="1"
+                            data-mask-max="30" />
+                          <span class="text text--medium filter-price__input-text" data-type="year">лет</span>
+                          <span class="filter-price__field-width filter-price__field-width--p-0"></span>
+                        </div>
                       </div>
                       <div class="filter-price__slider" data-min="1" data-max="30" data-start-min="25" data-step="1"></div>
                       <div class="filter-price__values">

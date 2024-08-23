@@ -26,6 +26,10 @@
     flex-direction: column;
   }
 
+  &__checkbox-field ~ &__main {
+    cursor: pointer;
+  }
+
   &__checkbox {
     margin-top: auto;
     margin-left: auto;

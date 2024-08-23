@@ -432,7 +432,7 @@
                     </div>
                   </div>
                   <div class="text text--sm text--gray-400 filter-menu__label">Площадь, м<sup>2</sup></div>
-                  <div class="filter-price filter-menu__price">
+                  <div class="filter-price filter-menu__price" data-name="fixed-area" data-update-check-input-id="filter-area-any">
                     <div class="filter-price__fields">
                       <div class="filter-price__field">
                         <input
@@ -468,35 +468,69 @@
                   <div class="text text--sm text--gray-400 filter-menu__label filter-menu__label--mb-0">Фиксированная площадь</div>
                   <div class="filter-menu__checkboxes">
                     <label class="filter-checkbox filter-menu__checkbox">
-                      <input class="filter-checkbox__input" type="radio" name="filter-area" data-label="Любая" checked />
+                      <input
+                        class="filter-checkbox__input"
+                        type="radio"
+                        name="filter-area"
+                        data-label="Любая"
+                        id="filter-area-any"
+                        checked />
                       <span class="text text--iflex text--justify-between filter-checkbox__btn">
                         <span>Любая</span>
                         <div class="filter-checkbox__switch"></div>
                       </span>
                     </label>
                     <label class="filter-checkbox filter-menu__checkbox">
-                      <input class="filter-checkbox__input" type="radio" name="filter-area" data-label="Менее 80 м<sup>2</sup>" />
+                      <input
+                        class="filter-checkbox__input"
+                        type="radio"
+                        name="filter-area"
+                        data-label="Менее 80 м<sup>2</sup>"
+                        data-filter-price-name="fixed-area"
+                        data-filter-price-min="52"
+                        data-filter-price-max="80" />
                       <span class="text text--iflex text--justify-between filter-checkbox__btn">
                         <span>Менее 80 м<sup>2</sup></span>
                         <div class="filter-checkbox__switch"></div>
                       </span>
                     </label>
                     <label class="filter-checkbox filter-menu__checkbox">
-                      <input class="filter-checkbox__input" type="radio" name="filter-area" data-label="81 - 120 м<sup>2</sup>" />
+                      <input
+                        class="filter-checkbox__input"
+                        type="radio"
+                        name="filter-area"
+                        data-label="81 - 120 м<sup>2</sup>"
+                        data-filter-price-name="fixed-area"
+                        data-filter-price-min="81"
+                        data-filter-price-max="120" />
                       <span class="text text--iflex text--justify-between filter-checkbox__btn">
                         <span>81 - 120 м<sup>2</sup></span>
                         <div class="filter-checkbox__switch"></div>
                       </span>
                     </label>
                     <label class="filter-checkbox filter-menu__checkbox">
-                      <input class="filter-checkbox__input" type="radio" name="filter-area" data-label="121 - 200 м<sup>2</sup>" />
+                      <input
+                        class="filter-checkbox__input"
+                        type="radio"
+                        name="filter-area"
+                        data-label="121 - 200 м<sup>2</sup>"
+                        data-filter-price-name="fixed-area"
+                        data-filter-price-min="121"
+                        data-filter-price-max="200" />
                       <span class="text text--iflex text--justify-between filter-checkbox__btn">
                         <span>121 - 200 м<sup>2</sup></span>
                         <div class="filter-checkbox__switch"></div>
                       </span>
                     </label>
                     <label class="filter-checkbox filter-menu__checkbox">
-                      <input class="filter-checkbox__input" type="radio" name="filter-area" data-label="201 м<sup>2</sup> и более" />
+                      <input
+                        class="filter-checkbox__input"
+                        type="radio"
+                        name="filter-area"
+                        data-label="201 м<sup>2</sup> и более"
+                        data-filter-price-name="fixed-area"
+                        data-filter-price-min="201"
+                        data-filter-price-max="305" />
                       <span class="text text--iflex text--justify-between filter-checkbox__btn">
                         <span>201 м<sup>2</sup> и более</span>
                         <div class="filter-checkbox__switch"></div>
@@ -514,7 +548,7 @@
                 </button>
                 <div class="filter-menu filter-menu--xl catalog-filter__menu dropdown__main">
                   <div class="text text--sm text--gray-400 filter-menu__label">Стоимость, руб.</div>
-                  <div class="filter-price filter-menu__price">
+                  <div class="filter-price filter-menu__price" data-name="price" data-update-check-input-id="filter-price-any">
                     <div class="filter-price__fields">
                       <div class="filter-price__field">
                         <input
@@ -550,28 +584,55 @@
                   <div class="text text--sm text--gray-400 filter-menu__label filter-menu__label--mb-0">Фиксированная стоимость</div>
                   <div class="filter-menu__checkboxes">
                     <label class="filter-checkbox filter-menu__checkbox">
-                      <input class="filter-checkbox__input" type="radio" name="filter-price" data-label="Любая" checked />
+                      <input
+                        class="filter-checkbox__input"
+                        type="radio"
+                        name="filter-price"
+                        data-label="Любая"
+                        id="filter-price-any"
+                        checked />
                       <span class="text text--iflex text--justify-between filter-checkbox__btn">
                         <span>Любая</span>
                         <div class="filter-checkbox__switch"></div>
                       </span>
                     </label>
                     <label class="filter-checkbox filter-menu__checkbox">
-                      <input class="filter-checkbox__input" type="radio" name="filter-price" data-label="Менее 2 000 000 руб." />
+                      <input
+                        class="filter-checkbox__input"
+                        type="radio"
+                        name="filter-price"
+                        data-label="Менее 2 000 000 руб."
+                        data-filter-price-name="price"
+                        data-filter-price-min="1390000"
+                        data-filter-price-max="2000000" />
                       <span class="text text--iflex text--justify-between filter-checkbox__btn">
                         <span>Менее 2 000 000 руб.</span>
                         <div class="filter-checkbox__switch"></div>
                       </span>
                     </label>
                     <label class="filter-checkbox filter-menu__checkbox">
-                      <input class="filter-checkbox__input" type="radio" name="filter-price" data-label="2 000 001 - 4 000 000 руб." />
+                      <input
+                        class="filter-checkbox__input"
+                        type="radio"
+                        name="filter-price"
+                        data-label="2 000 001 - 4 000 000 руб."
+                        data-filter-price-name="price"
+                        data-filter-price-min="2000001"
+                        data-filter-price-max="4000000" />
                       <span class="text text--iflex text--justify-between filter-checkbox__btn">
                         <span>2 000 001 - 4 000 000 руб.</span>
                         <div class="filter-checkbox__switch"></div>
                       </span>
                     </label>
                     <label class="filter-checkbox filter-menu__checkbox">
-                      <input class="filter-checkbox__input" type="radio" name="filter-price" data-label="4 000 001 руб. и более" />
+                      <input
+                        class="filter-checkbox__input"
+                        type="radio"
+                        name="filter-price"
+                        data-label="4 000 001 руб. и более"
+                        data-filter-price-name="price"
+                        data-filter-price-min="4000001"
+                        data-filter-price-max="6717000" />
                       <span class="text text--iflex text--justify-between filter-checkbox__btn">
                         <span>4 000 001 руб. и более</span>
                         <div class="filter-checkbox__switch"></div>
@@ -584,20 +645,20 @@
             </div>
             <div class="catalog-header__bottom">
               <div class="catalog-header__bottom-tags">
-                <div class="tag tag--mobile-sm catalog-header__bottom-tag">
+                <button class="tag tag--mobile-sm catalog-header__bottom-tag">
                   <div class="icon tag__icon">
                     <img class="icon__img" src="img/icons/lightning-gold.svg" alt="" />
                   </div>
                   <span>Хит сезона</span>
-                </div>
-                <div class="tag tag--mobile-sm catalog-header__bottom-tag">
+                </button>
+                <button class="tag tag--mobile-sm catalog-header__bottom-tag">
                   <span>Новинки</span>
-                </div>
-                <div class="tag tag--mobile-sm catalog-header__bottom-tag">
+                </button>
+                <button class="tag tag--mobile-sm catalog-header__bottom-tag">
                   <span>Акция сезона</span>
-                </div>
+                </button>
               </div>
-              <button class="text text--iflex text--gray-400 text--medium catalog-header__bottom-reset">
+              <button class="text text--iflex text--gray-400 text--medium catalog-header__bottom-reset js-reset-filters">
                 <div class="icon text__icon text__icon--mx-2xs">
                   <img class="icon__img" src="img/icons/close-gray-400.svg" alt="" />
                 </div>
@@ -618,35 +679,35 @@
                   <div class="filter-menu catalog-filter__menu dropdown__main">
                     <div class="filter-menu__checkboxes">
                       <label class="filter-checkbox filter-checkbox--px-0 filter-menu__checkbox">
-                        <input class="filter-checkbox__input" type="radio" name="filter-type" data-label="по популярности" checked />
+                        <input class="filter-checkbox__input" type="radio" name="sort" data-label="по популярности" checked />
                         <span class="text text--sm text--medium text--iflex text--justify-between filter-checkbox__btn">
                           <span>По популярности</span>
                           <div class="filter-checkbox__switch"></div>
                         </span>
                       </label>
                       <label class="filter-checkbox filter-checkbox--px-0 filter-menu__checkbox">
-                        <input class="filter-checkbox__input" type="radio" name="filter-type" data-label="по возрастанию цены" />
+                        <input class="filter-checkbox__input" type="radio" name="sort" data-label="по возрастанию цены" />
                         <span class="text text--sm text--medium text--iflex text--justify-between filter-checkbox__btn">
                           <span>По возрастанию цены</span>
                           <div class="filter-checkbox__switch"></div>
                         </span>
                       </label>
                       <label class="filter-checkbox filter-checkbox--px-0 filter-menu__checkbox">
-                        <input class="filter-checkbox__input" type="radio" name="filter-type" data-label="по убыванию цены" />
+                        <input class="filter-checkbox__input" type="radio" name="sort" data-label="по убыванию цены" />
                         <span class="text text--sm text--medium text--iflex text--justify-between filter-checkbox__btn">
                           <span>По убыванию цены</span>
                           <div class="filter-checkbox__switch"></div>
                         </span>
                       </label>
                       <label class="filter-checkbox filter-checkbox--px-0 filter-menu__checkbox">
-                        <input class="filter-checkbox__input" type="radio" name="filter-type" data-label="по возрастанию площади" />
+                        <input class="filter-checkbox__input" type="radio" name="sort" data-label="по возрастанию площади" />
                         <span class="text text--sm text--medium text--iflex text--justify-between filter-checkbox__btn">
                           <span>По возрастанию площади</span>
                           <div class="filter-checkbox__switch"></div>
                         </span>
                       </label>
                       <label class="filter-checkbox filter-checkbox--px-0 filter-menu__checkbox">
-                        <input class="filter-checkbox__input" type="radio" name="filter-type" data-label="по убыванию площади" />
+                        <input class="filter-checkbox__input" type="radio" name="sort" data-label="по убыванию площади" />
                         <span class="text text--sm text--medium text--iflex text--justify-between filter-checkbox__btn">
                           <span>По убыванию площади</span>
                           <div class="filter-checkbox__switch"></div>
@@ -883,20 +944,20 @@
                     </div>
                   </div>
                 </div>
-                <div class="product-article catalog__item">
+                <a class="product-article catalog__item" href="#">
                   <div class="product-article__content">
                     <div class="title title--4 title--semibold product-article__title">Строительство дома в&nbsp;ипотеку</div>
                     <p class="text text--medium product-article__text product-article__text--sm"
                       >Оформить ипотеку на&nbsp;выгодных условиях
                     </p>
                     <div class="product-article__footer">
-                      <a class="circle circle--sm circle--shadow product-article__move" href="#">
+                      <div class="circle circle--sm circle--shadow product-article__move">
                         <img src="img/icons/right-black.svg" alt="" />
-                      </a>
+                      </div>
                     </div>
                   </div>
                   <img class="product-article__img" src="img/catalog/article.jpg" alt="" />
-                </div>
+                </a>
                 <div class="product-card catalog__item">
                   <div class="product-card__img-box">
                     <a class="product-card__img-main" href="project.html">
@@ -1126,10 +1187,10 @@
                 <div class="product-callback catalog__item catalog__item--col-8">
                   <div class="product-callback__content product-callback__content--sm">
                     <div class="title title--4 title--semibold product-callback__title">Запишитесь на&nbsp;бесплатную экскурсию</div>
-                    <p class="text text--medium product-callback__text"
-                      >Вы можете посмотреть на этапы строительства проекта собственными глазами</p
-                    >
-                    <button class="btn btn--white btn--text-sm btn--px-sm product-callback__btn">Оставить заявку</button>
+                    <p class="text text--medium product-callback__text">
+                      Вы можете посмотреть на этапы строительства проекта собственными глазами
+                    </p>
+                    <button class="btn btn--white btn--text-sm btn--px-sm product-callback__btn js-open-popup" data-popup-name="callback">Оставить заявку</button>
                   </div>
                   <img class="product-callback__img" src="img/catalog/callback.jpg" alt="" />
                 </div>
@@ -1151,7 +1212,7 @@
                   <a class="pagination__link pagination__link--right" href="#"></a>
                 </div>
               </div>
-              <button class="text text--iflex text--gray-400 text--medium catalog-footer__reset">
+              <button class="text text--iflex text--gray-400 text--medium catalog-footer__reset js-reset-filters">
                 <div class="icon text__icon text__icon--mx-2xs">
                   <img class="icon__img" src="img/icons/close-gray-400.svg" alt="" />
                 </div>

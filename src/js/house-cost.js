@@ -34,7 +34,7 @@ if ($houseCost) {
 
   const $items = $calc.querySelectorAll(".product-category");
   $items.forEach(($item) => {
-    const $checkboxBtn = $item.querySelector(".product-category__checkbox-btn");
+    const $checkboxBtn = $item.querySelector(".product-category__main");
     $checkboxBtn.addEventListener("click", () => {
       if (swiper.activeIndex + 1 < swiper.slides.length) {
         swiper.slideNext(500);

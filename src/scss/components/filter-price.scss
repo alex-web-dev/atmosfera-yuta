@@ -6,6 +6,10 @@
     margin-bottom: 25px;
     display: flex;
     justify-content: space-between;
+
+    &--mb-xs {
+      margin-bottom: 10px;
+    }
   }
   
   &__field {
@@ -17,6 +21,10 @@
     &:not(:first-child) {
       margin-left: 20px;
     }
+
+    &--justify-end {
+      justify-content: flex-end;
+    }
   }
   
   &__field-width {
@@ -25,6 +33,10 @@
     max-width: 100%;
     visibility: hidden;
     white-space: pre-wrap;
+
+    &--p-0 {
+      padding: 0 1px;
+    }
   }
 
   &__header {
@@ -43,9 +55,17 @@
     outline: none;
     text-align: center;
     font-weight: 500;
+
+    &--p-0 {
+      padding: 0;
+    }
+  }
+
+  &__input-text {
+    margin-left: 3px;
   }
   
-  &__field:last-child &__input {
+  &__field:last-child:not(:first-child) &__input {
     margin-left: auto;
   }
   

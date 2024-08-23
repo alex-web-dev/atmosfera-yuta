@@ -24,7 +24,7 @@ export function unlockBody() {
 }
 
 export function extractNumber(str) {
-  let match = str.match(/\d[\d\s]*\d/);
+  let match = str.match(/\d[\d\s]*\d|\d/);
   return match ? parseInt(match[0].replace(/\s+/g, ""), 10) : null;
 }
 
@@ -33,19 +33,29 @@ export function getYearString(N) {
   const lastTwoDigits = N % 100;
 
   if (lastTwoDigits >= 11 && lastTwoDigits <= 19) {
-    return `${N} лет`;
+    return "лет";
   }
 
   switch (lastDigit) {
     case 1:
-      return `${N} год`;
+      return "год";
     case 2:
     case 3:
     case 4:
-      return `${N} года`;
+      return "года";
     default:
-      return `${N} лет`;
+      return "лет";
   }
+}
+
+export function createElem(type, className, options) {
+  const $elem = document.createElement(type);
+  $elem.className = className;
+  for (let key in options) {
+    $elem[key] = options[key];
+  }
+
+  return $elem;
 }
 
 export default {
@@ -53,4 +63,5 @@ export default {
   unlockBody,
   extractNumber,
   getYearString,
+  createElem,
 };

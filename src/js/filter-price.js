@@ -21,7 +21,7 @@ $priceFilters.forEach(($filter) => {
 
   noUiSlider.create($slider, {
     start: sliderStart,
-    connect: sliderStart.length === 1 ? 'lower' : true,
+    connect: sliderStart.length === 1 ? "lower" : true,
     step: data.step,
     range: {
       min: data.min,
@@ -35,52 +35,73 @@ $priceFilters.forEach(($filter) => {
 
   const $minInput = $filter.querySelector(".filter-price__input--min");
   const $maxInput = $filter.querySelector(".filter-price__input--max");
-  if ($minInput && $maxInput) {
-    $minInput?.addEventListener("blur", () => {
-      $slider.noUiSlider.set(extractNumber($minInput.value));
+  $minInput?.addEventListener("blur", () => {
+    $slider.noUiSlider.set(extractNumber($minInput.value));
+    updateFilterCheckInput($filter);
+  });
+  $maxInput?.addEventListener("blur", () => {
+    $slider?.noUiSlider.set([null, extractNumber($maxInput.value)]);
+    updateFilterCheckInput($filter);
+  });
+
+  const $minInputText = $filter.querySelector(".filter-price__input-text");
+  const $minWidthElem = $minInput?.closest(".filter-price__field").querySelector(".filter-price__field-width");
+  if ($minWidthElem) {
+    $minInput?.addEventListener("input", () => {
+      updateInputWidth($minInput, $minWidthElem);
+
+      if ($minInputText && $minInputText.dataset.type === 'year') {
+        $minInputText.textContent = getYearString($minInput.value, true);
+      }
     });
-    $maxInput.addEventListener("blur", () => {
-      $slider?.noUiSlider.set([null, extractNumber($maxInput.value)]);
-    });
-
-    const $minWidthElem = $minInput.closest(".filter-price__field").querySelector(".filter-price__field-width");
-    $minInput.addEventListener("input", () => updateInputWidth($minInput, $minWidthElem));
-
-    const $maxWidthElem = $maxInput.closest(".filter-price__field").querySelector(".filter-price__field-width");
-    $maxInput.addEventListener("input", () => updateInputWidth($maxInput, $maxWidthElem));
-
-    $slider.noUiSlider.on("update", (values) => {
-      const minValue = `${data.minLabel} ${values[0].toLocaleString("ru-RU")}`.trim();
-      const maxValue = `${data.maxLabel} ${values[1].toLocaleString("ru-RU")}`.trim();
-
-      $minInput.imask ? ($minInput.imask.value = minValue) : ($minInput.value = minValue);
-      $maxInput.imask ? ($maxInput.imask.value = maxValue) : ($maxInput.value = maxValue);
-
-      setTimeout(() => {
+    const resizeObserver = new ResizeObserver(() => {
+      if ($minWidthElem.offsetWidth !== $minInput.offsetWidth) {
         updateInputWidth($minInput, $minWidthElem);
-        updateInputWidth($maxInput, $maxWidthElem);
-      });
+      }
     });
+    resizeObserver.observe($minWidthElem);
+  }
 
-    const $dropdown = $filter.closest(".dropdown");
-    $dropdown?.addEventListener("dropdown:show", () => {
+  const $maxWidthElem = $maxInput?.closest(".filter-price__field").querySelector(".filter-price__field-width");
+  if ($maxWidthElem) {
+    $maxInput?.addEventListener("input", () => updateInputWidth($maxInput, $maxWidthElem));
+    const resizeObserver = new ResizeObserver(() => {
+      if ($maxWidthElem.offsetWidth !== $maxInput.offsetWidth) {
+        updateInputWidth($minInput, $maxWidthElem);
+      }
+    });
+    resizeObserver.observe($maxWidthElem);
+  }
+
+  $slider.noUiSlider.on("update", (values) => {
+    const minValue = `${data.minLabel} ${values[0]}`.trim();
+    const maxValue = `${data.maxLabel} ${values[1]}`.trim();
+
+    if ($minInput) {
+      $minInput.imask ? ($minInput.imask.value = minValue) : ($minInput.value = minValue);
+    }
+
+    if ($maxInput) {
+      $maxInput.imask ? ($maxInput.imask.value = maxValue) : ($maxInput.value = maxValue);
+    }
+
+    if ($minInputText && $minInputText.dataset.type === 'year') {
+      $minInputText.textContent = getYearString($minInput.value, true);
+    }
+
+    setTimeout(() => {
       updateInputWidth($minInput, $minWidthElem);
       updateInputWidth($maxInput, $maxWidthElem);
     });
-  }
+  });
 
-  const $headerNumValue = $filter.querySelector(".filter-price__header-value");
-  if ($headerNumValue) {
-    $slider.noUiSlider.on("update", (values) => {
-      if ($headerNumValue.dataset.filterType === "rub") {
-        $headerNumValue.textContent = `${values[0].toLocaleString("ru-RU")} руб.`;
-      } else if ($headerNumValue.dataset.filterType === "year") {
-        $headerNumValue.textContent = getYearString(values[0]);
-      } else {
-        $headerNumValue.textContent = values[0].toLocaleString("ru-RU");
-      }
-    });
-  }
+  $slider.noUiSlider.on("slide", () => updateFilterCheckInput($filter));
+
+  const $dropdown = $filter.closest(".dropdown");
+  $dropdown?.addEventListener("dropdown:show", () => {
+    updateInputWidth($minInput, $minWidthElem);
+    updateInputWidth($maxInput, $maxWidthElem);
+  });
 
   const $headerPercent = $filter.querySelector(".filter-price__header-percent");
   if ($headerPercent) {
@@ -89,24 +110,20 @@ $priceFilters.forEach(($filter) => {
     });
   }
 
-  $slider.noUiSlider.on("start", () => {
-    const event = new Event("nouislider:start");
-    document.dispatchEvent(event);
-  });
+  $slider.noUiSlider.on("start", () => document.dispatchEvent(new Event("nouislider:start")));
+  $slider.noUiSlider.on("end", () => document.dispatchEvent(new Event("nouislider:end")));
+});
 
-  $slider.noUiSlider.on("end", () => {
-    const event = new Event("nouislider:end");
-    document.dispatchEvent(event);
-  });
+const $updateInputs = document.querySelectorAll("[data-filter-price-name]");
+$updateInputs.forEach(($updateInput) => {
+  $updateInput.addEventListener("change", () => {
+    const filterPriceName = $updateInput.dataset.filterPriceName;
+    const $filterPrice = document.querySelector(`[data-name="${filterPriceName}"]`);
+    const $slider = $filterPrice.querySelector(".filter-price__slider");
+    const minValue = $updateInput.dataset.filterPriceMin;
+    const maxValue = $updateInput.dataset.filterPriceMax;
 
-  $filter.addEventListener("mousedown", () => {
-    const event = new Event("price-filter:mouse-down");
-    document.dispatchEvent(event);
-  });
-
-  document.addEventListener("mouseup", () => {
-    const event = new Event("price-filter:mouse-up");
-    document.dispatchEvent(event);
+    $slider?.noUiSlider.set([minValue, maxValue]);
   });
 });
 
@@ -117,4 +134,12 @@ function updateInputWidth($input, $widthElem) {
 
   $widthElem.textContent = $input.value || $input.placeholder;
   $input.style.width = $widthElem.offsetWidth + "px";
+}
+
+function updateFilterCheckInput($filter) {
+  const $checkInput = document.querySelector(`#${$filter.dataset.updateCheckInputId}`);
+  if ($checkInput && !$checkInput.checked) {
+    $checkInput.checked = true;
+    $checkInput.dispatchEvent(new Event("change"));
+  }
 }

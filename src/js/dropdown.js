@@ -1,25 +1,27 @@
+let isMouseDown = false;
+
 const $dropdowns = document.querySelectorAll(".dropdown");
 $dropdowns.forEach(($dropdown) => {
   const $btn = $dropdown.querySelector(".dropdown__btn");
   $btn.addEventListener("click", (e) => dropdownBtnHandler($btn, $dropdown, e));
+
+  $dropdown.addEventListener("mousedown", () => isMouseDown = true);
 });
 
 window.addEventListener("click", (e) => {
   const $activeDropdown = document.querySelector(".dropdown--active");
   const isInner = e.target.closest(".dropdown") && !e.target.classList.contains("dropdown");
 
-  if (!$activeDropdown || isInner || isNoUiSliderActive) {
+  if (!$activeDropdown || isInner || isMouseDown) {
     return;
   }
 
   closeDropdown($activeDropdown);
 });
 
-let isNoUiSliderActive = false;
-document.addEventListener("nouislider:start", () => (isNoUiSliderActive = true));
-document.addEventListener("nouislider:end", () => setTimeout(() => (isNoUiSliderActive = false)));
-document.addEventListener("price-filter:mouse-down", () => (isNoUiSliderActive = true));
-document.addEventListener("mouseup", () => setTimeout(() => (isNoUiSliderActive = false)));
+document.addEventListener("nouislider:start", () => (isMouseDown = true));
+document.addEventListener("nouislider:end", () => setTimeout(() => (isMouseDown = false)));
+window.addEventListener("mouseup", () => setTimeout(() => isMouseDown = false));
 
 function dropdownBtnHandler($btn, $dropdown, e) {
   e.stopPropagation();

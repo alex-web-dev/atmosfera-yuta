@@ -15,6 +15,7 @@
   "dependencies": {
     "@floating-ui/dom": "^1.6.10",
     "imask": "^7.6.1",
+    "lightgallery": "^2.7.2",
     "normalize.css": "^8.0.1",
     "nouislider": "^15.8.1",
     "simplebar": "^6.2.7",

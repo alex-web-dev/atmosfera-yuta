@@ -9,7 +9,11 @@ $inputs.forEach(($input) => {
     const min = $input.dataset.maskMin ? parseInt($input.dataset.maskMin, 10) : null;
     const max = $input.dataset.maskMax ? parseInt($input.dataset.maskMax, 10) : null;
 
-    const maskValue = $input.dataset.maskLabel ? `${$input.dataset.maskLabel} num` : 'num';
+    let maskValue = $input.dataset.maskLabel ? `${$input.dataset.maskLabel} num` : "num";
+    if ($input.dataset.maskText) {
+      maskValue += ` ${$input.dataset.maskText}`;
+    }
+
     imask = IMask($input, {
       mask: maskValue,
       lazy: false,
@@ -19,13 +23,11 @@ $inputs.forEach(($input) => {
           mask: Number,
           min,
           max,
-          thousandsSeparator: ' ',
+          thousandsSeparator: " ",
           scale: 0,
-        }
-      }
+        },
+      },
     });
-
-
   } else {
     imask = IMask($input, { mask });
   }
