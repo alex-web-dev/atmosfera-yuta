@@ -1,0 +1,24 @@
+.section {
+  &--py-lg {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  &--white {
+    background-color: #fff;
+  }
+
+  @media (max-width: 991px) {
+    &--py-lg {
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+  }
+
+  @media (max-width: 767px) {
+    &--py-lg {
+      padding-top: 35px;
+      padding-bottom: 35px;
+    }
+  }
+}

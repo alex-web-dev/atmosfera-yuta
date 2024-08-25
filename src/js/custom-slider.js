@@ -14,16 +14,18 @@ $customSliders.forEach(($customSlider) => {
   const handleSwiperUpdate = (swiper) => {
     controlsHandler($controls, {
       swiper,
-      valueThis: swiper.params.slidesPerView + swiper.activeIndex,
+      valueThis: +swiper.params.slidesPerView + +swiper.activeIndex,
       valueTotal: swiper.slides.length,
     });
   };
 
-  const slidesPerView1341 = $sliderMain.dataset['slidesPerView-1341'] ?? 3;
-  const slidesPerView992 = $sliderMain.dataset['slidesPerView-992'] ?? 3;
-  const slidesPerView641 = $sliderMain.dataset['slidesPerView-641'] ?? 2;
+  const slidesPerView1341 = $sliderMain.dataset["slidesPerView-1341"] ?? 3;
+  const slidesPerView1181 = $sliderMain.dataset["slidesPerView-1181"] ?? 3;
+  const slidesPerView992 = $sliderMain.dataset["slidesPerView-992"] ?? 3;
+  const slidesPerView641 = $sliderMain.dataset["slidesPerView-641"] ?? 2;
   const slidesPerView = $sliderMain.dataset.slidesPerView ?? 1;
   const spaceBetween = $sliderMain.dataset.spaceBetween ?? 21;
+  const spaceBetween641 = $sliderMain.dataset["spaceBetween-641"] ?? 21;
 
   new Swiper($sliderMain, {
     slidesPerView,
@@ -40,9 +42,13 @@ $customSliders.forEach(($customSlider) => {
     breakpoints: {
       641: {
         slidesPerView: slidesPerView641,
+        spaceBetween: spaceBetween641,
       },
       992: {
         slidesPerView: slidesPerView992,
+      },
+      1181: {
+        slidesPerView: slidesPerView1181,
       },
       1341: {
         slidesPerView: slidesPerView1341,
@@ -69,6 +75,8 @@ function controlsHandler($controls, { swiper, valueThis = 0, valueTotal = 0 }) {
 
   const $valueThis = $controls.querySelector(".slider-controls__value-this");
   const $valueTotal = $controls.querySelector(".slider-controls__value-total");
-  $valueThis.innerText = valueThis;
-  $valueTotal.innerText = valueTotal;
+  if ($valueThis && $valueTotal) {
+    $valueThis.innerText = valueThis;
+    $valueTotal.innerText = valueTotal;
+  }
 }

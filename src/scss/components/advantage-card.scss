@@ -1,0 +1,24 @@
+.advantage-card {
+  &__icon-box {
+    margin-bottom: 20px;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__icon {
+    max-height: 100%;
+    object-fit: contain;
+  }
+
+  &__text {
+    max-width: 260px;
+  }
+
+  @media (max-width: 767px) {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+}

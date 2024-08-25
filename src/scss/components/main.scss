@@ -30,6 +30,10 @@
     z-index: 1;
     margin-top: -60px;
 
+    &--mt-lg {
+      margin-top: -204px;
+    }
+
     &--mt-xl {
       margin-top: -590px;
     }
@@ -47,6 +51,16 @@
 
   &__callback {
     padding-top: 60px;
+  }
+
+  &__first-section {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+
+  &__last-section {
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
   }
 
   @media (max-width: 1180px) {
@@ -71,6 +85,10 @@
     &__overlay {
       margin-top: -40px;
 
+      &--mt-lg {
+        margin-top: -140px;
+      }
+
       &--mt-xl {
         margin-top: -490px;
       }
@@ -92,6 +110,8 @@
 
     &__features {
       margin-top: 45px;
+      border-top-left-radius: 16px;
+      border-top-right-radius: 16px;
     }
 
     &__stages {
@@ -101,6 +121,10 @@
 
     &__overlay {
       margin-top: -30px;
+
+      &--mt-lg {
+        margin-top: -90px;
+      }
 
       &--mt-xl {
         margin-top: -390px;
@@ -114,6 +138,11 @@
     &__equipment {
       margin-top: 35px;
       padding-bottom: 20px;
+    }
+
+    &__first-section {
+      border-top-left-radius: 16px;
+      border-top-right-radius: 16px;
     }
   }
 }

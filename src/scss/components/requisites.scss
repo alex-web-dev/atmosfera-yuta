@@ -1,0 +1,115 @@
+.requisites {
+  position: relative;
+
+  &--white {
+    background-color: #fff;
+  }
+
+  &--py-lg {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  &__title {
+    margin-bottom: 40px;
+  }
+
+  &__main {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  &__table {
+    flex: 1 1 auto;
+  }
+
+  &__callback {
+    margin-left: 20px;
+    flex: 0 0 426px;
+  }
+
+  &__bg-img {
+    position: absolute;
+    pointer-events: none;
+
+    &:nth-child(1) {
+      right: 0;
+      top: -175px;
+    }
+  }
+
+  @media (max-width: 1400px) {
+    &__bg-img {
+      &:nth-child(1) {
+        top: -150px;
+        max-width: 230px;
+      }
+    }
+  }
+
+  @media (max-width: 1340px) {
+    &__callback {
+      flex-basis: 390px;
+    }
+  }
+
+  @media (max-width: 1180px) {
+    &__callback {
+      flex-basis: 360px;
+    }
+  }
+
+  @media (max-width: 991px) {
+    &--py-lg {
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+
+    &__title {
+      margin-bottom: 32px;
+    }
+
+    &__main {
+      flex-direction: column;
+    }
+
+    &__table {
+      width: 100%;
+    }
+
+    &__callback {
+      margin-top: 24px;
+      margin-left: 0;
+      width: 100%;
+    }
+
+    &__bg-img {
+      &:nth-child(1) {
+        top: -130px;
+        right: -20px;
+        max-width: 170px;
+      }
+    }
+  }
+
+  @media (max-width: 991px) {
+    &--py-lg {
+      padding-top: 35px;
+      padding-bottom: 35px;
+    }
+
+    &__title {
+      margin-bottom: 24px;
+    }
+  }
+
+  @media (max-width: 767px) {
+    &__bg-img {
+      &:nth-child(1) {
+        top: -120px;
+        right: -20px;
+        max-width: 140px;
+      }
+    }
+  }
+}

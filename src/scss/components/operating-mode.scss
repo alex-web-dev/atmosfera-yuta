@@ -1,0 +1,21 @@
+.operating-mode {
+  &__title {
+    margin-bottom: 8px;
+  }
+  
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+  }
+  
+  &__label {
+    padding-top: 8px;
+  }
+
+  &__value {
+    &:not(:first-child) {
+      margin-top: 6px;
+    }
+  }
+}

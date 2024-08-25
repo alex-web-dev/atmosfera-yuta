@@ -113,6 +113,13 @@ function createGalleryModal($galleryBox, boxIndex, duration) {
     thumbs: {
       swiper: thumnailsSlider,
     },
+    on: {
+      click: (_, e) => {
+        if (e.target.classList.contains("swiper-slide")) {
+          closeGalleryModal(boxIndex);
+        }
+      },
+    },
   });
 
   const $close = $modal.querySelector(".gallery-modal__close");

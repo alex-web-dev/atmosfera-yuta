@@ -1,0 +1,79 @@
+.advantages {
+  position: relative;
+
+  &--py-lg {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  &__content {
+    position: relative;
+    z-index: 1;
+  }
+
+  &__bg-img {
+    position: absolute;
+    pointer-events: none;
+
+    &:nth-child(1) {
+      right: 0;
+      top: -343px;
+    }
+
+    &:nth-child(2) {
+      left: 0;
+      bottom: 27px;
+    }
+  }
+
+  @media (max-width: 1180px) {
+    &__bg-img {
+      &:nth-child(1) {
+        top: -225px;
+        max-width: 210px;
+      }
+
+      &:nth-child(2) {
+        bottom: 10px;
+        max-width: 130px;
+      }
+    }
+  }
+
+  @media (max-width: 991px) {
+    &--py-lg {
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+
+    &__bg-img {
+      &:nth-child(1) {
+        top: -180px;
+        max-width: 190px;
+      }
+
+      &:nth-child(2) {
+        max-width: 110px;
+      }
+    }
+  }
+
+  @media (max-width: 767px) {
+    &--py-lg {
+      padding-top: 35px;
+      padding-bottom: 35px;
+    }
+
+    &__bg-img {
+      &:nth-child(1) {
+        top: -175px;
+        max-width: 140px;
+        right: -20px;
+      }
+
+      &:nth-child(2) {
+        max-width: 85px;
+      }
+    }
+  }
+}

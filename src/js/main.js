@@ -20,3 +20,4 @@ import './tooltip.js';
 import './btn-checkbox.js';
 import './equipment.js';
 import './gallery.js';
+import './video.js';

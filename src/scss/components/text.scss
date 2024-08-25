@@ -2,7 +2,7 @@
   font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
-  color: #000;
+  color: var(--color-black);
 
   &--xs {
     font-size: 12px;
@@ -46,6 +46,10 @@
 
   &--lh-16 {
     line-height: 1.6;
+  }
+
+  &--05 {
+    color: rgba(var(--color-black--rgb), 0.5);
   }
 
   &--white {

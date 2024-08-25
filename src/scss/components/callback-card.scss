@@ -1,7 +1,7 @@
 .callback-card {
   padding: 40px 40px 52px;
   border-radius: 20px;
-  @include primary-gradient();
+  @include primary-gradient(156deg, 18.81%, 101.51%);
 
   &__icon {
     margin-bottom: 20px;
@@ -27,6 +27,7 @@
 
   &__btn {
     width: 100%;
+    display: block;
 
     &:not(:first-child) {
       margin-top: 18px;

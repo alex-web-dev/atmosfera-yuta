@@ -53,6 +53,12 @@
     font-weight: 700;
   }
 
+  &--gold {
+    @include gold-gradient();
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
   &--white {
     color: #fff;
   }
