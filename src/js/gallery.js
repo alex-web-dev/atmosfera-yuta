@@ -103,10 +103,11 @@ function createGalleryModal($galleryBox, boxIndex, duration) {
     freeMode: true,
   });
 
+  const slidesPerView = $items.length === 1 ? "auto" : 1;
+  const spaceBetween = $items.length === 1 ? 0 : 20;
   new Swiper($slider, {
-    slidesPerView: 1,
-    slidesPerGroup: 1,
-    spaceBetween: 20,
+    slidesPerView,
+    spaceBetween,
     speed: 600,
     navigation: {
       prevEl: $prev,
