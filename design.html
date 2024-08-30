@@ -1,0 +1,1265 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="shortcut icon" href="./favicon.png" />
+    <title>Атмосфера уюта - Проектирование</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__top">
+          <a class="logo header__column header__column--logo" href="index.html">
+            <img class="logo__img" src="/img/logo.png" alt="" />
+          </a>
+          <div class="site-rating header__column header__column--rating">
+            <div class="site-rating__value">4.8</div>
+            <div class="site-rating__info">
+              <div class="stars site-rating__stars">
+                <img class="stars__item" src="/img/icons/star-gold.svg" alt="" />
+                <img class="stars__item" src="/img/icons/star-gold.svg" alt="" />
+                <img class="stars__item" src="/img/icons/star-gold.svg" alt="" />
+                <img class="stars__item" src="/img/icons/star-gold.svg" alt="" />
+                <img class="stars__item" src="/img/icons/star-gold.svg" alt="" />
+              </div>
+              <div class="text text--sm text--bold text--white">Рейтинг в Яндекс</div>
+              <div class="text text--sm text--medium text--white site-rating__text site-rating__text--sm">на основании 50 отзывов</div>
+            </div>
+          </div>
+          <a
+            class="btn btn--gold btn--iflex btn--py-2xs btn--px-xs btn--text-sm btn--text-left header__column header__column--calc"
+            href="index.html#house-cost">
+            <span class="icon btn__icon btn__icon--mx-lg">
+              <img class="icon__img" src="/img/icons/calc-black.svg" alt="" />
+            </span>
+            <span>Предварительный расчет жилого дома</span>
+          </a>
+          <div class="header__column header__column--social">
+            <div class="text text--iflex text--sm text--medium text--white text--li text--li-gold text--left header__label">
+              Мы всегда на связи
+            </div>
+            <div class="circles">
+              <div class="circles__list">
+                <a class="circle circle--telegram circles__item" href="#">
+                  <img class="circle__icon" src="/img/icons/social/telegram-white.svg" alt="" />
+                </a>
+                <a class="circle circle--whatsapp circles__item" href="#">
+                  <img class="circle__icon" src="/img/icons/social/whatsapp-white.svg" alt="" />
+                </a>
+                <a class="circle circle--viber circles__item" href="#">
+                  <img class="circle__icon" src="/img/icons/social/viber-white.svg" alt="" />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="header__column header__column--callback">
+            <div class="text text--iflex text--sm text--medium text--white text--li text--li-gold">
+              Вт-Пт: 10:00 - 18:00, Сб: 10:00 - 14:00
+            </div>
+            <a class="title title--5 title--bold title--white" href="tel:+73832132012">+7 (383) 213-20-12</a>
+            <button
+              class="link link--gold link--filter-shadow link--semibold link--line link--line-gold js-open-popup"
+              data-popup-name="callback">
+              Заказать звонок
+            </button>
+          </div>
+          <button class="menu-toggle header__menu-toggle js-toggle-menu">
+            <span class="menu-toggle__lines"></span>
+          </button>
+        </div>
+        <div class="header__bottom">
+          <nav class="menu header__menu">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a class="link link--iflex link--sm link--bold link--white link--upper menu__link" href="index.html">Главная</a>
+              </li>
+              <li class="menu__item menu__item--has-children">
+                <a class="link link--iflex link--sm link--bold link--white link--upper menu__link" href="projects.html">Проекты и цены</a>
+                <div class="submenu menu__submenu">
+                  <div class="submenu__content">
+                    <ul class="submenu__list">
+                      <li class="submenu__item">
+                        <a class="link link--hover-primary link--iblock" href="projects.html">
+                          Дома из профилированного и строганного бруса
+                        </a>
+                      </li>
+                      <li class="submenu__item">
+                        <a class="link link--hover-primary link--iblock" href="projects.html">Бани из бруса</a>
+                      </li>
+                      <li class="submenu__item">
+                        <a class="link link--hover-primary link--iblock" href="projects.html">Дачные дома из бруса</a>
+                      </li>
+                      <li class="submenu__item">
+                        <a class="link link--hover-primary link--iblock" href="projects.html">Газобетонные дома</a>
+                      </li>
+                      <li class="submenu__item">
+                        <a class="link link--hover-primary link--iblock" href="projects.html">Кирпичные дома</a>
+                      </li>
+                      <li class="submenu__item">
+                        <a class="link link--hover-primary link--iblock" href="projects.html">Дома с гаражом</a>
+                      </li>
+                      <li class="submenu__item">
+                        <a class="link link--hover-primary link--iblock" href="projects.html">Беседки</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="menu__item menu__item--has-children">
+                <a class="link link--iflex link--sm link--bold link--white link--upper link--line link--line-gold menu__link" href="#"
+                  >Услуги</a
+                >
+                <div class="submenu menu__submenu">
+                  <div class="submenu__content">
+                    <ul class="submenu__list">
+                      <li class="submenu__item">
+                        <a class="link link--hover-primary link--iblock" href="#">Проектирование</a>
+                      </li>
+                      <li class="submenu__item">
+                        <a class="link link--hover-primary link--iblock" href="geology.html">Геология</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="menu__item">
+                <a class="link link--iflex link--sm link--bold link--white link--upper menu__link" href="completed-works.html">
+                  Наши работы
+                </a>
+              </li>
+              <li class="menu__item">
+                <a class="link link--iflex link--sm link--bold link--white link--upper menu__link" href="mortgage.html"> Ипотека </a>
+              </li>
+              <li class="menu__item">
+                <a class="link link--iflex link--sm link--bold link--white link--upper menu__link" href="articles.html">Статьи</a>
+              </li>
+              <li class="menu__item menu__item--has-children">
+                <a class="link link--iflex link--sm link--bold link--white link--upper menu__link" href="#"> О компании </a>
+                <div class="submenu menu__submenu">
+                  <div class="submenu__content">
+                    <ul class="submenu__list">
+                      <li class="submenu__item">
+                        <a class="link link--hover-primary link--iblock" href="reviews.html">Отзывы на Flamp</a>
+                      </li>
+                      <li class="submenu__item">
+                        <a class="link link--hover-primary link--iblock" href="#requisites">Реквизиты</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </nav>
+          <a class="link link--white link--iflex link--sm link--semibold header__bottom-link" href="favourites.html">
+            <div class="icon icon--sm link__icon">
+              <img class="icon__img" src="img/icons/heart-white.svg" alt="" />
+            </div>
+            <span>Избранное</span>
+          </a>
+        </div>
+      </div>
+      <div class="mobile-menu">
+        <div class="mobile-menu__content">
+          <div class="mobile-menu__body">
+            <div class="mobile-menu__header">
+              <a class="logo" href="index.html">
+                <img class="logo__img" src="/img/logo.png" alt="" />
+              </a>
+              <button class="menu-toggle header__menu-toggle js-toggle-menu">
+                <span class="menu-toggle__lines"></span>
+              </button>
+            </div>
+            <div class="mobile-menu__main">
+              <ul class="mobile-menu__list">
+                <li class="mobile-menu__item">
+                  <a class="link link--bold link--upper mobile-menu__link" href="index.html">Главная</a>
+                </li>
+                <li class="mobile-menu__item mobile-menu__item--has-children accordion">
+                  <button class="link link--bold link--upper mobile-menu__link accordion__btn">Проекты и цены</button>
+                  <div class="accordion__content">
+                    <ul class="mobile-submenu mobile-menu__submenu accordion__main">
+                      <li class="mobile-submenu__item">
+                        <a href="#">Дома из профилированного и строганного бруса</a>
+                      </li>
+                      <li class="mobile-submenu__item">
+                        <a href="#">Бани из бруса</a>
+                      </li>
+                      <li class="mobile-submenu__item">
+                        <a href="#">Дачные дома из бруса</a>
+                      </li>
+                      <li class="mobile-submenu__item">
+                        <a href="#">Газобетонные дома</a>
+                      </li>
+                      <li class="mobile-submenu__item">
+                        <a href="#">Кирпичные дома</a>
+                      </li>
+                      <li class="mobile-submenu__item">
+                        <a href="#">Дома с гаражом</a>
+                      </li>
+                      <li class="mobile-submenu__item">
+                        <a href="#">Беседки</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="mobile-menu__item mobile-menu__item--has-children accordion">
+                  <button class="link link--bold link--upper link--line link--line-gold mobile-menu__link accordion__btn">Услуги</button>
+                  <div class="accordion__content">
+                    <ul class="mobile-submenu mobile-menu__submenu accordion__main">
+                      <li class="mobile-submenu__item">
+                        <a href="#">Проектирование</a>
+                      </li>
+                      <li class="mobile-submenu__item">
+                        <a href="geology.html">Геология</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="mobile-menu__item">
+                  <a class="link link--bold link--upper mobile-menu__link" href="completed-works.html">Наши работы</a>
+                </li>
+                <li class="mobile-menu__item">
+                  <a class="link link--bold link--upper mobile-menu__link" href="#">Ипотека</a>
+                </li>
+                <li class="mobile-menu__item">
+                  <a class="link link--bold link--upper mobile-menu__link" href="articles.html">Статьи</a>
+                </li>
+                <li class="mobile-menu__item mobile-menu__item--has-children accordion">
+                  <button class="link link--bold link--upper mobile-menu__link accordion__btn">О компании</button>
+                  <div class="accordion__content">
+                    <ul class="mobile-submenu mobile-menu__submenu accordion__main">
+                      <li class="mobile-submenu__item">
+                        <a href="reviews.html">Отзывы на Flamp</a>
+                      </li>
+                      <li class="mobile-submenu__item">
+                        <a href="#requisites">Реквизиты</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+              <a class="link link--iflex link--sm link--semibold mobile-menu__addition-link" href="favourites.html">
+                <div class="icon icon--sm link__icon">
+                  <img class="icon__img" src="img/icons/heart-black.svg" alt="" />
+                </div>
+                <span>Избранное</span>
+              </a>
+              <a
+                class="btn btn--gold btn--iflex btn--py-2xs btn--px-xs btn--text-xs btn--text-left mobile-menu__calc js-close-menu"
+                href="index.html#house-cost">
+                <span class="icon btn__icon btn__icon--mx-lg">
+                  <img class="icon__img" src="/img/icons/calc-black.svg" alt="" />
+                </span>
+                <span>Предварительный расчет жилого дома</span>
+              </a>
+            </div>
+            <div class="mobile-menu__footer">
+              <div class="mobile-menu__social">
+                <div class="text text--iflex text--sm text--medium text--li text--li-gold text--left header__label">Мы всегда на связи</div>
+                <div class="circles">
+                  <div class="circles__list">
+                    <a class="circle circle--telegram circles__item" href="#">
+                      <img class="circle__icon" src="/img/icons/social/telegram-white.svg" alt="" />
+                    </a>
+                    <a class="circle circle--whatsapp circles__item" href="#">
+                      <img class="circle__icon" src="/img/icons/social/whatsapp-white.svg" alt="" />
+                    </a>
+                    <a class="circle circle--viber circles__item" href="#">
+                      <img class="circle__icon" src="/img/icons/social/viber-white.svg" alt="" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="mobile-menu__callback">
+                <div class="text text--iflex text--sm text--medium text--li text--li-gold">Вт-Пт: 10:00 - 18:00, Сб: 10:00 - 14:00</div>
+                <a class="text text--xl title--bold" href="tel:+73832132012">+7 (383) 213-20-12</a>
+                <button
+                  class="link link--gold link--filter-shadow link--semibold link--line link--line-gold js-open-popup"
+                  data-popup-name="callback">
+                  Заказать звонок
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="banner banner--blur">
+        <div class="container">
+          <div class="banner__content">
+            <div class="breadcrumb banner__breadcrumb">
+              <ul class="breadcrumb__list">
+                <li class="breadcrumb__item">
+                  <a class="breadcrumb__link" href="index.html">Главная</a>
+                </li>
+                <li class="breadcrumb__item">
+                  <a class="breadcrumb__link" href="#">Услуги</a>
+                </li>
+                <li class="breadcrumb__item">
+                  <span class="breadcrumb__current">Проектирование</span>
+                </li>
+              </ul>
+            </div>
+            <div class="banner__body">
+              <div class="banner__info banner__info--lg">
+                <h1 class="title title--3 title--white"> <b>Проектирование</b> жилых и дачных домов в Новосибирске</h1>
+                <div class="text text--white banner__info-text">
+                  <p>
+                    Мы убеждены: уютный дом начинается с проекта. Наш опыт в проектировании домов позволяет нам создавать типовые проекты
+                    коттеджей, таунхаусов, бань и беседок, воплощая в них лучшее. Наши проекты разрабатываются командой специалистов,
+                    включая менеджера, инженера, архитектора, дизайнера интерьеров и прораба, чтобы удовлетворить все потребности будущего
+                    владельца дома.
+                  </p>
+                  <p>
+                    Постоянно поддерживаем связь с заказчиком, регулярно информируя его о ходе работ и согласовывая проектную документацию.
+                    После подписания проекта мы приступаем к строительству, обеспечивая воплощение уютного и функционального жилья.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="banner__values banner__values--p-0">
+              <div class="banner__values-list banner__values-list--mx-xl">
+                <div class="banner-value banner-value--sm banner__values-item banner__values-item--mx-xl">
+                  <div class="banner-value__header">
+                    <div class="banner-value__title">
+                      <span class="title title--gold title--semibold banner-value__title-num">2-5</span>
+                      <span class="title title--4 title--white banner-value__title-text">месяцев</span>
+                    </div>
+                  </div>
+                  <div class="text text--white banner-value__text banner-value__text--px-0">разработки</div>
+                </div>
+                <div class="banner-value banner__values-item banner__values-item--mx-xl">
+                  <div class="banner-value__header">
+                    <div class="banner-value__title">
+                      <span class="title title--5 title--white banner-value__title-label">до</span>
+                      <span class="title title--gold title--semibold banner-value__title-num">5</span>
+                      <span class="title title--4 title--white banner-value__title-text">вариантов</span>
+                    </div>
+                  </div>
+                  <div class="text text--white banner-value__text banner-value__text--px-0">концепций проекта</div>
+                </div>
+                <div class="banner-value banner-value--auto banner__values-item banner__values-item--mx-xl">
+                  <div class="banner-value__header">
+                    <div class="banner-value__title">
+                      <span class="title title--gold title--semibold banner-value__title-num">∞</span>
+                      <span class="title title--4 title--white banner-value__title-text">правок</span>
+                    </div>
+                  </div>
+                  <div class="text text--white banner-value__text banner-value__text--px-0">неограниченное количество</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="benefits benefits--white benefits--py-lg main__overlay main__overlay--radius">
+        <div class="container">
+          <div class="benefits__content">
+            <div class="title title--5 benefits__title"><b>При проектировании</b> мы уделяем внимание нескольким ключевым факторам</div>
+            <div class="custom-slider benefits__slider">
+              <div class="custom-slider__main swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide custom-slider__slide">
+                    <div class="benefit-item custom-slider__item">
+                      <div class="benefit-item__icon-box">
+                        <img class="benefit-item__icon" src="img/mortgage/benefits/1.svg" alt="" />
+                      </div>
+                      <div class="text text--semibold benefit-item__title">Технология строительства</div>
+                      <p class="text benefit-item__text">
+                        Мы предлагаем различные варианты, такие как дом из пеноблоков, уютное шале из профилированного бруса, бунгало из
+                        бруса или каркасный таунхаус
+                      </p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide custom-slider__slide">
+                    <div class="benefit-item custom-slider__item">
+                      <div class="benefit-item__icon-box">
+                        <img class="benefit-item__icon" src="img/mortgage/benefits/2.svg" alt="" />
+                      </div>
+                      <div class="text text--semibold benefit-item__title">Местность</div>
+                      <p class="text benefit-item__text">
+                        Анализируем сейсмоактивность, уровень грунтовых вод, состояние почвы и климатные условия в разные времена года,
+                        чтобы обеспечить устойчивость и комфорт в доме
+                      </p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide custom-slider__slide">
+                    <div class="benefit-item custom-slider__item">
+                      <div class="benefit-item__icon-box">
+                        <img class="benefit-item__icon" src="img/mortgage/benefits/3.svg" alt="" />
+                      </div>
+                      <div class="text text--semibold benefit-item__title">Потребности жильцов</div>
+                      <p class="text benefit-item__text">
+                        Различные потребности жильцов учитываются в проектировании, включая предпочтения по теплоизоляции, звукоизоляции и
+                        инженерным коммуникациям.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-pagination custom-slider__pagination"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--white section--py-lg">
+        <div class="container">
+          <div class="section__content">
+            <div class="title title--5 section__title"> <b>Состав проекта</b> дома или коттеджа </div>
+            <div class="faq-info">
+              <div class="faq-info__list">
+                <div class="faq-item accordion faq-info__item">
+                  <button
+                    class="text text--medium text--left accordion__btn faq-item__btn faq-item__btn--px-0 faq-item__btn--py-sm faq-item__btn--pt-0">
+                    <span>Объемный вид проекта дома или коттеджа</span>
+                    <span class="circle faq-item__btn-icon">
+                      <img class="circle__img" src="img/icons/right-black.svg" alt="" />
+                    </span>
+                  </button>
+                  <div class="accordion__content">
+                    <div class="text accordion__main faq-item__main faq-item__main--px-0 faq-item__main--pb-sm">
+                      <div class="faq-item__body">
+                        <p>
+                          3D моделирование крайне полезно там, где в отделке фасада применяется несколько видов материалов или хочется
+                          посмотреть, как будут выглядеть те или иные цвета оконных переплетов, комбинации штукатурки, камня, кровельного
+                          покрытия. <br />
+                          Проекты коттеджей в 3D дают максимально реалистичное представление не только о том, как будет выглядеть сам дом,
+                          но и на сколько он будет гармонировать с окружающим ландшафтом и прочими постройками на участке.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="faq-item accordion faq-info__item">
+                  <button class="text text--medium text--left accordion__btn faq-item__btn faq-item__btn--px-0 faq-item__btn--py-sm">
+                    <span>Общие данные</span>
+                    <span class="circle faq-item__btn-icon">
+                      <img class="circle__img" src="img/icons/right-black.svg" alt="" />
+                    </span>
+                  </button>
+                  <div class="accordion__content">
+                    <div class="text accordion__main faq-item__main faq-item__main--px-0 faq-item__main--pb-sm">
+                      <div class="faq-item__body">
+                        <p>
+                          3D моделирование крайне полезно там, где в отделке фасада применяется несколько видов материалов или хочется
+                          посмотреть, как будут выглядеть те или иные цвета оконных переплетов, комбинации штукатурки, камня, кровельного
+                          покрытия.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="faq-item accordion faq-info__item">
+                  <button class="text text--medium text--left accordion__btn faq-item__btn faq-item__btn--px-0 faq-item__btn--py-sm">
+                    <span>Генплан застройки участка</span>
+                    <span class="circle faq-item__btn-icon">
+                      <img class="circle__img" src="img/icons/right-black.svg" alt="" />
+                    </span>
+                  </button>
+                  <div class="accordion__content">
+                    <div class="text accordion__main faq-item__main faq-item__main--px-0 faq-item__main--pb-sm">
+                      <div class="faq-item__body">
+                        <p>
+                          3D моделирование крайне полезно там, где в отделке фасада применяется несколько видов материалов или хочется
+                          посмотреть, как будут выглядеть те или иные цвета оконных переплетов, комбинации штукатурки, камня, кровельного
+                          покрытия.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="faq-item accordion faq-info__item">
+                  <button class="text text--medium text--left accordion__btn faq-item__btn faq-item__btn--px-0 faq-item__btn--py-sm">
+                    <span>План этажа</span>
+                    <span class="circle faq-item__btn-icon">
+                      <img class="circle__img" src="img/icons/right-black.svg" alt="" />
+                    </span>
+                  </button>
+                  <div class="accordion__content">
+                    <div class="text accordion__main faq-item__main faq-item__main--px-0 faq-item__main--pb-sm">
+                      <div class="faq-item__body">
+                        <p>
+                          3D моделирование крайне полезно там, где в отделке фасада применяется несколько видов материалов или хочется
+                          посмотреть, как будут выглядеть те или иные цвета оконных переплетов, комбинации штукатурки, камня, кровельного
+                          покрытия.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="faq-item accordion faq-info__item">
+                  <button class="text text--medium text--left accordion__btn faq-item__btn faq-item__btn--px-0 faq-item__btn--py-sm">
+                    <span>Фасад</span>
+                    <span class="circle faq-item__btn-icon">
+                      <img class="circle__img" src="img/icons/right-black.svg" alt="" />
+                    </span>
+                  </button>
+                  <div class="accordion__content">
+                    <div class="text accordion__main faq-item__main faq-item__main--px-0 faq-item__main--pb-sm">
+                      <div class="faq-item__body">
+                        <p>
+                          3D моделирование крайне полезно там, где в отделке фасада применяется несколько видов материалов или хочется
+                          посмотреть, как будут выглядеть те или иные цвета оконных переплетов, комбинации штукатурки, камня, кровельного
+                          покрытия.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="faq-item accordion faq-info__item">
+                  <button class="text text--medium text--left accordion__btn faq-item__btn faq-item__btn--px-0 faq-item__btn--py-sm">
+                    <span>Разрез</span>
+                    <span class="circle faq-item__btn-icon">
+                      <img class="circle__img" src="img/icons/right-black.svg" alt="" />
+                    </span>
+                  </button>
+                  <div class="accordion__content">
+                    <div class="text accordion__main faq-item__main faq-item__main--px-0 faq-item__main--pb-sm">
+                      <div class="faq-item__body">
+                        <p>
+                          3D моделирование крайне полезно там, где в отделке фасада применяется несколько видов материалов или хочется
+                          посмотреть, как будут выглядеть те или иные цвета оконных переплетов, комбинации штукатурки, камня, кровельного
+                          покрытия.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="faq-item accordion faq-info__item">
+                  <button class="text text--medium text--left accordion__btn faq-item__btn faq-item__btn--px-0 faq-item__btn--py-sm">
+                    <span>План кровли</span>
+                    <span class="circle faq-item__btn-icon">
+                      <img class="circle__img" src="img/icons/right-black.svg" alt="" />
+                    </span>
+                  </button>
+                  <div class="accordion__content">
+                    <div class="text accordion__main faq-item__main faq-item__main--px-0 faq-item__main--pb-sm">
+                      <div class="faq-item__body">
+                        <p>
+                          3D моделирование крайне полезно там, где в отделке фасада применяется несколько видов материалов или хочется
+                          посмотреть, как будут выглядеть те или иные цвета оконных переплетов, комбинации штукатурки, камня, кровельного
+                          покрытия.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="faq-info__img-box">
+                <img class="faq-info__img" src="img/design/faq.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--white">
+        <div class="container">
+          <div class="section__content">
+            <div class="callback-item">
+              <div class="callback-item__main">
+                <div class="title title--5 title--white callback-item__title"><b>Вы можете скачать пример проекта</b> для ознакомления</div>
+                <a class="btn btn--gold callback-item__main-btn" href="#">Скачать пример</a>
+              </div>
+              <div class="callback-item__img-box">
+                <div class="callback-item__img-main">
+                  <img class="callback-item__img" src="img/design/download.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--white section--pt-lg">
+        <div class="container">
+          <div class="section__content">
+            <div class="custom-slider section__slider">
+              <div class="custom-slider__header">
+                <div class="title title--5 custom-slider__title"><b>Наши специалисты</b></div>
+                <div class="slider-controls custom-slider__controls">
+                  <div class="text text--gray-400 slider-controls__value">
+                    <span class="slider-controls__value-this">0</span>
+                    /
+                    <span class="slider-controls__value-total">0</span>
+                  </div>
+                  <div class="slider-controls__btns">
+                    <button class="circle circle--gray-100 slider-controls__btn slider-controls__btn--prev">
+                      <img class="circle__img circle__img--rotate-180deg" src="img/icons/right-black.svg" alt="" />
+                    </button>
+                    <button class="circle circle--gray-100 slider-controls__btn slider-controls__btn--next">
+                      <img class="circle__img" src="img/icons/right-black.svg" alt="" />
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="custom-slider__main swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide custom-slider__slide custom-slider__slide--items-start">
+                    <div class="expert-card">
+                      <div class="video expert-card__video">
+                        <div class="video__content video__content--xl">
+                          <div class="video__main">
+                            <iframe
+                              data-src="https://www.youtube.com/embed/KeKbw0BOVgI"
+                              frameborder="0"
+                              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                              referrerpolicy="strict-origin-when-cross-origin"
+                              allowfullscreen></iframe>
+                          </div>
+                          <div class="video__preview">
+                            <div class="video__preview-main">
+                              <div class="circle circle--gold video__preview-play video__preview-play--center">
+                                <img src="img/icons/play.svg" alt="" />
+                              </div>
+                              <span class="text text--white video__preview-text video__preview-text--absolute"
+                                >Видео обзор наших проектов</span
+                              >
+                            </div>
+                            <img class="video__preview-img" src="img/design/experts/1.jpg" alt="" />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="expert-card__body">
+                        <div class="title title--6 title--semibold expert-card__title">Александр Романович</div>
+                        <div class="text text--gray-400 text--medium expert-card__position">Архитектор</div>
+                        <p class="text expert-card__text">
+                          Здравствуйте, меня зовут Александр, и я помогу вам понять какой бюджет нужен для строительства вашего дома под
+                          ключ.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide custom-slider__slide custom-slider__slide--items-start">
+                    <div class="expert-card">
+                      <div class="expert-card__img-box">
+                        <div class="expert-card__img-main">
+                          <img class="expert-card__img" src="img/design/experts/2.jpg" alt="" />
+                        </div>
+                      </div>
+                      <div class="expert-card__body">
+                        <div class="title title--6 title--semibold expert-card__title">Андрей Александрович</div>
+                        <div class="text text--gray-400 text--medium expert-card__position">Архитектор</div>
+                        <p class="text expert-card__text">
+                          Здравствуйте, меня зовут Александр, и я помогу вам понять какой бюджет нужен для строительства вашего дома под
+                          ключ.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide custom-slider__slide custom-slider__slide--items-start">
+                    <div class="expert-card">
+                      <div class="expert-card__img-box">
+                        <div class="expert-card__img-main">
+                          <img class="expert-card__img" src="img/design/experts/2.jpg" alt="" />
+                        </div>
+                      </div>
+                      <div class="expert-card__body">
+                        <div class="title title--6 title--semibold expert-card__title">Александр Романович</div>
+                        <div class="text text--gray-400 text--medium expert-card__position">Архитектор</div>
+                        <p class="text expert-card__text">
+                          Здравствуйте, меня зовут Александр, и я помогу вам понять какой бюджет нужен для строительства вашего дома под
+                          ключ.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide custom-slider__slide custom-slider__slide--items-start">
+                    <div class="expert-card">
+                      <div class="expert-card__img-box">
+                        <div class="expert-card__img-main">
+                          <img class="expert-card__img" src="img/design/experts/1.jpg" alt="" />
+                        </div>
+                      </div>
+                      <div class="expert-card__body">
+                        <div class="title title--6 title--semibold expert-card__title">Александр Романович</div>
+                        <div class="text text--gray-400 text--medium expert-card__position">Архитектор</div>
+                        <p class="text expert-card__text">
+                          Здравствуйте, меня зовут Александр, и я помогу вам понять какой бюджет нужен для строительства вашего дома под
+                          ключ.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide custom-slider__slide custom-slider__slide--items-start">
+                    <div class="expert-card">
+                      <div class="expert-card__img-box">
+                        <div class="expert-card__img-main">
+                          <img class="expert-card__img" src="img/design/experts/2.jpg" alt="" />
+                        </div>
+                      </div>
+                      <div class="expert-card__body">
+                        <div class="title title--6 title--semibold expert-card__title">Александр Романович</div>
+                        <div class="text text--gray-400 text--medium expert-card__position">Архитектор</div>
+                        <p class="text expert-card__text">
+                          Здравствуйте, меня зовут Александр, и я помогу вам понять какой бюджет нужен для строительства вашего дома под
+                          ключ.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="stages stages--white main__stages">
+        <div class="container">
+          <div class="custom-slider stages__content">
+            <div class="custom-slider__header">
+              <div class="title title--5 custom-slider__title custom-slider__title--pr-sm">
+                <b>Посмотрите на все этапы</b> работы с&nbsp;нами
+              </div>
+            </div>
+            <div
+              class="custom-slider__main swiper"
+              data-slides-per-view="1"
+              data-slides-per-view-1341="5"
+              data-slides-per-view-992="4"
+              data-slides-per-view-641="3"
+              data-space-between="0">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide custom-slider__slide">
+                  <div class="stage-card custom-slider__item">
+                    <div class="text text--sm text--medium text--primary stage-card__num">01</div>
+                    <div class="stage-card__icon">
+                      <img class="stage-card__icon-img" src="img/stages/1.svg" alt="" />
+                    </div>
+                    <div class="text text--flex text--semibold text--justify-between stage-card__title">
+                      <span>Проект</span>
+                      <img class="text__icon" src="img/icons/right-gray-400.svg" alt="" />
+                    </div>
+                    <div class="text stage-card__text">
+                      Выбираем готовый проект или создаем свой собственный вместе с нашим архитектором
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide custom-slider__slide">
+                  <div class="stage-card stage-card--white custom-slider__item">
+                    <div class="text text--sm text--medium text--primary stage-card__num">02</div>
+                    <div class="stage-card__icon">
+                      <img class="stage-card__icon-img" src="img/stages/2.svg" alt="" />
+                    </div>
+                    <div class="text text--flex text--semibold text--justify-between stage-card__title">
+                      <span>Подписание договора</span>
+                      <img class="text__icon" src="img/icons/right-gray-400.svg" alt="" />
+                    </div>
+                    <div class="text stage-card__text">После согласования проекта Вам остается только подписать договор</div>
+                  </div>
+                </div>
+                <div class="swiper-slide custom-slider__slide">
+                  <div class="stage-card custom-slider__item">
+                    <div class="text text--sm text--medium text--primary stage-card__num">03</div>
+                    <div class="stage-card__icon">
+                      <img class="stage-card__icon-img" src="img/stages/3.svg" alt="" />
+                    </div>
+                    <div class="text text--flex text--semibold text--justify-between stage-card__title">
+                      <span>Выезд на участок</span>
+                      <img class="text__icon" src="img/icons/right-gray-400.svg" alt="" />
+                    </div>
+                    <div class="text stage-card__text">
+                      Наши специалисты прибудут на участок, оценят качество грунта и определят точное расположение будущего дома
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide custom-slider__slide">
+                  <div class="stage-card stage-card--white custom-slider__item">
+                    <div class="text text--sm text--medium text--primary stage-card__num">04</div>
+                    <div class="stage-card__icon">
+                      <img class="stage-card__icon-img" src="img/stages/4.svg" alt="" />
+                    </div>
+                    <div class="text text--flex text--semibold text--justify-between stage-card__title">
+                      <span>Строительство </span>
+                      <img class="text__icon" src="img/icons/right-gray-400.svg" alt="" />
+                    </div>
+                    <div class="text stage-card__text">
+                      Строительство жилого дома с осуществлением контроля на всех этапах строительства
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide custom-slider__slide">
+                  <div class="stage-card custom-slider__item">
+                    <div class="text text--sm text--medium text--primary stage-card__num">05</div>
+                    <div class="stage-card__icon">
+                      <img class="stage-card__icon-img" src="img/stages/5.svg" alt="" />
+                    </div>
+                    <div class="text text--flex text--semibold text--justify-between stage-card__title">
+                      <span>Приемка и передача объекта</span>
+                    </div>
+                    <div class="text stage-card__text">Производим передачу объекта с&nbsp;соответствующей документацией</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination custom-slider__pagination"></div>
+          </div>
+        </div>
+        <div class="stages__bg-images">
+          <img class="stages__bg-img stages__bg-img--mobile-top-sm" src="img/stages/bg-img1.png" alt="" />
+          <img class="stages__bg-img" src="img/stages/bg-img2.png" alt="" />
+        </div>
+      </section>
+
+      <section class="catalog main__catalog">
+        <div class="catalog__main">
+          <div class="container">
+            <div class="catalog__main-content">
+              <div class="title title--5 catalog__title"><b>Популярные проекты</b> и цены</div>
+              <div class="catalog__list">
+                <div class="product-card catalog__item">
+                  <div class="product-card__img-box">
+                    <a class="product-card__img-main" href="project.html">
+                      <img class="product-card__img" src="img/catalog/4.jpg" alt="" />
+                    </a>
+                  </div>
+                  <div class="product-card__body">
+                    <div class="product-card__main">
+                      <div class="product-card__header">
+                        <div class="title title--6 title--semibold">
+                          <a href="project.html">Атмосфера - 105</a>
+                        </div>
+                        <button class="circle circle--border circle--border-blue-100 product-card__bookmark-btn"></button>
+                      </div>
+                      <div class="product-card__details">
+                        <span class="text text--sm text--medium product-card__detail">104 м<sup>2</sup></span>
+                        <span class="text text--sm text--medium product-card__detail">8 х 8м</span>
+                        <span class="text text--sm text--medium product-card__detail">2 этажа</span>
+                        <span class="text text--sm text--medium product-card__detail">4 комнаты</span>
+                      </div>
+                    </div>
+                    <div class="product-card__footer">
+                      <div class="product-card__footer-content">
+                        <div class="product-card__price">
+                          <span class="title title--6 title--semibold product-card__price-now">от 9 200 000 руб.</span>
+                        </div>
+                        <a class="icon product-card__move" href="project.html">
+                          <img class="icon__img" src="img/icons/right-black.svg" alt="" />
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="product-card catalog__item">
+                  <div class="product-card__img-box">
+                    <a class="product-card__img-main" href="project.html">
+                      <img class="product-card__img" src="img/catalog/5.jpg" alt="" />
+                    </a>
+                  </div>
+                  <div class="product-card__body">
+                    <div class="product-card__main">
+                      <div class="product-card__header">
+                        <div class="title title--6 title--semibold">
+                          <a href="project.html">Атмосфера - 115</a>
+                        </div>
+                        <button class="circle circle--border circle--border-blue-100 product-card__bookmark-btn"></button>
+                      </div>
+                      <div class="product-card__details">
+                        <span class="text text--sm text--medium product-card__detail">105 м<sup>2</sup></span>
+                        <span class="text text--sm text--medium product-card__detail">9 х 8м</span>
+                        <span class="text text--sm text--medium product-card__detail">2 этажа</span>
+                        <span class="text text--sm text--medium product-card__detail">4 комнаты</span>
+                      </div>
+                    </div>
+                    <div class="product-card__footer">
+                      <div class="product-card__footer-content">
+                        <div class="product-card__price">
+                          <span class="title title--6 title--semibold product-card__price-now">от 9 639 300 руб.</span>
+                        </div>
+                        <a class="icon product-card__move" href="project.html">
+                          <img class="icon__img" src="img/icons/right-black.svg" alt="" />
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="product-card catalog__item">
+                  <div class="product-card__img-box">
+                    <a class="product-card__img-main" href="project.html">
+                      <img class="product-card__img" src="img/catalog/6.jpg" alt="" />
+                    </a>
+                  </div>
+                  <div class="product-card__body">
+                    <div class="product-card__main">
+                      <div class="product-card__header">
+                        <div class="title title--6 title--semibold">
+                          <a href="project.html">Атмосфера - 130</a>
+                        </div>
+                        <button class="circle circle--border circle--border-blue-100 product-card__bookmark-btn"></button>
+                      </div>
+                      <div class="product-card__details">
+                        <span class="text text--sm text--medium product-card__detail">103,2 м<sup>2</sup></span>
+                        <span class="text text--sm text--medium product-card__detail">9 х 7м</span>
+                        <span class="text text--sm text--medium product-card__detail">2 этажа</span>
+                        <span class="text text--sm text--medium product-card__detail">5 комнат</span>
+                      </div>
+                    </div>
+                    <div class="product-card__footer">
+                      <div class="product-card__footer-content">
+                        <div class="product-card__price">
+                          <span class="title title--6 title--semibold product-card__price-now">от 10 395 000 руб.</span>
+                        </div>
+                        <a class="icon product-card__move" href="project.html">
+                          <img class="icon__img" src="img/icons/right-black.svg" alt="" />
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <a class="btn btn--text-sm catalog__more catalog__more--mt-lg" href="projects.html">Смотреть каталог проектов</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="faq faq--white faq--mobile-pt-sm main__section main__section--mt-lg">
+        <div class="container">
+          <div class="faq__content">
+            <div class="title title--5 faq__title"><b>Часто задаваемые</b> вопросы</div>
+            <div class="faq__main">
+              <div class="faq__list">
+                <div class="faq-item accordion faq__item">
+                  <button class="text text--medium text--left accordion__btn faq-item__btn">
+                    <span>Какие дома вы проектируете?</span>
+                    <span class="circle faq-item__btn-icon">
+                      <img class="circle__img" src="img/icons/right-black.svg" alt="" />
+                    </span>
+                  </button>
+                  <div class="accordion__content">
+                    <div class="text accordion__main faq-item__main">
+                      <div class="faq-item__body">
+                        <p>
+                          В нашем портфолио есть самые разные проекты: в стиле хайтек, с большим процентом остекления, значительными
+                          консольными вылетами и другими элементами, присущими этой стилистике. Есть классические коттеджи различной
+                          площади. Мы можем сделать качественный проект любого дома. Даже если вы захотите спроектировать что-то очень
+                          оригинальное, мы справимся с задачей, главное, чтобы желаемое совпадало с возможностями по строительству. Обратите
+                          внимание, что при заключении договора на возведение коттеджа — проектирование будет бесплатным.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="faq-item accordion faq__item">
+                  <button class="text text--medium text--left accordion__btn faq-item__btn">
+                    <span>Из чего складывается стоимость проекта?</span>
+                    <span class="circle faq-item__btn-icon">
+                      <img class="circle__img" src="img/icons/right-black.svg" alt="" />
+                    </span>
+                  </button>
+                  <div class="accordion__content">
+                    <div class="text accordion__main faq-item__main">
+                      <div class="faq-item__body">
+                        <p>
+                          В нашем портфолио есть самые разные проекты: в стиле хайтек, с большим процентом остекления, значительными
+                          консольными вылетами и другими элементами, присущими этой стилистике.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="faq-item accordion faq__item">
+                  <button class="text text--medium text--left accordion__btn faq-item__btn">
+                    <span>Можно ли заказать строительство в кредит, ипотеку, рассрочку?</span>
+                    <span class="circle faq-item__btn-icon">
+                      <img class="circle__img" src="img/icons/right-black.svg" alt="" />
+                    </span>
+                  </button>
+                  <div class="accordion__content">
+                    <div class="text accordion__main faq-item__main">
+                      <div class="faq-item__body">
+                        <p>
+                          В нашем портфолио есть самые разные проекты: в стиле хайтек, с большим процентом остекления, значительными
+                          консольными вылетами и другими элементами, присущими этой стилистике. Есть классические коттеджи различной
+                          площади. Мы можем сделать качественный проект любого дома. Даже если вы захотите спроектировать что-то очень
+                          оригинальное, мы справимся с задачей, главное, чтобы желаемое совпадало с возможностями по строительству. Обратите
+                          внимание, что при заключении договора на возведение коттеджа — проектирование будет бесплатным.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="faq-item accordion faq__item">
+                  <button class="text text--medium text--left accordion__btn faq-item__btn">
+                    <span>Входит ли фундамент в стоимость проекта?</span>
+                    <span class="circle faq-item__btn-icon">
+                      <img class="circle__img" src="img/icons/right-black.svg" alt="" />
+                    </span>
+                  </button>
+                  <div class="accordion__content">
+                    <div class="text accordion__main faq-item__main">
+                      <div class="faq-item__body">
+                        <p>
+                          В нашем портфолио есть самые разные проекты: в стиле хайтек, с большим процентом остекления, значительными
+                          консольными вылетами и другими элементами, присущими этой стилистике. Есть классические коттеджи различной
+                          площади. Мы можем сделать качественный проект любого дома. Даже если вы захотите спроектировать что-то очень
+                          оригинальное, мы справимся с задачей, главное, чтобы желаемое совпадало с возможностями по строительству. Обратите
+                          внимание, что при заключении договора на возведение коттеджа — проектирование будет бесплатным.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="callback-card faq__callback">
+                <div class="circle callback-card__icon">
+                  <img class="circle__icon" src="img/icons/heart-black.svg" alt="" />
+                </div>
+                <div class="title title--5 title--white callback-card__title">
+                  <b>Отзывы о нас</b> - <br />
+                  это самая прекрасная рекомендация качества
+                </div>
+                <div class="callback-card__btns">
+                  <a class="btn-gold-border callback-card__btn js-accordion-status" href="#">
+                    <div class="btn-gold-border__content">
+                      <span class="link link--gold link--semibold link--lg btn-gold-border__link">Google Maps</span>
+                      <div class="stars">
+                        <img class="stars__item" src="/img/icons/star-gold.svg" alt="" />
+                        <img class="stars__item" src="/img/icons/star-gold.svg" alt="" />
+                        <img class="stars__item" src="/img/icons/star-gold.svg" alt="" />
+                        <img class="stars__item" src="/img/icons/star-gold.svg" alt="" />
+                        <img class="stars__item" src="/img/icons/star-gold.svg" alt="" />
+                      </div>
+                    </div>
+                    <div class="btn-gold-border__bg"></div>
+                  </a>
+                  <a class="btn-gold-border callback-card__btn js-accordion-status" href="#">
+                    <div class="btn-gold-border__content">
+                      <span class="link link--gold link--semibold link--lg btn-gold-border__link">2ГИС</span>
+                      <div class="stars">
+                        <img class="stars__item" src="/img/icons/star-gold.svg" alt="" />
+                        <img class="stars__item" src="/img/icons/star-gold.svg" alt="" />
+                        <img class="stars__item" src="/img/icons/star-gold.svg" alt="" />
+                        <img class="stars__item" src="/img/icons/star-gold.svg" alt="" />
+                        <img class="stars__item" src="/img/icons/star-gold.svg" alt="" />
+                      </div>
+                    </div>
+                    <div class="btn-gold-border__bg"></div>
+                  </a>
+                  <a class="btn-gold-border callback-card__btn js-accordion-status" href="#">
+                    <div class="btn-gold-border__content">
+                      <span class="link link--gold link--semibold link--lg btn-gold-border__link">Яндекс.Карты</span>
+                      <div class="stars">
+                        <img class="stars__item" src="/img/icons/star-gold.svg" alt="" />
+                        <img class="stars__item" src="/img/icons/star-gold.svg" alt="" />
+                        <img class="stars__item" src="/img/icons/star-gold.svg" alt="" />
+                        <img class="stars__item" src="/img/icons/star-gold.svg" alt="" />
+                        <img class="stars__item" src="/img/icons/star-gold.svg" alt="" />
+                      </div>
+                    </div>
+                    <div class="btn-gold-border__bg"></div>
+                  </a>
+                </div>
+                <div class="text text--sm text--blue-200 text--center callback-card__ps">
+                  Нажмите на интересующую вас платформу, чтобы прочитать отзывы о нас
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__content">
+          <div class="callback-item footer__callback">
+            <div class="callback-item__main">
+              <div class="title title--5 title--white callback-item__title"><b>У вас остались</b> вопросы?</div>
+              <p class="text text--white callback-item__text">
+                Оставьте заявку и наш менеджер перезвонит вам, чтобы ответить на ваши вопросы
+              </p>
+            </div>
+            <button class="btn btn--gold callback-item__btn js-open-popup" data-popup-name="callback">Оставить заявку</button>
+          </div>
+          <div class="footer__body">
+            <div class="footer__cards">
+              <div class="footer-card footer__card">
+                <div class="footer-card__content">
+                  <div class="text text--gray-400 footer-card__label">Связаться с нами</div>
+                  <div class="footer-card__contacts">
+                    <a class="link link--xl link--lh-16 link--medium link--hover-primary footer-card__contact" href="tel:+73832132012">
+                      +7 (383) 213-20-12
+                    </a>
+                    <a
+                      class="link link--xl link--lh-16 link--medium link--hover-primary footer-card__contact"
+                      href="mailto:oooatm2012@yandex.ru">
+                      oooatm2012@yandex.ru
+                    </a>
+                  </div>
+                  <div class="circles circles--m-lg footer-card__social-btns">
+                    <div class="circles__list">
+                      <a class="circle circle--lg circle--telegram circles__item" href="#">
+                        <img class="circle__icon" src="/img/icons/social/telegram-white.svg" alt="" />
+                      </a>
+                      <a class="circle circle--lg circle--whatsapp circles__item" href="#">
+                        <img class="circle__icon" src="/img/icons/social/whatsapp-white.svg" alt="" />
+                      </a>
+                      <a class="circle circle--lg circle--viber circles__item" href="#">
+                        <img class="circle__icon" src="/img/icons/social/viber-white.svg" alt="" />
+                      </a>
+                      <a class="circle circle--lg circle--vk circles__item" href="#">
+                        <img class="circle__icon" src="/img/icons/social/vk-white.svg" alt="" />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="footer-card footer-card--map footer__card">
+                <div class="footer-card__content">
+                  <div class="text text--gray-400 footer-card__label">Приходите в гости</div>
+                  <div class="footer-card__contacts">
+                    <div class="text text--xl text--lh-16 text--medium footer-card__contact">630051, г. Новосибирск, ул. Ползунова, 1</div>
+                  </div>
+                  <div class="circles circles--m-lg footer-card__social-btns">
+                    <div class="circles__list">
+                      <a class="circle circle--lg circles__item" href="#">
+                        <img class="icon circle__icon" src="/img/icons/social/yandex.png" alt="" />
+                      </a>
+                      <a class="circle circle--lg circles__item" href="#">
+                        <img class="icon circle__icon" src="/img/icons/social/2gis.png" alt="" />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="footer-main footer__main">
+              <div class="footer-main__nav">
+                <div class="footer-menu footer-main__nav-menu">
+                  <a class="link link--xl link--medium link--hover-primary footer-menu__title" href="completed-works.html">Наши работы</a>
+                </div>
+                <div class="footer-menu footer-main__nav-menu">
+                  <a class="link link--xl link--medium link--hover-primary footer-menu__title" href="mortgage.html">Дом в ипотеку</a>
+                </div>
+                <div class="footer-menu footer-main__nav-menu">
+                  <a class="link link--xl link--medium link--hover-primary footer-menu__title" href="articles.html">Статьи</a>
+                </div>
+                <div class="footer-menu footer-main__nav-menu">
+                  <a class="link link--xl link--medium link--hover-primary footer-menu__title" href="projects.html">Проекты</a>
+                  <ul class="footer-menu__list">
+                    <li class="footer-menu__item">
+                      <a class="link link--hover-primary footer-menu__link" href="projects.html">Дома из бруса</a>
+                    </li>
+                    <li class="footer-menu__item">
+                      <a class="link link--hover-primary footer-menu__link" href="projects.html">Бани из бруса</a>
+                    </li>
+                    <li class="footer-menu__item">
+                      <a class="link link--hover-primary footer-menu__link" href="projects.html">Дачные дома из бруса</a>
+                    </li>
+                    <li class="footer-menu__item">
+                      <a class="link link--hover-primary footer-menu__link" href="projects.html">Дома из газобетона</a>
+                    </li>
+                    <li class="footer-menu__item">
+                      <a class="link link--hover-primary footer-menu__link" href="projects.html">Дома из кирпича</a>
+                    </li>
+                    <li class="footer-menu__item">
+                      <a class="link link--hover-primary footer-menu__link" href="projects.html">Беседки</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="footer-menu footer-main__nav-menu">
+                  <a class="link link--xl link--medium link--hover-primary footer-menu__title" href="#">Услуги</a>
+                  <ul class="footer-menu__list">
+                    <li class="footer-menu__item">
+                      <a class="link link--hover-primary footer-menu__link" href="design.html">Проектирование</a>
+                    </li>
+                    <li class="footer-menu__item">
+                      <a class="link link--hover-primary footer-menu__link" href="geology.html">Геология участка</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="footer-menu footer-main__nav-menu">
+                  <a class="link link--xl link--medium link--hover-primary footer-menu__title" href="about.html">О компании</a>
+                  <ul class="footer-menu__list">
+                    <li class="footer-menu__item">
+                      <a class="link link--hover-primary footer-menu__link" href="about.html">О нас</a>
+                    </li>
+                    <li class="footer-menu__item">
+                      <a class="link link--hover-primary footer-menu__link" href="about.html#reviews.html">Отзывы</a>
+                    </li>
+                    <li class="footer-menu__item">
+                      <a class="link link--hover-primary footer-menu__link" href="contacts.html">Контакты</a>
+                    </li>
+                  </ul>
+                  <div class="footer-menu__section">
+                    <a class="link link--xl link--medium link--hover-primary footer-menu__title" href="#">Смотрите нас</a>
+                    <div class="circles circles--m-lg footer-menu__social-btns">
+                      <div class="circles__list">
+                        <a class="circle circle--lg circle--youtube circles__item" href="#">
+                          <img class="icon circle__icon" src="/img/icons/social/youtube-white.svg" alt="" />
+                        </a>
+                        <a class="circle circle--lg circle--rutube circles__item" href="#">
+                          <img class="icon circle__icon" src="/img/icons/social/rutube.png" alt="" />
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="footer-main__bottom">
+                <div class="text text--sm footer-main__copyright">Copyright © 2024 ООО “Атмосфера уюта”. Все права защищены.</div>
+                <div class="footer-main__bottom-links">
+                  <a class="link link--sm link--gray-400 footer-main__bottom-link" href="#">Политика конфиденциальности</a>
+                  <a class="link link--sm link--gray-400 footer-main__bottom-link" href="#">Персональные данные</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="popup popup--full" data-popup-name="callback">
+      <div class="popup__body">
+        <div class="popup__dialog">
+          <div class="popup-callback popup__callback" data-simplebar>
+            <button class="circle circle--sm circle--gray-100 popup-callback__close js-close-popup">
+              <img src="img/icons/close-primary-gradient.svg" alt="" />
+            </button>
+            <div class="title title--6 title--lh-16 popup-callback__title"><b>Заполните форму,</b> и мы вам перезвоним</div>
+            <form class="form popup-callback__form" action="#" autocomplete="off">
+              <div class="form__main">
+                <div class="input form__item">
+                  <div class="input__main">
+                    <input class="input__field input__field--gray-100" type="text" placeholder="Ваше имя" />
+                  </div>
+                </div>
+                <div class="input form__item">
+                  <div class="input__main">
+                    <input
+                      class="input__field input__field--gray-100 js-imask"
+                      type="text"
+                      placeholder="Телефон"
+                      data-mask="+{7} (000) 000-00-00" />
+                  </div>
+                </div>
+                <div class="input form__item">
+                  <div class="input__main">
+                    <input class="input__field input__field--gray-100" type="text" placeholder="Комментарий" />
+                  </div>
+                </div>
+                <button class="btn btn--full btn--text-sm form__submit form__submit--mt-xl">Оставить заявку</button>
+                <div class="text text--sm text--center text--gray-400 text--link-medium text--link-primary form__privacy">
+                  Нажимая на кнопку, я даю согласие на обработку
+                  <a href="#">персональных данных</a>
+                  и принимаю условия
+                  <a href="#">Политики конфиденциальности</a>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="popup__backdrop"></div>
+    </div>
+    <script type="module" src="./src/js/main.js"></script>
+  </body>
+</html>

@@ -53,7 +53,7 @@ if ($product) {
 
   const $sliderSwitchItems = $product.querySelectorAll(".product__switch-item");
   const $sliderSwitchInput = $product.querySelector(".product__switch-main .switch__input");
-  $sliderSwitchInput.addEventListener("change", () => {
+  $sliderSwitchInput?.addEventListener("change", () => {
     switchSliderHandler({
       $input: $sliderSwitchInput,
       $switchItems: $sliderSwitchItems,

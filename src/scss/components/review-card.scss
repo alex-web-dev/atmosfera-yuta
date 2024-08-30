@@ -1,0 +1,18 @@
+.review-card {
+  background-color: #fff;
+  border-radius: 20px;
+
+  &__video {
+    margin: 8px;
+  }
+
+  &__body {
+    padding: 24px;
+  }
+
+  &__text {
+    &:not(:first-child) {
+      margin-top: 8px;
+    }
+  }
+}

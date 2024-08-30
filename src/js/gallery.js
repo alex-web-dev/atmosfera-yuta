@@ -60,6 +60,8 @@ function createGalleryModal($galleryBox, boxIndex, duration) {
   `;
 
   const $items = $galleryBox.querySelectorAll(".gallery__item");
+  if ($items.length === 1) $modal.classList.add("gallery-modal--single");
+
   const $sliderWrapper = document.createElement("div");
   $sliderWrapper.className = "swiper-wrapper";
   $items.forEach(($item) => {

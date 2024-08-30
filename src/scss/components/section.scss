@@ -4,8 +4,16 @@
     padding-bottom: 60px;
   }
 
+  &--pt-lg {
+    padding-top: 60px;
+  }
+
   &--white {
     background-color: #fff;
+  }
+
+  &__title {
+    margin-bottom: 40px;
   }
 
   @media (max-width: 991px) {
@@ -13,12 +21,28 @@
       padding-top: 50px;
       padding-bottom: 50px;
     }
+
+    &--pt-lg {
+      padding-top: 50px;
+    }
+
+    &__title {
+      margin-bottom: 32px;
+    }
   }
 
   @media (max-width: 767px) {
     &--py-lg {
       padding-top: 35px;
       padding-bottom: 35px;
+    }
+
+    &--pt-lg {
+      padding-top: 35px;
+    }
+
+    &__title {
+      margin-bottom: 24px;
     }
   }
 }

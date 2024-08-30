@@ -29,6 +29,10 @@
     padding-bottom: 605px;
   }
 
+  &--xl-md {
+    padding-bottom: 585px;
+  }
+
   &--lg {
     padding-bottom: 248px;
   }
@@ -37,14 +41,22 @@
     padding-bottom: 60px;
   }
 
+  &--reviews {
+    padding-bottom: 460px;
+  }
+
   &__content {
     position: relative;
-    z-index: 1;
+    z-index: 2;
   }
 
   &__breadcrumb {
     &:not(:last-child) {
       margin-bottom: 60px;
+    }
+
+    &--mb-xs {
+      margin-bottom: 24px;
     }
   }
 
@@ -55,6 +67,10 @@
 
   &__info {
     max-width: 716px;
+
+    &--lg {
+      max-width: 913px;
+    }
   }
 
   &__info-text {
@@ -78,6 +94,10 @@
     &--sm {
       max-width: 716px;
     }
+
+    &--lg {
+      max-width: 793px;
+    }
   }
 
   &__features {
@@ -98,6 +118,10 @@
   &__values {
     margin-top: 32px;
     padding: 20px;
+
+    &--p-0 {
+      padding: 0;
+    }
   }
 
   &__values-list {
@@ -105,11 +129,19 @@
     margin-left: -40px;
     display: flex;
     flex-wrap: wrap;
+
+    &--mx-xl {
+      margin-left: -84px;
+    }
   }
 
   &__values-item {
     margin-top: 40px;
     margin-left: 40px;
+
+    &--mx-xl {
+      margin-left: 84px;
+    }
   }
 
   @media (max-width: 1180px) {
@@ -117,6 +149,10 @@
 
     &--xl {
       padding-bottom: 505px;
+    }
+
+    &--xl-md {
+      padding-bottom: 485px;
     }
 
     &__breadcrumb {
@@ -152,12 +188,20 @@
       padding-bottom: 490px;
     }
 
+    &--xl-md {
+      padding-bottom: 470px;
+    }
+
     &--lg {
       padding-bottom: 180px;
     }
 
     &--pb-xs {
       padding-bottom: 50px;
+    }
+
+    &--reviews {
+      padding-bottom: 420px;
     }
 
     &__breadcrumb {
@@ -182,11 +226,19 @@
     &__values-list {
       margin-top: -20px;
       margin-left: -20px;
+
+      &--mx-xl {
+        margin-left: -48px;
+      }
     }
 
     &__values-item {
       margin-top: 20px;
       margin-left: 20px;
+
+      &--mx-xl {
+        margin-left: 48px;
+      }
     }
 
     &__video {
@@ -209,12 +261,20 @@
       padding-bottom: 390px;
     }
 
+    &--xl-md {
+      padding-bottom: 370px;
+    }
+
     &--lg {
       padding-bottom: 120px;
     }
 
     &--pb-xs {
       padding-bottom: 40px;
+    }
+
+    &--reviews {
+      padding-bottom: 440px;
     }
 
     &__breadcrumb {

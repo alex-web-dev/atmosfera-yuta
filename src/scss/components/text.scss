@@ -147,6 +147,24 @@
     }
   }
 
+  &--clamp {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    line-clamp: 1;
+    -webkit-box-orient: vertical;
+    word-break: break-word;
+  }
+  
+  &--clamp-lines-3 {
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+  }
+  
+  &--clamp-word {
+    word-break: break-word;
+  }
+
   &--link-white {
     a {
       color: #fff;
@@ -258,6 +276,10 @@
       &:not(:first-child) {
         margin-top: 16px;
       }
+    }
+
+    &__mobile-sm {
+      font-size: 14px;
     }
   }
 }

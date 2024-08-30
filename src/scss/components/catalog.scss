@@ -16,6 +16,10 @@
     flex-direction: column;
   }
 
+  &__title {
+    margin-bottom: 40px;
+  }
+
   &__sort {
     margin-bottom: 20px;
   }
@@ -45,6 +49,10 @@
     margin: 32px auto 0;
     width: 320px;
     max-width: 100%;
+
+    &--mt-lg {
+      margin-top: 40px;
+    }
   }
 
   &__footer {
@@ -57,6 +65,10 @@
     }
 
     &__header {
+      margin-bottom: 32px;
+    }
+
+    &__title {
       margin-bottom: 32px;
     }
 
@@ -78,6 +90,10 @@
     }
 
     &__header {
+      margin-bottom: 24px;
+    }
+
+    &__title {
       margin-bottom: 24px;
     }
 

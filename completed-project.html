@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="shortcut icon" href="./favicon.png" />
+    <title>Атмосфера уюта - Готовый проект</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__top">
+          <a class="logo header__column header__column--logo" href="index.html">
+            <img class="logo__img" src="/img/logo.png" alt="" />
+          </a>
+          <div class="site-rating header__column header__column--rating">
+            <div class="site-rating__value">4.8</div>
+            <div class="site-rating__info">
+              <div class="stars site-rating__stars">
+                <img class="stars__item" src="/img/icons/star-gold.svg" alt="" />
+                <img class="stars__item" src="/img/icons/star-gold.svg" alt="" />
+                <img class="stars__item" src="/img/icons/star-gold.svg" alt="" />
+                <img class="stars__item" src="/img/icons/star-gold.svg" alt="" />
+                <img class="stars__item" src="/img/icons/star-gold.svg" alt="" />
+              </div>
+              <div class="text text--sm text--bold text--white">Рейтинг в Яндекс</div>
+              <div class="text text--sm text--medium text--white site-rating__text site-rating__text--sm">на основании 50 отзывов</div>
+            </div>
+          </div>
+          <a
+            class="btn btn--gold btn--iflex btn--py-2xs btn--px-xs btn--text-sm btn--text-left header__column header__column--calc"
+            href="index#house-cost">
+            <span class="icon btn__icon btn__icon--mx-lg">
+              <img class="icon__img" src="/img/icons/calc-black.svg" alt="" />
+            </span>
+            <span>Предварительный расчет жилого дома</span>
+          </a>
+          <div class="header__column header__column--social">
+            <div class="text text--iflex text--sm text--medium text--white text--li text--li-gold text--left header__label">
+              Мы всегда на связи
+            </div>
+            <div class="circles">
+              <div class="circles__list">
+                <a class="circle circle--telegram circles__item" href="#">
+                  <img class="circle__icon" src="/img/icons/social/telegram-white.svg" alt="" />
+                </a>
+                <a class="circle circle--whatsapp circles__item" href="#">
+                  <img class="circle__icon" src="/img/icons/social/whatsapp-white.svg" alt="" />
+                </a>
+                <a class="circle circle--viber circles__item" href="#">
+                  <img class="circle__icon" src="/img/icons/social/viber-white.svg" alt="" />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="header__column header__column--callback">
+            <div class="text text--iflex text--sm text--medium text--white text--li text--li-gold">
+              Вт-Пт: 10:00 - 18:00, Сб: 10:00 - 14:00
+            </div>
+            <a class="title title--5 title--bold title--white" href="tel:+73832132012">+7 (383) 213-20-12</a>
+            <button
+              class="link link--gold link--filter-shadow link--semibold link--line link--line-gold js-open-popup"
+              data-popup-name="callback">
+              Заказать звонок
+            </button>
+          </div>
+          <button class="menu-toggle header__menu-toggle js-toggle-menu">
+            <span class="menu-toggle__lines"></span>
+          </button>
+        </div>
+        <div class="header__bottom">
+          <nav class="menu header__menu">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a class="link link--iflex link--sm link--bold link--white link--upper menu__link" href="index.html">Главная</a>
+              </li>
+              <li class="menu__item menu__item--has-children">
+                <a class="link link--iflex link--sm link--bold link--white link--upper menu__link" href="projects.html">Проекты и цены</a>
+                <div class="submenu menu__submenu">
+                  <div class="submenu__content">
+                    <ul class="submenu__list">
+                      <li class="submenu__item">
+                        <a class="link link--hover-primary link--iblock" href="projects.html"
+                          >Дома из профилированного и строганного бруса</a
+                        >
+                      </li>
+                      <li class="submenu__item">
+                        <a class="link link--hover-primary link--iblock" href="projects.html">Бани из бруса</a>
+                      </li>
+                      <li class="submenu__item">
+                        <a class="link link--hover-primary link--iblock" href="projects.html">Дачные дома из бруса</a>
+                      </li>
+                      <li class="submenu__item">
+                        <a class="link link--hover-primary link--iblock" href="projects.html">Газобетонные дома</a>
+                      </li>
+                      <li class="submenu__item">
+                        <a class="link link--hover-primary link--iblock" href="projects.html">Кирпичные дома</a>
+                      </li>
+                      <li class="submenu__item">
+                        <a class="link link--hover-primary link--iblock" href="projects.html">Дома с гаражом</a>
+                      </li>
+                      <li class="submenu__item">
+                        <a class="link link--hover-primary link--iblock" href="projects.html">Беседки</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="menu__item menu__item--has-children">
+                <a class="link link--iflex link--sm link--bold link--white link--upper menu__link" href="#">Услуги</a>
+                <div class="submenu menu__submenu">
+                  <div class="submenu__content">
+                    <ul class="submenu__list">
+                      <li class="submenu__item">
+                        <a class="link link--hover-primary link--iblock" href="design.html">Проектирование</a>
+                      </li>
+                      <li class="submenu__item">
+                        <a class="link link--hover-primary link--iblock" href="geology.html">Геология</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="menu__item">
+                <a class="link link--iflex link--sm link--bold link--white link--upper link--line link--line-gold menu__link" href="completed-works.html">
+                  Наши работы
+                </a>
+              </li>
+              <li class="menu__item">
+                <a class="link link--iflex link--sm link--bold link--white link--upper menu__link" href="mortgage.html">Ипотека</a>
+              </li>
+              <li class="menu__item">
+                <a class="link link--iflex link--sm link--bold link--white link--upper menu__link" href="articles.html">Статьи</a>
+              </li>
+              <li class="menu__item menu__item--has-children">
+                <a class="link link--iflex link--sm link--bold link--white link--upper menu__link" href="about.html">О компании</a>
+                <div class="submenu menu__submenu">
+                  <div class="submenu__content">
+                    <ul class="submenu__list">
+                      <li class="submenu__item">
+                        <a class="link link--hover-primary link--iblock" href="reviews.html">Отзывы на Flamp</a>
+                      </li>
+                      <li class="submenu__item">
+                        <a class="link link--hover-primary link--iblock" href="about.html#requisites">Реквизиты</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </nav>
+          <a class="link link--white link--iflex link--sm link--semibold header__bottom-link" href="favourites.html">
+            <div class="icon icon--sm link__icon">
+              <img class="icon__img" src="img/icons/heart-white.svg" alt="" />
+            </div>
+            <span>Избранное</span>
+          </a>
+        </div>
+      </div>
+      <div class="mobile-menu">
+        <div class="mobile-menu__content">
+          <div class="mobile-menu__body">
+            <div class="mobile-menu__header">
+              <a class="logo" href="index.html">
+                <img class="logo__img" src="/img/logo.png" alt="" />
+              </a>
+              <button class="menu-toggle header__menu-toggle js-toggle-menu">
+                <span class="menu-toggle__lines"></span>
+              </button>
+            </div>
+            <div class="mobile-menu__main">
+              <ul class="mobile-menu__list">
+                <li class="mobile-menu__item">
+                  <a class="link link--bold link--upper mobile-menu__link" href="index.html">Главная</a>
+                </li>
+                <li class="mobile-menu__item mobile-menu__item--has-children accordion">
+                  <button class="link link--bold link--upper mobile-menu__link accordion__btn">Проекты и цены</button>
+                  <div class="accordion__content">
+                    <ul class="mobile-submenu mobile-menu__submenu accordion__main">
+                      <li class="mobile-submenu__item">
+                        <a href="#">Дома из профилированного и строганного бруса</a>
+                      </li>
+                      <li class="mobile-submenu__item">
+                        <a href="#">Бани из бруса</a>
+                      </li>
+                      <li class="mobile-submenu__item">
+                        <a href="#">Дачные дома из бруса</a>
+                      </li>
+                      <li class="mobile-submenu__item">
+                        <a href="#">Газобетонные дома</a>
+                      </li>
+                      <li class="mobile-submenu__item">
+                        <a href="#">Кирпичные дома</a>
+                      </li>
+                      <li class="mobile-submenu__item">
+                        <a href="#">Дома с гаражом</a>
+                      </li>
+                      <li class="mobile-submenu__item">
+                        <a href="#">Беседки</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="mobile-menu__item mobile-menu__item--has-children accordion">
+                  <button class="link link--bold link--upper mobile-menu__link accordion__btn">Услуги</button>
+                  <div class="accordion__content">
+                    <ul class="mobile-submenu mobile-menu__submenu accordion__main">
+                      <li class="mobile-submenu__item">
+                        <a href="design.html">Проектирование</a>
+                      </li>
+                      <li class="mobile-submenu__item">
+                        <a href="geology.html">Геология</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="mobile-menu__item">
+                  <a class="link link--bold link--upper link--line link--line-gold mobile-menu__link" href="completed-works.html">Наши работы</a>
+                </li>
+                <li class="mobile-menu__item">
+                  <a class="link link--bold link--upper mobile-menu__link" href="mortgage.html">Ипотека</a>
+                </li>
+                <li class="mobile-menu__item">
+                  <a class="link link--bold link--upper mobile-menu__link" href="articles.html">Статьи</a>
+                </li>
+                <li class="mobile-menu__item mobile-menu__item--has-children accordion">
+                  <button class="link link--bold link--upper mobile-menu__link accordion__btn">О компании</button>
+                  <div class="accordion__content">
+                    <ul class="mobile-submenu mobile-menu__submenu accordion__main">
+                      <li class="mobile-submenu__item">
+                        <a href="reviews.html">Отзывы на Flamp</a>
+                      </li>
+                      <li class="mobile-submenu__item">
+                        <a href="about.html#requisites">Реквизиты</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+              <a class="link link--iflex link--sm link--semibold mobile-menu__addition-link" href="favourites.html">
+                <div class="icon icon--sm link__icon">
+                  <img class="icon__img" src="img/icons/heart-black.svg" alt="" />
+                </div>
+                <span>Избранное</span>
+              </a>
+              <a
+                class="btn btn--gold btn--iflex btn--py-2xs btn--px-xs btn--text-xs btn--text-left mobile-menu__calc js-close-menu"
+                href="index.html#house-cost">
+                <span class="icon btn__icon btn__icon--mx-lg">
+                  <img class="icon__img" src="/img/icons/calc-black.svg" alt="" />
+                </span>
+                <span>Предварительный расчет жилого дома</span>
+              </a>
+            </div>
+            <div class="mobile-menu__footer">
+              <div class="mobile-menu__social">
+                <div class="text text--iflex text--sm text--medium text--li text--li-gold text--left header__label">Мы всегда на связи</div>
+                <div class="circles">
+                  <div class="circles__list">
+                    <a class="circle circle--telegram circles__item" href="#">
+                      <img class="circle__icon" src="/img/icons/social/telegram-white.svg" alt="" />
+                    </a>
+                    <a class="circle circle--whatsapp circles__item" href="#">
+                      <img class="circle__icon" src="/img/icons/social/whatsapp-white.svg" alt="" />
+                    </a>
+                    <a class="circle circle--viber circles__item" href="#">
+                      <img class="circle__icon" src="/img/icons/social/viber-white.svg" alt="" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="mobile-menu__callback">
+                <div class="text text--iflex text--sm text--medium text--li text--li-gold">Вт-Пт: 10:00 - 18:00, Сб: 10:00 - 14:00</div>
+                <a class="text text--xl title--bold" href="tel:+73832132012">+7 (383) 213-20-12</a>
+                <button
+                  class="link link--gold link--filter-shadow link--semibold link--line link--line-gold js-open-popup"
+                  data-popup-name="callback">
+                  Заказать звонок
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="banner banner--blur banner--xl-md">
+        <div class="container">
+          <div class="banner__content">
+            <div class="breadcrumb banner__breadcrumb">
+              <ul class="breadcrumb__list">
+                <li class="breadcrumb__item">
+                  <a class="breadcrumb__link" href="index.html">Главная</a>
+                </li>
+                <li class="breadcrumb__item">
+                  <a class="breadcrumb__link" href="completed-works.html">Наши работы</a>
+                </li>
+                <li class="breadcrumb__item">
+                  <span class="breadcrumb__current">Дачный дом СНТ Обь</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="product main__overlay main__overlay--mt-xl-md">
+        <div class="container">
+          <div class="product__content">
+            <div class="product__body box">
+              <div class="product__sliders">
+                <div class="product__slider-item product__slider-item--active">
+                  <div class="product-nav-slider product__nav-slider swiper">
+                    <div class="swiper-wrapper product-nav-slider__wrapper">
+                      <div class="swiper-slide product-nav-slider__slide">
+                        <img class="product-nav-slider__img" src="img/completed-project/1.jpg" alt="" />
+                      </div>
+                      <div class="swiper-slide product-nav-slider__slide">
+                        <img class="product-nav-slider__img" src="img/completed-project/2.jpg" alt="" />
+                      </div>
+                      <div class="swiper-slide product-nav-slider__slide">
+                        <img class="product-nav-slider__img" src="img/completed-project/3.jpg" alt="" />
+                      </div>
+                      <div class="swiper-slide product-nav-slider__slide">
+                        <img class="product-nav-slider__img" src="img/completed-project/4.jpg" alt="" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="product__main-slider-box">
+                    <div class="product-main-slider product__main-slider swiper gallery">
+                      <div class="swiper-wrapper product-main-slider__wrapper">
+                        <div class="product-main-slider__slide swiper-slide gallery__item" data-img="img/completed-project/1.jpg">
+                          <img class="product-main-slider__img gallery__btn" src="img/completed-project/1.jpg" alt="" />
+                        </div>
+                        <div class="product-main-slider__slide swiper-slide gallery__item" data-img="img/completed-project/2.jpg">
+                          <img class="product-main-slider__img gallery__btn" src="img/completed-project/2.jpg" alt="" />
+                        </div>
+                        <div class="product-main-slider__slide swiper-slide gallery__item" data-img="img/completed-project/3.jpg">
+                          <img class="product-main-slider__img gallery__btn" src="img/completed-project/3.jpg" alt="" />
+                        </div>
+                        <div class="product-main-slider__slide swiper-slide gallery__item" data-img="img/completed-project/4.jpg">
+                          <img class="product-main-slider__img gallery__btn" src="img/completed-project/4.jpg" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product__sidebar">
+              <div class="product-info product-info--pb-xl product__sidebar-section box">
+                <div class="title title--6 title--semibold product-info__title">Дачный дом СНТ Обь</div>
+                <div class="product-info__list">
+                  <div class="product-info__item">
+                    <span class="text text--gray-400 product-info__item-label">Тип постройки:</span>
+                    <span class="text text--medium product-info__item-value">Дом</span>
+                  </div>
+                  <div class="product-info__item">
+                    <span class="text text--gray-400 product-info__item-label">Кол-во этажей:</span>
+                    <span class="text text--medium product-info__item-value">1</span>
+                  </div>
+                  <div class="product-info__item">
+                    <span class="text text--gray-400 product-info__item-label">Материал стен:</span>
+                    <span class="text text--medium product-info__item-value">Брус 100х150мм</span>
+                  </div>
+                  <div class="product-info__item">
+                    <span class="text text--gray-400 product-info__item-label">Облицовка:</span>
+                    <span class="text text--medium product-info__item-value">-</span>
+                  </div>
+                  <div class="product-info__item">
+                    <span class="text text--gray-400 product-info__item-label">Фундамент:</span>
+                    <span class="text text--medium product-info__item-value">Жби блоки</span>
+                  </div>
+                  <div class="product-info__item">
+                    <span class="text text--gray-400 product-info__item-label">Перекрытия:</span>
+                    <span class="text text--medium product-info__item-value">-</span>
+                  </div>
+                  <div class="product-info__item">
+                    <span class="text text--gray-400 product-info__item-label">Кровля:</span>
+                    <span class="text text--medium product-info__item-value">Металлочерепица </span>
+                  </div>
+                </div>
+              </div>
+              <div class="product-buy product__sidebar-section box box--primary-gradient">
+                <div class="title title--6 title--white title--semibold product-buy__item">
+                  <div class="text text--white text--medium product-buy__item-value">Стоимость</div>
+                  <div class="product-buy__item-value">7 730 000 руб.</div>
+                </div>
+                <button class="btn btn--gold btn--full product-buy__btn js-open-popup" data-popup-name="callback">
+                  Хочу похожий проект
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="process process--white process--py-lg main__section main__section--mt-lg">
+        <div class="container">
+          <div class="process__content">
+            <div class="title title--5 process__title"><b>Процесс строительства</b> проекта</div>
+            <div class="nav-btns">
+              <div class="nav-btns__list tabs-btns" data-tabs-name="process">
+                <button class="nav-btn nav-btns__btn tabs-btns__btn tabs-btns__btn--active">Первый этап</button>
+                <button class="nav-btn nav-btns__btn tabs-btns__btn">Второй этап</button>
+                <button class="nav-btn nav-btns__btn tabs-btns__btn">Видеоотчет строительства</button>
+              </div>
+            </div>
+            <div class="tabs-list process__tabs" data-tabs-name="process">
+              <div class="tabs-list__item tabs-list__item--active">
+                <div class="process__list">
+                  <div class="process-item process__item">
+                    <div class="process-item__img-box">
+                      <img class="process-item__img" src="img/process/1.jpg" alt="" />
+                    </div>
+                    <div class="process-item__main">
+                      <div class="title title--5 title--semibold process-item__title">Обустройство фундамента</div>
+                      <p class="text process-item__text">
+                        Первым этапом в строительстве является устройство фундамента, который является основой дома.
+                        <br />
+                        В этом проекте мы использовали Жби блоки (300х300мм) для обустройства фундамента
+                      </p>
+                    </div>
+                  </div>
+                  <div class="process-item process__item">
+                    <div class="process-item__img-box">
+                      <img class="process-item__img" src="img/process/2.jpg" alt="" />
+                    </div>
+                    <div class="process-item__main">
+                      <div class="title title--5 title--semibold process-item__title">Сборка дома из бруса</div>
+                      <div class="text process-item__text">
+                        Устройство нижней обвязки: Это структура, соединяющая вертикальные стойки дома. Монтаж лаг пола: Лаги укладываются
+                        горизонтально на нижней обвязке и служат основой для пола.Сборка чернового пола: Происходит сборка основы пола из
+                        деревянных брусков.
+                        <br />
+                        Утепление и гидроизоляция: Для обеспечения теплоизоляции и защиты от влаги проводится утепление и гидроизоляция
+                        пола.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="process-item process__item">
+                    <div class="process-item__img-box">
+                      <img class="process-item__img" src="img/process/3.jpg" alt="" />
+                    </div>
+                    <div class="process-item__main">
+                      <div class="title title--5 title--semibold process-item__title">Настил Пола из Шпунтованной Доски</div>
+                      <p class="text process-item__text">
+                        Настил пола производится из шпунтованной доски, которая обеспечивает прочность и долговечность пола.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tabs-list__item">
+                <div class="process__list">
+                  <div class="process-item process__item">
+                    <div class="process-item__img-box">
+                      <img class="process-item__img" src="img/process/2.jpg" alt="" />
+                    </div>
+                    <div class="process-item__main">
+                      <div class="title title--5 title--semibold process-item__title">Сборка дома из бруса</div>
+                      <div class="text process-item__text">
+                        Устройство нижней обвязки: Это структура, соединяющая вертикальные стойки дома. Монтаж лаг пола: Лаги укладываются
+                        горизонтально на нижней обвязке и служат основой для пола.Сборка чернового пола: Происходит сборка основы пола из
+                        деревянных брусков.
+                        <br />
+                        Утепление и гидроизоляция: Для обеспечения теплоизоляции и защиты от влаги проводится утепление и гидроизоляция
+                        пола.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="process-item process__item">
+                    <div class="process-item__img-box">
+                      <img class="process-item__img" src="img/process/3.jpg" alt="" />
+                    </div>
+                    <div class="process-item__main">
+                      <div class="title title--5 title--semibold process-item__title">Настил Пола из Шпунтованной Доски</div>
+                      <p class="text process-item__text">
+                        Настил пола производится из шпунтованной доски, которая обеспечивает прочность и долговечность пола.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tabs-list__item">
+                <div class="process__list">
+                  <div class="process-item process__item">
+                    <div class="process-item__img-box">
+                      <img class="process-item__img" src="img/process/3.jpg" alt="" />
+                    </div>
+                    <div class="process-item__main">
+                      <div class="title title--5 title--semibold process-item__title">Настил Пола из Шпунтованной Доски</div>
+                      <p class="text process-item__text">
+                        Настил пола производится из шпунтованной доски, которая обеспечивает прочность и долговечность пола.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="process__addition">
+              <div class="process__addition-item">
+                <div class="title title--5 process__addition-title"><b>Видео-отзыв</b> заказчика</div>
+                <div class="video process__addition-main">
+                  <div class="video__content">
+                    <div class="video__main">
+                      <iframe
+                        data-src="https://www.youtube.com/embed/KeKbw0BOVgI"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                        allowfullscreen></iframe>
+                    </div>
+                    <div class="video__preview">
+                      <div class="video__preview-main">
+                        <div class="circle circle--gold video__preview-play video__preview-play--center">
+                          <img src="img/icons/play.svg" alt="" />
+                        </div>
+                      </div>
+                      <img class="video__preview-img" src="img/process/video-preview.jpg" alt="" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="process__addition-item">
+                <div class="title title--5 process__addition-title"><b>Обьект</b> на карте</div>
+                <div class="map">
+                  <iframe
+                    src="https://yandex.ru/map-widget/v1/?um=constructor%3A7adb13dcdee7c9f2975c68c8f46fbc8c9c1fc2c5558bfd0beab66485bcc31507&amp;source=constructor&scroll=false"
+                    frameborder="0"></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="process__bg-images">
+          <img class="process__bg-img" src="img/process/bg-img.png" alt="">
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__content">
+          <div class="callback-item footer__callback">
+            <div class="callback-item__main">
+              <div class="title title--5 title--white callback-item__title"><b>У вас остались</b> вопросы?</div>
+              <p class="text text--white callback-item__text">
+                Оставьте заявку и наш менеджер перезвонит вам, чтобы ответить на ваши вопросы
+              </p>
+            </div>
+            <button class="btn btn--gold callback-item__btn js-open-popup" data-popup-name="callback">Оставить заявку</button>
+          </div>
+          <div class="footer__body">
+            <div class="footer__cards">
+              <div class="footer-card footer__card">
+                <div class="footer-card__content">
+                  <div class="text text--gray-400 footer-card__label">Связаться с нами</div>
+                  <div class="footer-card__contacts">
+                    <a class="link link--xl link--lh-16 link--medium link--hover-primary footer-card__contact" href="tel:+73832132012">
+                      +7 (383) 213-20-12
+                    </a>
+                    <a
+                      class="link link--xl link--lh-16 link--medium link--hover-primary footer-card__contact"
+                      href="mailto:oooatm2012@yandex.ru">
+                      oooatm2012@yandex.ru
+                    </a>
+                  </div>
+                  <div class="circles circles--m-lg footer-card__social-btns">
+                    <div class="circles__list">
+                      <a class="circle circle--lg circle--telegram circles__item" href="#">
+                        <img class="circle__icon" src="/img/icons/social/telegram-white.svg" alt="" />
+                      </a>
+                      <a class="circle circle--lg circle--whatsapp circles__item" href="#">
+                        <img class="circle__icon" src="/img/icons/social/whatsapp-white.svg" alt="" />
+                      </a>
+                      <a class="circle circle--lg circle--viber circles__item" href="#">
+                        <img class="circle__icon" src="/img/icons/social/viber-white.svg" alt="" />
+                      </a>
+                      <a class="circle circle--lg circle--vk circles__item" href="#">
+                        <img class="circle__icon" src="/img/icons/social/vk-white.svg" alt="" />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="footer-card footer-card--map footer__card">
+                <div class="footer-card__content">
+                  <div class="text text--gray-400 footer-card__label">Приходите в гости</div>
+                  <div class="footer-card__contacts">
+                    <div class="text text--xl text--lh-16 text--medium footer-card__contact">630051, г. Новосибирск, ул. Ползунова, 1</div>
+                  </div>
+                  <div class="circles circles--m-lg footer-card__social-btns">
+                    <div class="circles__list">
+                      <a class="circle circle--lg circles__item" href="#">
+                        <img class="icon circle__icon" src="/img/icons/social/yandex.png" alt="" />
+                      </a>
+                      <a class="circle circle--lg circles__item" href="#">
+                        <img class="icon circle__icon" src="/img/icons/social/2gis.png" alt="" />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="footer-main footer__main">
+              <div class="footer-main__nav">
+                <div class="footer-menu footer-main__nav-menu">
+                  <a class="link link--xl link--medium link--hover-primary footer-menu__title" href="completed-works.html">Наши работы</a>
+                </div>
+                <div class="footer-menu footer-main__nav-menu">
+                  <a class="link link--xl link--medium link--hover-primary footer-menu__title" href="mortgage.html">Дом в ипотеку</a>
+                </div>
+                <div class="footer-menu footer-main__nav-menu">
+                  <a class="link link--xl link--medium link--hover-primary footer-menu__title" href="articles.html">Статьи</a>
+                </div>
+                <div class="footer-menu footer-main__nav-menu">
+                  <a class="link link--xl link--medium link--hover-primary footer-menu__title" href="projects.html">Проекты</a>
+                  <ul class="footer-menu__list">
+                    <li class="footer-menu__item">
+                      <a class="link link--hover-primary footer-menu__link" href="projects.html">Дома из бруса</a>
+                    </li>
+                    <li class="footer-menu__item">
+                      <a class="link link--hover-primary footer-menu__link" href="projects.html">Бани из бруса</a>
+                    </li>
+                    <li class="footer-menu__item">
+                      <a class="link link--hover-primary footer-menu__link" href="projects.html">Дачные дома из бруса</a>
+                    </li>
+                    <li class="footer-menu__item">
+                      <a class="link link--hover-primary footer-menu__link" href="projects.html">Дома из газобетона</a>
+                    </li>
+                    <li class="footer-menu__item">
+                      <a class="link link--hover-primary footer-menu__link" href="projects.html">Дома из кирпича</a>
+                    </li>
+                    <li class="footer-menu__item">
+                      <a class="link link--hover-primary footer-menu__link" href="projects.html">Беседки</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="footer-menu footer-main__nav-menu">
+                  <a class="link link--xl link--medium link--hover-primary footer-menu__title" href="#">Услуги</a>
+                  <ul class="footer-menu__list">
+                    <li class="footer-menu__item">
+                      <a class="link link--hover-primary footer-menu__link" href="design.html">Проектирование</a>
+                    </li>
+                    <li class="footer-menu__item">
+                      <a class="link link--hover-primary footer-menu__link" href="geology.html">Геология участка</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="footer-menu footer-main__nav-menu">
+                  <a class="link link--xl link--medium link--hover-primary footer-menu__title" href="about.html">О компании</a>
+                  <ul class="footer-menu__list">
+                    <li class="footer-menu__item">
+                      <a class="link link--hover-primary footer-menu__link" href="about.html">О нас</a>
+                    </li>
+                    <li class="footer-menu__item">
+                      <a class="link link--hover-primary footer-menu__link" href="about.html#reviews.html">Отзывы</a>
+                    </li>
+                    <li class="footer-menu__item">
+                      <a class="link link--hover-primary footer-menu__link" href="contacts.html">Контакты</a>
+                    </li>
+                  </ul>
+                  <div class="footer-menu__section">
+                    <a class="link link--xl link--medium link--hover-primary footer-menu__title" href="#">Смотрите нас</a>
+                    <div class="circles circles--m-lg footer-menu__social-btns">
+                      <div class="circles__list">
+                        <a class="circle circle--lg circle--youtube circles__item" href="#">
+                          <img class="icon circle__icon" src="/img/icons/social/youtube-white.svg" alt="" />
+                        </a>
+                        <a class="circle circle--lg circle--rutube circles__item" href="#">
+                          <img class="icon circle__icon" src="/img/icons/social/rutube.png" alt="" />
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="footer-main__bottom">
+                <div class="text text--sm footer-main__copyright">Copyright © 2024 ООО “Атмосфера уюта”. Все права защищены.</div>
+                <div class="footer-main__bottom-links">
+                  <a class="link link--sm link--gray-400 footer-main__bottom-link" href="#">Политика конфиденциальности</a>
+                  <a class="link link--sm link--gray-400 footer-main__bottom-link" href="#">Персональные данные</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="popup popup--full" data-popup-name="callback">
+      <div class="popup__body">
+        <div class="popup__dialog">
+          <div class="popup-callback popup__callback" data-simplebar>
+            <button class="circle circle--sm circle--gray-100 popup-callback__close js-close-popup">
+              <img src="img/icons/close-primary-gradient.svg" alt="" />
+            </button>
+            <div class="title title--6 title--lh-16 popup-callback__title"><b>Заполните форму,</b> и мы вам перезвоним</div>
+            <form class="form popup-callback__form" action="#" autocomplete="off">
+              <div class="form__main">
+                <div class="input form__item">
+                  <div class="input__main">
+                    <input class="input__field input__field--gray-100" type="text" placeholder="Ваше имя" />
+                  </div>
+                </div>
+                <div class="input form__item">
+                  <div class="input__main">
+                    <input
+                      class="input__field input__field--gray-100 js-imask"
+                      type="text"
+                      placeholder="Телефон"
+                      data-mask="+{7} (000) 000-00-00" />
+                  </div>
+                </div>
+                <div class="input form__item">
+                  <div class="input__main">
+                    <input class="input__field input__field--gray-100" type="text" placeholder="Комментарий" />
+                  </div>
+                </div>
+                <button class="btn btn--full btn--text-sm form__submit form__submit--mt-xl">Оставить заявку</button>
+                <div class="text text--sm text--center text--gray-400 text--link-medium text--link-primary form__privacy">
+                  Нажимая на кнопку, я даю согласие на обработку
+                  <a href="#">персональных данных</a>
+                  и принимаю условия
+                  <a href="#">Политики конфиденциальности</a>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="popup__backdrop"></div>
+    </div>
+    <script type="module" src="./src/js/main.js"></script>
+  </body>
+</html>

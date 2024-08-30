@@ -11,6 +11,11 @@
   transition: opacity 0;
   user-select: none;
 
+  &--single &__controls,
+  &--single &__thumbnails {
+    display: none;
+  }
+
   &__content {
     display: flex;
     flex-direction: column;

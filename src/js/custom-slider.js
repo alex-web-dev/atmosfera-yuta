@@ -26,6 +26,9 @@ $customSliders.forEach(($customSlider) => {
   const slidesPerView = $sliderMain.dataset.slidesPerView ?? 1;
   const spaceBetween = $sliderMain.dataset.spaceBetween ?? 21;
   const spaceBetween641 = $sliderMain.dataset["spaceBetween-641"] ?? 21;
+  const spaceBetween992 = $sliderMain.dataset["spaceBetween-992"] ?? 21;
+  const spaceBetween1181 = $sliderMain.dataset["spaceBetween-1181"] ?? 21;
+  const spaceBetween1341 = $sliderMain.dataset["spaceBetween-1341"] ?? 21;
 
   new Swiper($sliderMain, {
     slidesPerView,
@@ -46,12 +49,15 @@ $customSliders.forEach(($customSlider) => {
       },
       992: {
         slidesPerView: slidesPerView992,
+        spaceBetween: spaceBetween992,
       },
       1181: {
         slidesPerView: slidesPerView1181,
+        spaceBetween: spaceBetween1181,
       },
       1341: {
         slidesPerView: slidesPerView1341,
+        spaceBetween: spaceBetween1341,
       },
     },
     on: {

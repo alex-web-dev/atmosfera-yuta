@@ -32,6 +32,10 @@
     justify-content: center;
     height: auto;
     width: calc(33.33% - 20px);
+
+    &--items-start {
+      align-items: flex-start;
+    }
   }
 
   &__main[data-space-between] &__slide {

@@ -12,13 +12,13 @@
 
   &__location {
     position: relative;
-    
+
     &:not(:first-child) {
       margin-left: 20px;
       padding-left: 20px;
-      
+
       &:before {
-        content: '';
+        content: "";
         position: absolute;
         left: 0;
         top: 50%;
@@ -50,7 +50,15 @@
   &__btn {
     margin-top: 12px;
     margin-left: 12px;
-    width: calc(25% - 12px);
+    flex: 1 1 0%;
+
+    &--fixed-size {
+      flex: 0 0 294px;
+
+      &-sm {
+        flex-basis: 268px;
+      }
+    }
   }
 
   &__bottom {
@@ -83,6 +91,7 @@
 
   @media (max-width: 1180px) {
     &__btn {
+      flex: none;
       width: calc(50% - 12px);
     }
   }
@@ -95,7 +104,7 @@
       &:first-child:not(:last-child) {
         margin-right: 12px;
       }
-  
+
       &:last-child:not(:first-child) {
         margin-left: 12px;
       }
@@ -108,7 +117,7 @@
 
   @media (max-width: 767px) {
     border-radius: 16px;
-    
+
     &__top {
       flex-direction: column;
       align-items: flex-start;
@@ -119,7 +128,7 @@
         margin-top: 12px;
         margin-left: 0;
         padding-left: 0;
-        
+
         &:before {
           display: none;
         }

@@ -6,6 +6,14 @@
   &__content {
     position: relative;
     padding-top: 64.5%;
+
+    &--sm {
+      padding-top: 58.5%;
+    }
+
+    &--xl {
+      padding-top: 74.6%;
+    }
   }
 
   &__main {
@@ -15,7 +23,7 @@
     width: 100%;
     height: 100%;
     display: none;
-    
+
     &--show {
       display: block;
     }
@@ -48,6 +56,12 @@
       background: linear-gradient(180deg, rgba(39, 39, 44, 0) 38.29%, rgba(39, 39, 44, 0.5) 77.88%);
     }
 
+    &--backdrop-lg {
+      &:before {
+        background: linear-gradient(0deg, rgba(39, 39, 44, 0.5) 8.43%, rgba(255, 255, 255, 0) 144.17%);
+      }
+    }
+
     &--hide {
       display: none;
     }
@@ -67,6 +81,10 @@
     margin: 17% auto 0;
     flex: 0 0 auto;
     cursor: pointer;
+
+    &--center {
+      margin: auto;
+    }
   }
 
   &__preview-img {
@@ -80,6 +98,12 @@
 
   &__preview-text {
     margin-top: auto;
+
+    &--absolute {
+      position: absolute;
+      left: 24px;
+      bottom: 24px;
+    }
   }
 
   @media (max-width: 767px) {
@@ -87,6 +111,13 @@
 
     &__preview-main {
       padding: 20px;
+    }
+
+    &__preview-text {
+      &--absolute {
+        left: 20px;
+        bottom: 20px;
+      }
     }
   }
 }

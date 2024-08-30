@@ -1,0 +1,163 @@
+.process {
+  position: relative;
+  z-index: 1;
+
+  &--white {
+    background-color: #fff;
+  }
+
+  &--py-lg {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  &__title {
+    margin-bottom: 40px;
+  }
+
+  &__tabs {
+    margin-top: 40px;
+  }
+
+  &__item {
+    &:not(:first-child) {
+      margin-top: 40px;
+    }
+  }
+
+  &__addition {
+    margin-top: 40px;
+    padding-top: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    border-top: 1px solid var(--color-blue-100);
+  }
+
+  &__addition-item {
+    width: calc(50% - 10px);
+    
+    &:nth-child(2n) {
+      margin-left: 20px;
+    }
+  }
+
+  &__addition-title {
+    margin-bottom: 40px;
+  }
+
+  &__bg-img {
+    position: absolute;
+    pointer-events: none;
+
+    &:nth-child(1) {
+      top: -240px;
+      right: 0;
+    }
+  }
+
+  @media (max-width: 1400px) {
+    &__bg-img {
+      &:nth-child(1) {
+        top: -215px;
+        max-width: 200px;
+      }
+    }
+  }
+
+  @media (max-width: 1180px) {
+    &__bg-img {
+      &:nth-child(1) {
+        top: -195px;
+        max-width: 180px;
+      }
+    }
+  }
+
+  @media (max-width: 991px) {
+    &--py-lg {
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+
+    &__title {
+      margin-bottom: 32px;
+    }
+
+    &__tabs {
+      margin-top: 32px;
+    }
+
+    &__item {
+      &:not(:first-child) {
+        margin-top: 32px;
+        padding-top: 32px;
+        border-top: 1px solid var(--color-blue-100);
+      }
+    }
+
+    &__addition {
+      margin-top: 32px;
+      padding-top: 50px;
+    }
+
+    &__addition-title {
+      margin-bottom: 32px;
+    }
+
+    &__bg-img {
+      &:nth-child(1) {
+        top: -180px;
+        max-width: 160px;
+      }
+    }
+  }
+
+  @media (max-width: 767px) {
+    &--py-lg {
+      padding-top: 35px;
+      padding-bottom: 35px;
+    }
+
+    &__title {
+      margin-bottom: 24px;
+      padding-right: 15px;
+    }
+
+    &__tabs {
+      margin-top: 24px;
+    }
+
+    &__item {
+      &:not(:first-child) {
+        margin-top: 24px;
+        padding-top: 24px;
+      }
+    }
+    
+    &__addition {
+      margin-top: 24px;
+      padding-top: 32px;
+    }
+
+    &__addition-item {
+      width: 100%;
+
+      &:not(:first-child) {
+        margin-top: 24px;
+        margin-left: 0;
+      }
+    }
+
+    &__addition-title {
+      margin-bottom: 16px;
+    }
+
+    &__bg-img {
+      &:nth-child(1) {
+        top: -130px;
+        right: 0;
+        max-width: 100px;
+      }
+    }
+  }
+}

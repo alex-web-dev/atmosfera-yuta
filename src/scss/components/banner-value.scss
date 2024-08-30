@@ -5,6 +5,10 @@
     max-width: 232px;
   }
 
+  &--auto {
+    max-width: none;
+  }
+
   &__header {
     display: flex;
     align-items: center;
@@ -16,6 +20,10 @@
     margin-right: 6px;
   }
 
+  &__title-label {
+    margin-right: 4px;
+  }
+
   &__title-num {
     font-size: 52px;
   }
@@ -24,6 +32,11 @@
     margin-top: 4px;
     padding-left: 20px;
     padding-right: 20px;
+
+    &--px-0 {
+      padding-left: 0;
+      padding-right: 0;
+    }
   }
 
   @media (max-width: 991px) {
@@ -31,6 +44,10 @@
 
     &--sm {
       max-width: 200px;
+    }
+
+    &--auto {
+      max-width: none;
     }
 
     &__header-sup {
@@ -48,6 +65,12 @@
 
     &__text {
       font-size: 15px;
+    }
+  }
+
+  @media (max-width: px) {
+    &__title-num {
+      font-size: 42px;
     }
   }
 }

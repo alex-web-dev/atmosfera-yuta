@@ -10,6 +10,20 @@
     width: 100%;
     transition: color 0.4s;
 
+    &--px-0 {
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    &--py-sm {
+      padding-top: 16px;
+      padding-bottom: 16px;
+    }
+
+    &--pt-0 {
+      padding-top: 0;
+    }
+
     &.accordion__btn--active {
       color: var(--color-gray-400);
     }
@@ -34,12 +48,17 @@
     }
   }
 
-  &__content {
-    margin-top: -4px;
-  }
-
   &__main {
     padding: 0 24px 24px;
+
+    &--px-0 {
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    &--pb-sm {
+      padding-bottom: 16px;
+    }
   }
 
   &__body {

@@ -1,0 +1,90 @@
+.benefit-item {
+  position: relative;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+
+  &--p-xs {
+    padding: 24px;
+  }
+
+  &--arrow-right {
+    &:after {
+      position: absolute;
+      left: calc(100% + 2px);
+      top: 0;
+      @include pseudo-icon('../img/icons/right-gray-400.svg', 28px, 144px);
+      background-size: 8px 12px;
+    }
+  }
+
+  &__icon-box {
+    margin-bottom: 20px;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__icon {
+    max-height: 100%;
+    object-fit: contain;
+  }
+
+  &__text {
+    margin-top: 20px;
+
+    &--mt-xs {
+      margin-top: 12px;
+    }
+
+    &--mt-0 {
+      margin-top: 0;
+    }
+  }
+
+  @media (max-width: 1400px) {
+    &--arrow-right {
+      &:after {
+        width: 18px;
+      }
+    }
+  }
+
+  @media (max-width: 1180px) {
+    padding: 32px;
+  }
+
+  @media (max-width: 991px) {
+    padding: 24px;
+  }
+
+  @media (max-width: 767px) {
+    padding: 0;
+
+    &--arrow-right {
+      &:after {
+        left: calc(100% - 10px);
+      }
+    }
+
+    &__icon-box {
+      margin-bottom: 12px;
+
+      &--mobile-sm {
+        margin-bottom: 8px;
+        width: 28px;
+        height: 28px;
+      }
+    }
+
+    &__text {
+      margin-top: 12px;
+
+      &--mt-0 {
+        margin-top: 0;
+      }
+    }
+  }
+}
